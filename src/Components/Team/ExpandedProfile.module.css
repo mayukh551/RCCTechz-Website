@@ -1,0 +1,15 @@
+.profile{
+    animation: animate-profile .3s ease-in-out forwards;
+}
+
+@keyframes animate-profile{
+    from{
+        opacity: 0;
+        transform: translateY(-3em);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

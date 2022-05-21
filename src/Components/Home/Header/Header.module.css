@@ -1,0 +1,25 @@
+.header__image{
+    /* background-image: url(../../Images/HomeSection1.png); */
+    /* background-image: url(../../Images/PC_Setup_3.jpg); */
+    background-image: url(../../../Images/PC_Setup_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.club-animation{
+    animation: club-name 1s ease-in-out forwards;
+}
+
+@keyframes club-name {
+    from{
+        opacity: 0;
+        transform: translateX(-2.6rem);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
