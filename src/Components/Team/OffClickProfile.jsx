@@ -4,20 +4,7 @@ import ProfileCard from "../UI/ProfileCard";
 const OffClickProfile = (props) => {
     var coreMember = props.coreMember;
     const coreTeamProfileHandler = (e) => {
-        // goToTop();
-        if (e.target.localName !== "i") {
-            // console.log("element chosen : ", e.target.localName);
-            // console.log(window.innerHeight, e.clientY);
-            // console.log(window.innerHeight / e.clientY);
-            props.displayEventHandler(true, e.clientY / window.innerHeight);
-        }
-    };
-
-    const goToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
+        console.log('Profile Clicked!');
     };
 
     return (

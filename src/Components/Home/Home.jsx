@@ -12,7 +12,7 @@ const Home = () => {
             <DefineClub />
             <WhatWeDo />
             <Domains />
-            <HFooter />
+            {/* <HFooter /> */}
         </div>
     );
 };
