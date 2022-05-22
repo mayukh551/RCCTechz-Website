@@ -6,19 +6,17 @@ const OffClickProfile = (props) => {
     const coreTeamProfileHandler = (e) => {
         // goToTop();
         if (e.target.localName !== "i") {
-            // console.log("element chosen : ", e.target.localName);
-            // console.log(window.innerHeight, e.clientY);
-            // console.log(window.innerHeight / e.clientY);
-            props.displayEventHandler(true, e.clientY / window.innerHeight);
+            console.log('height from visible top edge', e, e.pageY, e.clientY);
+            props.displayEventHandler(true, e.pageY - e.clientY);
         }
     };
 
-    const goToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
+    // const goToTop = () => {
+    //     window.scrollTo({
+    //         top: 0,
+    //         behavior: "smooth",
+    //     });
+    // };
 
     return (
         // <div

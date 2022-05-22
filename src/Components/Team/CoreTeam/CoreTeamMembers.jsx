@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import OffClickProfile from "../OffClickProfile";
 import ExpandedProfile from "../ExpandedProfile";
 import Backdrop from "../../UI/Backdrop";
@@ -7,34 +7,41 @@ import Backdrop from "../../UI/Backdrop";
 // or the expanded version of the card
 // on clicking the profile
 
+function profileReducer(state, action){
+    console.log(action.topPos, action.cond);
+    return {pos: action.topPos, cond: action.cond};
+}
+
+
 const CoreTeamMembers = (props) => {
     // True -> Display expanded profile card
     // False -> Display normal profile card
 
     var coreMember = props.coreMember;
 
-    var topPx = 0;
-    const [expandedDisplayCond, setExpandedDisplayCond] = useState(false);
+    // const [expandedDisplayCond, setExpandedDisplayCond] = useState(false);
+    const [expandedDisplayCond, setExpandedDisplayCond] = useReducer(profileReducer, {
+        pos: 0,
+        cond: false
+    });
 
     const displayEventHandler = (cond, top) => {
-        topPx = top;
         console.log("Expanded Display Cond Status :", cond);
-        setExpandedDisplayCond(cond);
+        setExpandedDisplayCond({topPos: top, cond: cond})
+        // setExpandedDisplayCond(cond);
     };
 
-    const sendToCoreTeam = props.sendToCoreTeam;
-    console.log(coreMember.name);
-    // useEffect(() => {
-    //     sendToCoreTeam(expandedDisplayCond);
-    // }, [expandedDisplayCond]);
+    const {pos: topPx} = expandedDisplayCond;
+    const {cond: isProfileClicked} = expandedDisplayCond;
 
     return (
         <div className="">
-            {expandedDisplayCond === true ? (
+            {isProfileClicked === true ? (
                 <>
                     {/* <Backdrop /> */}
+                    {console.log('Top Position :', topPx - 200)}
                     <ExpandedProfile
-                        topPx={topPx}
+                        topPx={topPx - 200}
                         coreMember={coreMember}
                         displayEventHandler={displayEventHandler}
                     />

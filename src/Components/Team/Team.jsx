@@ -9,11 +9,11 @@ const Team = () => {
     // console.log('Team Component');
     const onTeam = (cond) => {
         console.log('Remember me! I am that backdrop :', cond);
-        setBackdrop(cond);
+        // setBackdrop(cond);
     }
 
     return (
-        <div className={`${showBackdrop === true? 'h-screen overflow-hidden' : 'h-full'} bg-gray-700 text-white text-2xl`}>
+        <div className={`bg-gray-700 text-white text-2xl relative`}>
             {/* <div className="h-screen overflow-hidden absolute top-0 left-0 w-full" style={{background: 'transparent'}}></div> */}
             {console.log('is backdrop here', showBackdrop)}
             {showBackdrop === true ? <Backdrop/> : ''}
