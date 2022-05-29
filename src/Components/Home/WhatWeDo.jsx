@@ -12,7 +12,7 @@ const WhatWeDo = () => {
                 <h1 className="text-left text-3xl xl:text-5xl pl-4 border-l-[10px] border-white">
                     What do we do?
                 </h1>
-                <p className="mt-8 pr-0 sm:pr-16 text-left">
+                <p className="mt-8 pr-0 sm:pr-16 text-left 2xl:text-2xl">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Repellendus sunt unde nemo eius, eligendi sapiente omnis
                     asperiores repudiandae ducimus quisquam? Iste esse dolore

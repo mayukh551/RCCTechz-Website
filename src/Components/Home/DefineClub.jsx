@@ -23,7 +23,7 @@ const DefineClub = () => {
                 >
                     What are we?
                 </h1>
-                <p className="mt-8 w-full md:w-[70%] font-medium text-left">
+                <p className="mt-8 w-full md:w-[70%] font-medium text-left 2xl:text-2xl">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Nihil voluptates quae nostrum mollitia quod exercitationem
                     obcaecati. Maxime consequuntur quas laboriosam? Impedit
