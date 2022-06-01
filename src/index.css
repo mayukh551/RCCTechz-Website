@@ -10,8 +10,8 @@ body {
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 0px;
-}
+} */
 
 @tailwind utilities;

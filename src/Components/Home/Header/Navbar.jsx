@@ -1,28 +1,39 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { gsap } from "gsap/all";
 
 const Navbar = () => {
+    const navbar = useRef(null);
+    useEffect(() => {
+        gsap.from(navbar.current, {
+            yPercent: -300,
+            duration: 2,
+            ease: "power3.out",
+        });
+    }, []);
+
     return (
         <Fragment>
             <div
                 className="h-[50px] w-full bg-black left-0 top-0"
-                style={{ borderBottomRightRadius: "10px" }}
+                ref={navbar}
+                // style={{ borderBottomRightRadius: "10px" }}
             >
-                <ul className="h-full text-white font-bold text-lg flex flex-row justify-center items-center text-center">
+                <ul className="h-full text-white font-bold text-lg flex flex-row justify-center text-center">
                     <Link to="/">
-                        <li className="mx-6 px-8 cursor-pointer hover:text-black hover:bg-slate-100">
+                        <li className="h-full pt-3 mx-6 px-8 cursor-pointer hover:text-black hover:bg-slate-100">
                             Home
                         </li>
                     </Link>
                     <Link to="/team">
-                        <li className="mx-6 px-8 cursor-pointer hover:text-black hover:bg-slate-100">
+                        <li className="h-full pt-3 mx-6 px-8 cursor-pointer hover:text-black hover:bg-slate-100">
                             Team
                         </li>
                     </Link>
-                    <li className="mx-6 px-8 cursor-pointer hover:text-black hover:bg-slate-100">
+                    <li className="h-full pt-3 mx-6 px-8 cursor-pointer hover:text-black hover:bg-slate-100">
                         Projects
                     </li>
-                    <li className="mx-6 px-8 cursor-pointer hover:text-black hover:bg-slate-100">
+                    <li className="h-full pt-3 mx-6 px-8 cursor-pointer hover:text-black hover:bg-slate-100">
                         <Link to="/events">Events</Link>
                     </li>
                 </ul>
