@@ -48,6 +48,7 @@ const Domains = () => {
     const domainCardRefs = useRef([]);
 
     useEffect(() => {
+        
         const t1 = gsap.timeline({
             scrollTrigger: {
                 trigger: scrollTriggerDiv.current,
