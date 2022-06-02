@@ -7,7 +7,7 @@ import Domains from "./Domains";
 
 const Home = () => {
     return (
-        <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
+        <div className="h-screen">
             <Header />
             <DefineClub />
             <WhatWeDo />

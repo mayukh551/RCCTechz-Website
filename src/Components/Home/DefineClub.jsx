@@ -8,7 +8,7 @@ import linux from '../../SVGs/linux.svg';
 const DefineClub = () => {
     return (
         <div
-            className={`snap-start relative flex flex-row items-center h-screen text-white`}
+            className={`relative flex flex-row items-center h-screen text-white`}
             style={{ color: "#f1faee", backgroundColor: "#e63946" }}
         >
             <img

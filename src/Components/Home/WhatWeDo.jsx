@@ -5,7 +5,7 @@ import SvgLogoList from "./SvgHomeSec2";
 const WhatWeDo = () => {
     return (
         <div
-            className={`snap-start relative px-4 sm:px-14 flex flex-col-reverse justify-center xl:flex-row h-screen xl:items-center`}
+            className={`relative px-4 sm:px-14 flex flex-col-reverse justify-center xl:flex-row h-screen xl:items-center`}
             style={{ backgroundColor: "#f5ebe0" }}
         >
             <div className="mt-9 mb-5 xl:mt-0 xl:mb-8">
