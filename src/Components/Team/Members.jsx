@@ -50,11 +50,12 @@ const Members = (props) => {
     return (
         <div className="px-10">
             <div className="py-10 grid grid-rows-5 grid-cols-1 md:grid-cols-2 bp_1100:grid-rows-2 bp_1100:grid-cols-3 gap-y-16 place-items-center">
-                {coreTeamDetails.map((member) => {
+                {coreTeamDetails.map((member, index) => {
                     return (
                         <CoreTeamMembers
                             key={member.clubRole}
                             coreMember={member}
+                            index={index}
                         />
                     );
                 })}

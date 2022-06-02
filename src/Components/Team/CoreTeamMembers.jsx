@@ -23,24 +23,8 @@ const CoreTeamMembers = (props) => {
         <OffClickProfile
             coreMember={coreMember}
             displayEventHandler={displayEventHandler}
+            index={props.index}
         />
-        // <div className="">
-        //     {expandedDisplayCond === true ? (
-        //         <>
-        //             {/* <Backdrop /> */}
-        //             <ExpandedProfile
-        //                 topPx={topPx}
-        //                 coreMember={coreMember}
-        //                 displayEventHandler={displayEventHandler}
-        //             />
-        //         </>
-        //     ) : (
-        //         <OffClickProfile
-        //             coreMember={coreMember}
-        //             displayEventHandler={displayEventHandler}
-        //         />
-        //     )}
-        // </div>
     );
 };
 

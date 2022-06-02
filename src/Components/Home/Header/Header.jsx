@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Header.module.css";
 import Navbar from "./Navbar";
+import clubLogo from '../../../Images/RCC Techz (White).png'
 
 const Header = () => {
+
+    const [renderCond, setRenderCond] = useState(true);
+
     return (
         <div className={`relative h-screen ${classes.header__image}`}>
-            <Navbar />
+            <Navbar renderCond={renderCond}/>
+            <img src={clubLogo} alt="RCCTechz" className="w-96 absolute top-[25%] right-9" />
             <h1
                 className={`font-bold border-l-[20px] border-cyan-500 pl-7 sm:pl-12 text-4xl sm:text-7xl lg:text-9xl text-white absolute left-4 sm:left-9 md:left-16 bottom-10`}
             >

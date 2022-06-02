@@ -1,21 +1,23 @@
-import React, { Fragment, useEffect, useRef } from "react";
+import React, { Fragment, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap/all";
 
-const Navbar = () => {
+const Navbar = ({ renderCond }) => {
     const navbar = useRef(null);
     useEffect(() => {
-        gsap.from(navbar.current, {
-            yPercent: -300,
-            duration: 2,
-            ease: "power3.out",
-        });
-    }, []);
+        if (renderCond) {
+            gsap.from(navbar.current, {
+                yPercent: -300,
+                duration: 2,
+                ease: "power3.out",
+            });
+        }
+    }, [renderCond]);
 
     return (
         <Fragment>
             <div
-                className="h-[50px] w-full bg-black fixed z-50 left-0 top-0"
+                className="h-[50px] w-full bg-black z-50 left-0 top-0"
                 ref={navbar}
                 // style={{ borderBottomRightRadius: "10px" }}
             >
