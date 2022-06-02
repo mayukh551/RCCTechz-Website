@@ -8,29 +8,43 @@ import { useEffect, useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const WhatWeDo = () => {
-    const content = useRef();
+    const whatWeDo_ContentRef = useRef(null);
+    const whatWeDo_SectionRef = useRef(null);
 
     useEffect(() => {
-        gsap.from(
-            ".img",
-            {
-                scrollTrigger: {
-                    trigger: ".img",
-                    toggleActions: "play none none none",
-                },
-                opacity: 0,
-                scale: 0.6,
-                duration: 1,
-            }
-        );
+        gsap.from(".img", {
+            scrollTrigger: {
+                trigger: whatWeDo_SectionRef.current,
+                toggleActions: "play none none none",
+            },
+            opacity: 0,
+            scale: 0.6,
+            duration: 1,
+        });
+
+        gsap.from(whatWeDo_ContentRef.current, {
+            scrollTrigger: {
+                trigger: whatWeDo_SectionRef.current,
+                start: "top 70%",
+                toggleActions: "play none none none",
+            },
+            delay: 0.3,
+            xPercent: -50,
+            duration: 0.7,
+            opacity: 0,
+        });
     });
 
     return (
         <div
             className={`relative px-4 sm:px-14 flex flex-col-reverse justify-center xl:flex-row h-screen xl:items-center`}
             style={{ backgroundColor: "#f5ebe0" }}
+            ref={whatWeDo_SectionRef}
         >
-            <div className="mt-9 mb-5 xl:mt-0 xl:mb-8">
+            <div
+                className="mt-9 mb-5 xl:mt-0 xl:mb-8"
+                ref={whatWeDo_ContentRef}
+            >
                 <h1 className="text-left text-3xl xl:text-5xl pl-4 border-l-[10px] border-white">
                     What do we do?
                 </h1>
