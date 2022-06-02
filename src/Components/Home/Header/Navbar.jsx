@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <Fragment>
             <div
-                className="h-[50px] w-full bg-black left-0 top-0"
+                className="h-[50px] w-full bg-black fixed z-50 left-0 top-0"
                 ref={navbar}
                 // style={{ borderBottomRightRadius: "10px" }}
             >
