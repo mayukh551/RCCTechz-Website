@@ -8,11 +8,11 @@ const ExpandedProfile = (props) => {
     console.log('On ExpandedProfile Components');
     const closeButtonHandler = () => {
         console.log("On Close button");
-        props.displayEventHandler(false);
+        props.viewProfileHandler(false);
     }
 
     return (
-        <ProfileCard styleCard={`${classes.profile} z-50 overflow-hidden text-base absolute left-[26.75%] top-[20%] ml-12 mt-12 w-[500px] h-[360px] text-white bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700`}>
+        <ProfileCard styleCard={`${classes.profile} z-50 text-base absolute left-[26.75%] top-[20%] ml-12 mt-12 w-[500px] h-[360px] text-white bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700`}>
             <div className="p-4 flex flex-col">
                 <h1 className="mb-9">
                     <span className="text-orange-400">Name</span> : {member.name}

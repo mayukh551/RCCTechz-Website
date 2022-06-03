@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Backdrop = () => {
-  return (
-    <div className='z-10 min-h-full min-w-full absolute top-0 left-0'
-    // style={{background: "rgba(0, 0, 0, 1)"}}
-    ></div>
-  )
-}
+const Backdrop = (props) => {
+    return <div onClick={props.showBackdropHandler} className="z-30 bg-black opacity-70 h-screen w-screen absolute top-0 left-0"></div>;
+};
 
-export default Backdrop
+export default Backdrop;

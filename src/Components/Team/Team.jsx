@@ -7,18 +7,17 @@ const Team = () => {
     // const [scrollHeight, setScrollHeight] = useState(false);
     const [showBackdrop, setBackdrop] = useState(false);
     // console.log('Team Component');
-    const onTeam = (cond) => {
+    const showBackdropHandler = (cond) => {
         console.log('Remember me! I am that backdrop :', cond);
         setBackdrop(cond);
     }
 
     return (
-        <div className={`${showBackdrop === true? 'h-screen overflow-hidden' : 'h-full'} bg-gray-700 text-white text-2xl`}>
-            {/* <div className="h-screen overflow-hidden absolute top-0 left-0 w-full" style={{background: 'transparent'}}></div> */}
+        <div className={`h-screen overflow-y-scroll bg-gray-700 text-white text-2xl`}>
             {console.log('is backdrop here', showBackdrop)}
-            {showBackdrop === true ? <Backdrop/> : ''}
+            {showBackdrop === true ? <Backdrop showBackdropHandler={showBackdropHandler}/> : ''}
             <TeamHeader />
-            <Members sendToTeam={onTeam}/>
+            <Members showBackdropHandler={showBackdropHandler}/>
         </div>
     );
 };

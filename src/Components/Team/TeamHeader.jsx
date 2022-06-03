@@ -13,18 +13,6 @@ const TeamHeader = () => {
                         Team
                     </span>
                 </h1>
-                {/* <ul className="mb-2 text-sm bp_650:text-lg flex flex-row space-x-16">
-                <li className="cursor-pointer"><Link to="/team/coreTeam">Core Team</Link></li>
-                <li className="cursor-pointer"><Link to="/team/domainManagers">Domain Managers</Link></li>
-                <li className="cursor-pointer">Rest</li>
-                <li className="cursor-pointer"><Link to="/team/founders">Founder</Link></li>
-            </ul> */}
-                {/* <ul className="mb-2 text-lg flex flex-row space-x-16">
-                <li className="cursor-pointer"><Link to="/team/coreTeam">Core Team</Link></li>
-                <li className="cursor-pointer"><Link to="/team/domainManagers">Domain Managers</Link></li>
-                <li className="cursor-pointer">Rest</li>
-                <li className="cursor-pointer"><Link to="/team/founders">Founder</Link></li>
-            </ul> */}
             </div>
         </>
     );

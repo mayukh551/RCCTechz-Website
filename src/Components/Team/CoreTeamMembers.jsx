@@ -24,6 +24,7 @@ const CoreTeamMembers = (props) => {
             coreMember={coreMember}
             displayEventHandler={displayEventHandler}
             index={props.index}
+            showBackdropHandler={props.showBackdropHandler}
         />
     );
 };
