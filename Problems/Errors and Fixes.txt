@@ -1,5 +1,7 @@
+Features:
 - Nested Router
+- Hover animation of domain card and bg img on domain cards
 
-- Profile Click scrollHeight event
+Bug:
+- ExpandedProfile Component Rednders for all profile cards -> Convert to one render only 
 
-- Animation of svgs
