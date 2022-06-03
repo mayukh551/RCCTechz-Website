@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import ai from "../../SVGs/artificial_intelligence.svg";
 import webdev from "../../SVGs/web_development.svg";
 import cyberSecurity from "../../SVGs/Cyber_Security.svg";
@@ -28,9 +28,10 @@ const DomainCard = React.forwardRef((props, ref) => {
                 domain.show === false
                     ? "justify-between"
                     : "justify-between md:justify-center text-white md:text-black space-y-9"
-            } w-full sm:w-[57%]  md:w-[60%] hover:scale-110 lg:w-[55%] transition-all duration-300 xl:[50%] md:hover:bg-zinc-200 md:bg-zinc-300 shadow-lg rounded-lg`}
+            } w-full sm:w-[57%]  md:w-[60%] lg:w-[55%] xl:[50%] md:hover:bg-zinc-200 md:bg-zinc-300 shadow-lg rounded-lg`}
         >
             {/* md:hover:w-[70%] lg:hover:w-[60%] */}
+            {/* hover:scale-110 transition-all duration-300 */}
             {domain.show === false ? (
                 <>
                     <img className="w-28 md:w-40" src={svg} alt="" />

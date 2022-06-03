@@ -48,7 +48,6 @@ const Domains = () => {
     const domainCardRefs = useRef([]);
 
     useEffect(() => {
-        
         const t1 = gsap.timeline({
             scrollTrigger: {
                 trigger: scrollTriggerDiv.current,
@@ -59,21 +58,22 @@ const Domains = () => {
             opacity: 0,
             xPercent: -100,
             duration: 0.6,
-        });
-
-        gsap.from(domainCardRefs.current, {
-            scrollTrigger: {
-                trigger: scrollTriggerDiv.current,
-                start: "top 70%",
+        }).fromTo(
+            domainCardRefs.current,
+            {
+                opacity: 0,
+                scale: 0.3,
             },
-            opacity: 0,
-            // yPercent: 40,
-            // duration: 1,
-            stagger: 0.1,
-            // repeat: -1,
-            // repeatDelay: -1,
-            // yoyo: true,
-        });
+            {
+                opacity: 1,
+                scale: 1,
+                duration: 1,
+                stagger: 0.1,
+                // repeat: -1,
+                repeatDelay: 1,
+                yoyo: true,
+            }
+        );
     }, []);
 
     var tempdomainDetails = domainDetails;
@@ -90,9 +90,9 @@ const Domains = () => {
         setNewDomainDetails([...tempdomainDetails]);
     };
 
-    useEffect(() => {
-        console.log("useEffect -> Domains.jsx ->", domainDetails);
-    }, [domainDetails]);
+    // useEffect(() => {
+    //     // console.log("useEffect -> Domains.jsx ->", domainDetails);
+    // }, [domainDetails]);
 
     return (
         <div
