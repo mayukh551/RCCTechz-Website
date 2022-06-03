@@ -28,7 +28,7 @@ const DomainCard = React.forwardRef((props, ref) => {
                 domain.show === false
                     ? "justify-between"
                     : "justify-between md:justify-center text-white md:text-black space-y-9"
-            } w-full sm:w-[57%]  md:w-[60%] lg:w-[55%] xl:[50%] md:hover:bg-zinc-200 md:bg-zinc-300 shadow-lg rounded-lg`}
+            } w-full sm:w-[57%]  md:w-[60%] lg:w-[55%] xl:w-[50%] md:hover:bg-zinc-200 md:bg-zinc-300 shadow-lg rounded-lg`}
         >
             {/* md:hover:w-[70%] lg:hover:w-[60%] */}
             {/* hover:scale-110 transition-all duration-300 */}
