@@ -1,9 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 // import CoreTeam from "./CoreTeam";
 import CoreTeamMembers from "./CoreTeamMembers";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Members = (props) => {
     const [collegeYear, setNewCollegeYear] = useState(2);
+    const sectionCoreTeam = useRef(null);
 
     const coreTeamDetails = [
         {
@@ -43,19 +47,33 @@ const Members = (props) => {
         },
     ];
 
-    useEffect(() => {
-        console.log("I thought!");
-    }, []);
+    // useEffect(() => {
+    //     let q = gsap.utils.selector(sectionCoreTeam);
+
+    //     gsap.from(q(".member-card"), {
+    //         opacity: 0,
+    //         scale: 0.6,
+    //         duration: 1,
+    //         stagger: 0.1,
+    //         // repeat: -1,
+    //         repeatDelay: 1,
+    //         yoyo: true,
+    //     });
+    // }, []);
 
     return (
         <div className="px-10">
-            <div className="py-10 grid grid-rows-5 grid-cols-1 md:grid-cols-2 bp_1100:grid-rows-2 bp_1100:grid-cols-3 gap-y-16 place-items-center">
+            <div
+                ref={sectionCoreTeam}
+                className="py-10 grid grid-rows-5 grid-cols-1 md:grid-cols-2 bp_1100:grid-rows-2 bp_1100:grid-cols-3 gap-y-16 place-items-center"
+            >
                 {coreTeamDetails.map((member, index) => {
                     return (
                         <CoreTeamMembers
                             key={member.clubRole}
                             coreMember={member}
                             index={index}
+                            ref={sectionCoreTeam}
                         />
                     );
                 })}

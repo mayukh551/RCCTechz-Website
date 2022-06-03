@@ -7,7 +7,7 @@ import Backdrop from "../UI/Backdrop";
 // or the expanded version of the card
 // on clicking the profile
 
-const CoreTeamMembers = (props) => {
+const CoreTeamMembers = React.forwardRef((props, ref) => {
     // True -> Display expanded profile card
     // False -> Display normal profile card
 
@@ -24,8 +24,9 @@ const CoreTeamMembers = (props) => {
             coreMember={coreMember}
             displayEventHandler={displayEventHandler}
             index={props.index}
+            ref={ref}
         />
     );
-};
+});
 
 export default CoreTeamMembers;

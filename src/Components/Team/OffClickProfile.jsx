@@ -1,3 +1,4 @@
+import React from "react";
 import profile from "../../Images/Laptop.jpg";
 import ProfileCard from "../UI/ProfileCard";
 import { gsap } from "gsap";
@@ -10,7 +11,7 @@ const CardBackdrop = () => {
     );
 };
 
-const OffClickProfile = (props) => {
+const OffClickProfile = React.forwardRef((props, ref) => {
     var coreMember = props.coreMember;
     const coreTeamProfileHandler = (e) => {
         console.log("Profile Clicked!");
@@ -21,7 +22,6 @@ const OffClickProfile = (props) => {
     const [displayBtn, setDisplayBtn] = useState(false);
 
     const mouseEventHandler = () => {
-        // console.log("Leave card!");
         setDisplayBtn((prevCond) => !prevCond);
     };
 
@@ -54,15 +54,12 @@ const OffClickProfile = (props) => {
     return (
         // hover:scale-110 hover:dark:bg-gray-700
         <ProfileCard
+            ref={ref}
             coreTeamProfileHandler={coreTeamProfileHandler}
             mouseEventHandler={mouseEventHandler}
-            styleCard="z-10 relative cursor-default transition-all duration-200 w-[320px] h-[360px] bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+            styleCard="z-10 member-card relative cursor-default transition-all duration-200 w-[320px] h-[360px] bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
         >
-            {/* <div className="flex justify-end px-4 pt-4"></div> */}
             <div
-                // onClick={coreTeamProfileHandler}
-                // onMouseEnter={mouseEventHandler}
-                // onMouseLeave={mouseEventHandler}
                 className={`flex flex-col items-center justify-evenly`}
                 id="myCard"
             >
@@ -74,9 +71,9 @@ const OffClickProfile = (props) => {
                 <h5 className="mb-4 text-xl font-medium text-gray-900 dark:text-white">
                     {coreMember.name}
                 </h5>
-                {/* <div className="mb-5 text-base text-gray-500 dark:text-gray-400">
-                    {coreMember.profession}
-                </div> */}
+                <div className="mb-5 text-base text-gray-500 dark:text-gray-400">
+                    {"CSE 2nd Year"}
+                </div>
                 <div className="mb-7 text-base text-gray-500 dark:text-gray-400">
                     {coreMember.clubRole}
                 </div>
@@ -124,6 +121,6 @@ const OffClickProfile = (props) => {
             </div>
         </ProfileCard>
     );
-};
+});
 
 export default OffClickProfile;
