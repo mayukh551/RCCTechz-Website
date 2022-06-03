@@ -1,21 +1,32 @@
-import React from "react";
+import React, { useContext } from "react";
+import TeamContext from "../store/team-context";
 import ProfileCard from "../UI/ProfileCard";
-import classes from './ExpandedProfile.module.css'
+import classes from "./ExpandedProfile.module.css";
 
 const ExpandedProfile = (props) => {
-
     var member = props.coreMember;
-    console.log('On ExpandedProfile Components');
+
+    const teamCtx = useContext(TeamContext);
+
+    console.log("On ExpandedProfile Components");
     const closeButtonHandler = () => {
-        console.log("On Close button");
-        props.viewProfileHandler(false);
-    }
+        console.log("Exp profile closed");
+        // props.viewProfileHandler(false);
+
+        // To remove backdrop and expanded profile view
+        teamCtx.viewProfileHandler();
+        console.log("between");
+        teamCtx.showBackdropHandler();
+    };
 
     return (
-        <ProfileCard styleCard={`${classes.profile} z-50 text-base absolute left-[26.75%] top-[20%] ml-12 mt-12 w-[500px] h-[360px] text-white bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700`}>
+        <ProfileCard
+            styleCard={`${classes.profile} z-50 text-base absolute left-[26.75%] top-[20%] ml-12 mt-12 w-[500px] h-[360px] text-white bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700`}
+        >
             <div className="p-4 flex flex-col">
                 <h1 className="mb-9">
-                    <span className="text-orange-400">Name</span> : {member.name}
+                    <span className="text-orange-400">Name</span> :{" "}
+                    {member.name}
                     <hr className="mt-2 mr-28" />
                 </h1>
                 <p className="">
@@ -31,7 +42,10 @@ const ExpandedProfile = (props) => {
                 placeat aut quasi veritatis voluptatum impedit ipsam assumenda
                 magnam labore corrupti deserunt. Similique.
                 <div className="mt-5 shadow-2xl mr-5 text-right">
-                    <button onClick={closeButtonHandler} className=" bg-purple-500 hover:bg-purple-600 active:bg-purple-400 px-6 py-1 rounded-md">
+                    <button
+                        onClick={closeButtonHandler}
+                        className=" bg-purple-500 hover:bg-purple-600 active:bg-purple-400 px-6 py-1 rounded-md"
+                    >
                         Close
                     </button>
                 </div>

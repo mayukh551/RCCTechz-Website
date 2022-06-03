@@ -43,9 +43,7 @@ const Members = (props) => {
         },
     ];
 
-    useEffect(() => {
-        console.log("I thought!");
-    }, []);
+    console.log('Members Comp');
 
     return (
         <div className="px-10 h-full">

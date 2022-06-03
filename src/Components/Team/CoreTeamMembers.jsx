@@ -19,6 +19,7 @@ const CoreTeamMembers = (props) => {
         setExpandedDisplayCond(cond);
     };
 
+    console.log('CoreTeamMembers Comp');
     return (
         <OffClickProfile
             coreMember={coreMember}

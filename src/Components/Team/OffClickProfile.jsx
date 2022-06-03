@@ -1,33 +1,37 @@
 // import profile from "../../Images/Laptop.jpg";
 import ProfileCard from "../UI/ProfileCard";
 import { gsap } from "gsap";
-import { useEffect, useRef, useState, Fragment } from "react";
+import { useEffect, useRef, useContext, useState, Fragment } from "react";
 import ExpandedProfile from "./ExpandedProfile";
+import TeamContext from "../store/team-context";
 
 const CardBackdrop = () => {
-    console.log("backdrop");
+    // console.log("backdrop");
     return (
         <div className="absolute rounded-lg top-0 h-full w-full opacity-40 bg-black z-30"></div>
     );
 };
 
 const OffClickProfile = (props) => {
-    const [isViewProfile, setViewProfile] = useState(false);
-
     var coreMember = props.coreMember;
+
+    const teamCtx = useContext(TeamContext);
 
     const buttonRef = useRef(null);
     const socialMediaRef = useRef(null);
     const [displayBtn, setDisplayBtn] = useState(false);
-    
-    const viewProfileHandler = (e) => {
+
+    const updateProfileView = (e) => {
         console.log("Profile Clicked!");
-        setViewProfile((prevCond) => !prevCond);
-        props.showBackdropHandler(!isViewProfile);
+
+        // to bring the backdrop and expanded profile component
+        // on display
+        teamCtx.showBackdropHandler();
+        console.log("between");
+        teamCtx.viewProfileHandler();
     };
 
     const mouseEventHandler = () => {
-        // console.log("Leave card!");
         setDisplayBtn((prevCond) => !prevCond);
     };
 
@@ -57,6 +61,7 @@ const OffClickProfile = (props) => {
         }
     }, [displayBtn]);
 
+    console.log("OffClickProfile Comp");
     return (
         // hover:scale-110 hover:dark:bg-gray-700
         <Fragment>
@@ -117,7 +122,7 @@ const OffClickProfile = (props) => {
                         <>
                             <button
                                 ref={buttonRef}
-                                onClick={viewProfileHandler}
+                                onClick={updateProfileView}
                                 className="absolute z-50 opacity-100 px-7 py-3 bg-green-800 hover:bg-green-900 text-white font-bold rounded-[10px] text-base"
                             >
                                 View Profile
@@ -128,10 +133,10 @@ const OffClickProfile = (props) => {
                 </div>
             </ProfileCard>
 
-            {isViewProfile && (
+            {teamCtx.isViewProfile && (
                 <ExpandedProfile
                     coreMember={coreMember}
-                    viewProfileHandler={viewProfileHandler}
+                    // viewProfileHandler={viewProfileHandler}
                 />
             )}
         </Fragment>
