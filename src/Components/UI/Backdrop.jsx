@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
 import TeamContext from "../store/team-context";
 
-const Backdrop = (props) => {
+const Backdrop = () => {
     const teamCtx = useContext(TeamContext);
 
     const backdropHandler = () => {
-        teamCtx.showBackdropHandler();
         teamCtx.viewProfileHandler();
     };
 

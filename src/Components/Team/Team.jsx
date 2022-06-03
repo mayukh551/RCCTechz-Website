@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import TeamContext from "../store/team-context";
 import Backdrop from "../UI/Backdrop";
 import Members from "./Members";
@@ -8,9 +8,10 @@ const Team = () => {
     const [showBackdrop, setBackdrop] = useState(false);
     const [isViewProfile, setViewProfile] = useState(false);
 
-    const showBackdropHandler = () => setBackdrop((prevCond) => !prevCond);
-
-    const viewProfileHandler = () => setViewProfile((prevCond) => !prevCond);
+    const viewProfileHandler = () => {
+        setViewProfile((prevCond) => !prevCond);
+        setBackdrop((prevCond) => !prevCond);
+    };
 
     console.log("Team Comp");
 
@@ -18,7 +19,6 @@ const Team = () => {
         <TeamContext.Provider
             value={{
                 isBackdrop: showBackdrop,
-                showBackdropHandler: showBackdropHandler,
                 isViewProfile: isViewProfile,
                 viewProfileHandler: viewProfileHandler,
             }}
@@ -28,13 +28,9 @@ const Team = () => {
             >
                 {console.log("is backdrop here", showBackdrop)}
                 {console.log("is viewProfile here", isViewProfile)}
-                {showBackdrop === true ? (
-                    <Backdrop showBackdropHandler={showBackdropHandler} />
-                ) : (
-                    ""
-                )}
+                {showBackdrop === true ? <Backdrop /> : ""}
                 <TeamHeader />
-                <Members showBackdropHandler={showBackdropHandler} />
+                <Members />
             </div>
         </TeamContext.Provider>
     );

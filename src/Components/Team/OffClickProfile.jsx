@@ -1,4 +1,3 @@
-// import profile from "../../Images/Laptop.jpg";
 import ProfileCard from "../UI/ProfileCard";
 import { gsap } from "gsap";
 import { useEffect, useRef, useContext, useState, Fragment } from "react";
@@ -6,7 +5,6 @@ import ExpandedProfile from "./ExpandedProfile";
 import TeamContext from "../store/team-context";
 
 const CardBackdrop = () => {
-    // console.log("backdrop");
     return (
         <div className="absolute rounded-lg top-0 h-full w-full opacity-40 bg-black z-30"></div>
     );
@@ -26,8 +24,7 @@ const OffClickProfile = (props) => {
 
         // to bring the backdrop and expanded profile component
         // on display
-        teamCtx.showBackdropHandler();
-        console.log("between");
+
         teamCtx.viewProfileHandler();
     };
 
@@ -134,10 +131,7 @@ const OffClickProfile = (props) => {
             </ProfileCard>
 
             {teamCtx.isViewProfile && (
-                <ExpandedProfile
-                    coreMember={coreMember}
-                    // viewProfileHandler={viewProfileHandler}
-                />
+                <ExpandedProfile coreMember={coreMember} />
             )}
         </Fragment>
     );
