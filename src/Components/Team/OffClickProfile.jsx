@@ -63,6 +63,7 @@ const OffClickProfile = (props) => {
         // hover:scale-110 hover:dark:bg-gray-700
         <Fragment>
             <ProfileCard
+                Card
                 mouseEventHandler={mouseEventHandler}
                 styleCard="z-10 relative cursor-default transition-all duration-200 w-[320px] h-[360px] bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
             >
