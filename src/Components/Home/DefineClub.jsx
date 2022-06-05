@@ -42,7 +42,10 @@ const DefineClub = () => {
                 src="https://images.unsplash.com/photo-1523289619259-44358ba02ba5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=600&q=60"
                 alt=""
             />
-            <div
+            <motion.div
+                initial={{ opacity: 0, y: "-10%" }}
+                animate={startAnimation && { opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
                 className={`px-4 sm:pl-14 sm:pr-20 text-justify ${style.content}`}
             >
                 <h1
@@ -70,7 +73,7 @@ const DefineClub = () => {
                 >
                     Know More
                 </motion.button>
-            </div>
+            </motion.div>
 
             <div className={`${style.svg}`}>
                 <img
