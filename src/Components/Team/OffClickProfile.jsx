@@ -1,8 +1,9 @@
 import ProfileCard from "../UI/ProfileCard";
-import { gsap } from "gsap";
-import { useEffect, useRef, useContext, useState, Fragment } from "react";
+import { useContext, useState, Fragment } from "react";
 import ExpandedProfile from "./ExpandedProfile";
 import TeamContext from "../store/team-context";
+
+import { motion, AnimatePresence } from "framer-motion";
 
 const CardBackdrop = () => {
     return (
@@ -14,9 +15,6 @@ const OffClickProfile = (props) => {
     var coreMember = props.coreMember;
 
     const teamCtx = useContext(TeamContext);
-
-    const buttonRef = useRef(null);
-    const socialMediaRef = useRef(null);
     const [displayBtn, setDisplayBtn] = useState(false);
 
     const updateProfileView = (e) => {
@@ -32,32 +30,6 @@ const OffClickProfile = (props) => {
         setDisplayBtn((prevCond) => !prevCond);
     };
 
-    useEffect(() => {
-        if (displayBtn) {
-            gsap.fromTo(
-                buttonRef.current,
-                {
-                    y: -50,
-                },
-                {
-                    y: 1,
-                    duration: 0.2,
-                }
-            );
-
-            gsap.fromTo(
-                socialMediaRef.current,
-                {
-                    y: 30,
-                },
-                {
-                    y: 1,
-                    duration: 0.2,
-                }
-            );
-        }
-    }, [displayBtn]);
-
     console.log("OffClickProfile Comp");
     return (
         // hover:scale-110 hover:dark:bg-gray-700
@@ -65,6 +37,7 @@ const OffClickProfile = (props) => {
             <ProfileCard
                 Card
                 mouseEventHandler={mouseEventHandler}
+                hoverAnim={displayBtn}
                 styleCard="z-10 relative cursor-default transition-all duration-200 w-[320px] h-[360px] bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
             >
                 {/* <div className="flex justify-end px-4 pt-4"></div> */}
@@ -86,48 +59,57 @@ const OffClickProfile = (props) => {
                     <div className="mb-7 text-base text-gray-500 dark:text-gray-400">
                         {coreMember.clubRole}
                     </div>
-
-                    {displayBtn && (
-                        <ul
-                            className="absolute bottom-12 space-x-6 flex z-50"
-                            ref={socialMediaRef}
-                        >
-                            <li className="active:animate-ping cursor-pointer">
-                                <a
-                                    rel="noreferrer"
-                                    target="_blank"
-                                    href="https://twitter.com/"
-                                >
-                                    <i className="mx-2 bi bi-twitter text-white hover:text-sky-300"></i>
-                                </a>
-                            </li>
-                            <li className="active:animate-ping cursor-pointer">
-                                <a
-                                    rel="noreferrer"
-                                    target="_blank"
-                                    href="https://github.com/"
-                                >
-                                    <i className="mx-2 bi bi-reddit text-white hover:text-orange-600"></i>
-                                </a>
-                            </li>
-                            <li className="active:animate-ping cursor-pointer">
-                                <i className="mx-2 bi bi-linkedin text-white hover:text-sky-500"></i>
-                            </li>
-                        </ul>
-                    )}
-
-                    {displayBtn && (
-                        <>
-                            <button
-                                ref={buttonRef}
-                                onClick={updateProfileView}
-                                className="absolute z-50 opacity-100 px-7 py-3 bg-green-800 hover:bg-green-900 text-white font-bold rounded-[10px] text-base"
+                    <AnimatePresence>
+                        {displayBtn && (
+                            <motion.ul
+                                key="socialMedia"
+                                className="absolute bottom-12 space-x-6 flex z-50"
+                                // ref={socialMediaRef}
+                                initial={{ y: 30 }}
+                                animate={{ y: 1 }}
+                                transition={{ duration: 0.2 }}
+                                exit={{ y: 30, opacity: 0 }}
                             >
-                                View Profile
-                            </button>
-                            <CardBackdrop />
-                        </>
-                    )}
+                                <li className="active:animate-ping cursor-pointer">
+                                    <a
+                                        rel="noreferrer"
+                                        target="_blank"
+                                        href="https://twitter.com/"
+                                    >
+                                        <i className="mx-2 bi bi-twitter text-white hover:text-sky-300"></i>
+                                    </a>
+                                </li>
+                                <li className="active:animate-ping cursor-pointer">
+                                    <a
+                                        rel="noreferrer"
+                                        target="_blank"
+                                        href="https://github.com/"
+                                    >
+                                        <i className="mx-2 bi bi-reddit text-white hover:text-orange-600"></i>
+                                    </a>
+                                </li>
+                                <li className="active:animate-ping cursor-pointer">
+                                    <i className="mx-2 bi bi-linkedin text-white hover:text-sky-500"></i>
+                                </li>
+                            </motion.ul>
+                        )}
+                        {displayBtn && (
+                            <>
+                                <motion.button
+                                    // ref={buttonRef}
+                                    onClick={updateProfileView}
+                                    className="absolute z-50 opacity-100 px-7 py-3 bg-green-800 hover:bg-green-900 text-white font-bold rounded-[10px] text-base"
+                                    initial={{ y: -50 }}
+                                    animate={{ y: 1 }}
+                                    transition={{ duration: 0.2 }}
+                                    exit={{ y: -50, opacity: 0 }}
+                                >
+                                    View Profile
+                                </motion.button>
+                                <CardBackdrop />
+                            </>
+                        )}
+                    </AnimatePresence>
                 </div>
             </ProfileCard>
 
