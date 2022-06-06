@@ -8,11 +8,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const DefineClub = () => {
-    const imgPC = useRef(null);
-    const contentDefine = useRef(null);
-    const headingDefine = useRef(null);
     const btn = useRef(null);
-    const scrollTriggerDiv = useRef(null);
 
     const [startAnimation, setStartAnimation] = useState(false);
 
@@ -68,7 +64,6 @@ const DefineClub = () => {
                     initial={{ opacity: 0, y: "80%" }}
                     animate={startAnimation && { opacity: 1, y: 0 }}
                     transition={{ delay: 0.8, type: "spring", stiffness: 100 }}
-                    ref={btn}
                     className="rounded-lg mt-11 py-2 px-3 bg-slate-700 hover:bg-slate-600 active:bg-slate-500"
                 >
                     Know More
