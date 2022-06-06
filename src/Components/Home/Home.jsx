@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Header from "./Header/Header";
 import DefineClub from "./DefineClub";
 import WhatWeDo from "./WhatWeDo";

@@ -3,8 +3,9 @@ import ai from "../../SVGs/artificial_intelligence.svg";
 import webdev from "../../SVGs/web_development.svg";
 import cyberSecurity from "../../SVGs/Cyber_Security.svg";
 import cp from "../../SVGs/programming.svg";
+import { motion } from "framer-motion";
 
-const DomainCard = React.forwardRef((props, ref) => {
+const DomainCard = (props) => {
     var domain = props.domain;
 
     const displayContent = () => {
@@ -19,16 +20,22 @@ const DomainCard = React.forwardRef((props, ref) => {
         svg = ai;
     // if (domain.domainName === "AI/ML") svg = ai;
 
-
     return (
-        <div
-            ref={ref}
+        <motion.div
             onClick={displayContent}
             className={`cursor-pointer pb-0 px-5 pt-3 md:pb-7 flex items-center md:flex-col ${
                 domain.show === false
                     ? "justify-between"
                     : "justify-between md:justify-center text-white md:text-black space-y-9"
             } w-full sm:w-[57%]  md:w-[60%] lg:w-[55%] xl:w-[50%] md:hover:bg-zinc-200 md:bg-zinc-300 shadow-lg rounded-lg`}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={
+                props.startAnimation && {
+                    opacity: 1,
+                    scale: 1,
+                }
+            }
+            transition={{ duration: 1, delay: props.i * 0.2 }}
         >
             {/* md:hover:w-[70%] lg:hover:w-[60%] */}
             {/* hover:scale-110 transition-all duration-300 */}
@@ -49,8 +56,8 @@ const DomainCard = React.forwardRef((props, ref) => {
                     </h1>
                 </>
             )}
-        </div>
+        </motion.div>
     );
-});
+};
 
 export default DomainCard;
