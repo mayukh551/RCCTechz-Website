@@ -59,6 +59,7 @@ const OffClickProfile = (props) => {
                     <div className="mb-7 text-base text-gray-500 dark:text-gray-400">
                         {coreMember.clubRole}
                     </div>
+                    {displayBtn && <CardBackdrop />}
                     <AnimatePresence>
                         {displayBtn && (
                             <motion.ul
@@ -106,7 +107,6 @@ const OffClickProfile = (props) => {
                                 >
                                     View Profile
                                 </motion.button>
-                                <CardBackdrop />
                             </>
                         )}
                     </AnimatePresence>
