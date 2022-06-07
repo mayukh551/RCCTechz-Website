@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header/Header";
 import DefineClub from "./DefineClub";
 import WhatWeDo from "./WhatWeDo";
-// import HFooter from "./HFooter";
+import HFooter from "./HFooter";
 import Domains from "./Domains";
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
             <DefineClub />
             <WhatWeDo />
             <Domains />
-            {/* <HFooter /> */}
+            <HFooter />
         </div>
     );
 };
