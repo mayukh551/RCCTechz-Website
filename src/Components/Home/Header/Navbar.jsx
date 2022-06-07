@@ -1,15 +1,15 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const Navbar = ({ renderCond }) => {
     return (
         <Fragment>
-            <motion.div
+            <div
                 className="h-[50px] w-full bg-black z-50 left-0 top-0"
-                initial={{ y: "-100%" }}
-                animate={{ y: 0 }}
-                transition={{ delay: 0.4, duration: 1 }}
+                // initial={{ y: "-100%" }}
+                // animate={{ y: 0 }}
+                // transition={{ delay: 0.4, duration: 1 }}
                 // style={{ borderBottomRightRadius: "10px" }}
             >
                 <ul className="h-full text-white font-bold text-lg flex flex-row justify-center text-center">
@@ -30,7 +30,7 @@ const Navbar = ({ renderCond }) => {
                         <Link to="/events">Events</Link>
                     </li>
                 </ul>
-            </motion.div>
+            </div>
         </Fragment>
     );
 };
