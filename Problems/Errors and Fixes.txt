@@ -1,7 +1,12 @@
 Features:
 - Nested Router
 - Hover animation of domain card and bg img on domain cards
+- Typing Animation on header of Team Page
 
 Bug:
 - ExpandedProfile Component Rednders for all profile cards -> Convert to one render only 
+- Fix responsiveness of navbar
 
+New Pages to ADD:
+#1 Event Page
+#2 Project Page
