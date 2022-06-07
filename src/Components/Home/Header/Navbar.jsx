@@ -1,24 +1,15 @@
-import React, { Fragment, useEffect, useRef, useState } from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import { gsap } from "gsap/all";
+import { motion } from "framer-motion";
 
 const Navbar = ({ renderCond }) => {
-    const navbar = useRef(null);
-    useEffect(() => {
-        if (renderCond) {
-            gsap.from(navbar.current, {
-                yPercent: -300,
-                duration: 2,
-                ease: "power3.out",
-            });
-        }
-    }, [renderCond]);
-
     return (
         <Fragment>
-            <div
+            <motion.div
                 className="h-[50px] w-full bg-black z-50 left-0 top-0"
-                ref={navbar}
+                initial={{ y: "-100%" }}
+                animate={{ y: 0 }}
+                transition={{ delay: 0.4, duration: 1 }}
                 // style={{ borderBottomRightRadius: "10px" }}
             >
                 <ul className="h-full text-white font-bold text-lg flex flex-row justify-center text-center">
@@ -39,7 +30,7 @@ const Navbar = ({ renderCond }) => {
                         <Link to="/events">Events</Link>
                     </li>
                 </ul>
-            </div>
+            </motion.div>
         </Fragment>
     );
 };
