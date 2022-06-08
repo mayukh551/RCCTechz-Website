@@ -6,7 +6,7 @@ const TeamHeader = () => {
     return (
         <>
             <Navbar />
-            <div className="border-2 border-white h-[140px] pt-7 flex flex-col justify-between items-center">
+            <div className="h-[140px] pt-7 flex flex-col justify-between items-center">
                 <h1 className="text-center text-3xl sm:text-4xl md:text-6xl">
                     Meet the{" "}
                     <span className="font-extrabold shadow-xl py-2 px-4 text-orange-500">
