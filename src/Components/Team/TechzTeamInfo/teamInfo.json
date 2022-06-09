@@ -8,13 +8,13 @@
         },
         {
             "name": "Shagnik Mukherjee",
-            "profession": "UX Designer",
+            "profession": "Robotics Engineer",
             "clubRole": "Convenor",
             "dept": "CSE",
             "year": 3
         },
         {
-            "name": "Honu",
+            "name": "MD Hasanuj Jaman Hossain",
             "profession": "Gaachhe chora",
             "clubRole": "Event Manager",
             "dept": "CSE",
@@ -29,7 +29,7 @@
         },
         {
             "name": "Shirsasish Sarkar",
-            "profession": "ML Engineer",
+            "profession": "PHP Developer",
             "clubRole": "Tech Head",
             "dept": "CSE",
             "year": 3
@@ -39,35 +39,35 @@
     "domainManagers": [{
             "name": "Soham Saha Roy",
             "profession": "React Developer",
-            "clubRole": "WebDev Domain Manager",
+            "clubRole": "WebDev",
             "dept": "CSE",
             "year": 3
         },
         {
             "name": "Soham Banerjee",
             "profession": "Software Security Engineer",
-            "clubRole": "Cyber Security Domain Manager",
+            "clubRole": "Cyber Security",
             "dept": "CSE",
             "year": 3
         },
         {
             "name": "Rishav Mandal",
             "profession": "Android Developer",
-            "clubRole": "AppDev Domain Manager",
+            "clubRole": "AppDev",
             "dept": "CSE",
             "year": 3
         },
         {
-            "name": "MD Hasanuj Jaman Hossain",
+            "name": "Nishant Thakur",
             "profession": "Competitive Programming Enthusiast",
-            "clubRole": "Competitive Programming Domain Manager",
+            "clubRole": "Competitive Programming",
             "dept": "CSE",
             "year": 3
         },
         {
             "name": "Triasis Ghosh",
             "profession": "ML Engineer",
-            "clubRole": "AI/ML Domain Manager",
+            "clubRole": "AI/ML",
             "dept": "CSE",
             "year": 3
         }

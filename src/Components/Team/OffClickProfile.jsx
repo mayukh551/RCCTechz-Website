@@ -17,7 +17,7 @@ const OffClickProfile = (props) => {
     const teamCtx = useContext(TeamContext);
     const [displayBtn, setDisplayBtn] = useState(false);
 
-    const updateProfileView = (e) => {
+    const updateProfileView = () => {
         console.log("Profile Clicked!");
 
         // to bring the backdrop and expanded profile component
@@ -65,7 +65,6 @@ const OffClickProfile = (props) => {
                             <motion.ul
                                 key="socialMedia"
                                 className="absolute bottom-12 space-x-6 flex z-50"
-                                // ref={socialMediaRef}
                                 initial={{ y: 30 }}
                                 animate={{ y: 1 }}
                                 transition={{ duration: 0.2 }}
@@ -97,7 +96,6 @@ const OffClickProfile = (props) => {
                         {displayBtn && (
                             <>
                                 <motion.button
-                                    // ref={buttonRef}
                                     onClick={updateProfileView}
                                     className="absolute z-50 opacity-100 px-7 py-3 bg-green-800 hover:bg-green-900 text-white font-bold rounded-[10px] text-base"
                                     initial={{ y: -50 }}

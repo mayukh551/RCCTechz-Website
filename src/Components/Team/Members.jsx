@@ -1,65 +1,61 @@
-import { useEffect, useState } from "react";
-// import CoreTeam from "./CoreTeam";
-import CoreTeamMembers from "./CoreTeamMembers";
+import { Fragment } from "react";
+import teamData from "../Team/TechzTeamInfo/teamInfo.json";
+import OffClickProfile from "./OffClickProfile";
 
-const Members = (props) => {
-    const [collegeYear, setNewCollegeYear] = useState(2);
-
-    const coreTeamDetails = [
-        {
-            name: "Mayukh Bhowmick",
-            profession: "React Developer",
-            clubRole: "Coordinator",
-            Dept: "CSE",
-            year: collegeYear,
-        },
-        {
-            name: "Shagnik Mukherjee",
-            profession: "UX Designer",
-            clubRole: "Convenor",
-            Dept: "CSE",
-            year: collegeYear,
-        },
-        {
-            name: "Honu",
-            profession: "Gaachhe chora",
-            clubRole: "Event Manager",
-            Dept: "CSE",
-            year: collegeYear,
-        },
-        {
-            name: "MD Saood Khan",
-            profession: "Back-End Developer",
-            clubRole: "Non-Tech Head",
-            Dept: "CSE",
-            year: collegeYear,
-        },
-        {
-            name: "Shirsasish Sarkar",
-            profession: "ML Engineer",
-            clubRole: "Tech Head",
-            Dept: "CSE",
-            year: collegeYear,
-        },
-    ];
-
-    console.log('Members Comp');
+const Members = () => {
+    console.log("Members Comp");
+    const coreTeamDetails = teamData.coreTeamMembers;
+    const domainManagerDetails = teamData.domainManagers;
+    const founderDetails = teamData.founders;
 
     return (
-        <div className="px-10 h-full">
-            <div className="py-10 grid grid-rows-5 grid-cols-1 md:grid-cols-2 bp_1100:grid-rows-2 bp_1100:grid-cols-3 gap-y-16 place-items-center">
-                {coreTeamDetails.map((member, index) => {
-                    return (
-                        <CoreTeamMembers
-                            key={member.clubRole}
-                            coreMember={member}
-                            index={index}
-                            showBackdropHandler={props.showBackdropHandler}
-                        />
-                    );
-                })}
+        <Fragment>
+            <div className="px-10 pt-10 mb-20">
+                <h1 className="mb-9 text-5xl text-center underline underline-offset-8 decoration-emerald-400">
+                    Core Team
+                </h1>
+                <div className="py-10 grid grid-rows-5 grid-cols-1 md:grid-cols-2 bp_1100:grid-rows-2 bp_1100:grid-cols-3 gap-y-16 place-items-center">
+                    {coreTeamDetails.map((member) => {
+                        return (
+                            <OffClickProfile
+                                key={member.clubRole}
+                                coreMember={member}
+                            />
+                        );
+                    })}
+                </div>
             </div>
-        </div>
+            <div className="px-10 mb-20">
+                <h1 className="mb-9 text-5xl text-center underline underline-offset-8 decoration-emerald-400">
+                    Domain Managers
+                </h1>
+                <div className="py-10 grid grid-rows-5 grid-cols-1 md:grid-cols-2 bp_1100:grid-rows-2 bp_1100:grid-cols-3 gap-y-16 place-items-center">
+                    {domainManagerDetails.map((member) => {
+                        return (
+                            <OffClickProfile
+                                key={member.clubRole}
+                                coreMember={member}
+                            />
+                        );
+                    })}
+                </div>
+            </div>
+            <div className="px-10 mb-20">
+                <h1 className="mb-9 text-5xl text-center underline underline-offset-8 decoration-emerald-400">
+                    Founders
+                </h1>
+                <div className="py-10 grid grid-rows-5 grid-cols-1 md:grid-cols-2 bp_1100:grid-rows-2 bp_1100:grid-cols-3 gap-y-16 place-items-center">
+                    {founderDetails.map((member) => {
+                        return (
+                            <OffClickProfile
+                                key={member.clubRole}
+                                coreMember={member}
+                            />
+                        );
+                    })}
+                </div>
+            </div>
+        </Fragment>
     );
 };
 
