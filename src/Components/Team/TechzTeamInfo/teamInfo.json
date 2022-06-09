@@ -1,121 +1,116 @@
-[{
-        "category": "Core Team",
-        "member": [{
-                "name": "Mayukh Bhowmick",
-                "profession": "React Developer",
-                "clubRole": "Coordinator",
-                "Dept": "CSE",
-                "year": 1
-            },
-            {
-                "name": "Shagnik Mukherjee",
-                "profession": "UX Designer",
-                "clubRole": "Convenor",
-                "Dept": "CSE",
-                "year": 1
-            },
-            {
-                "name": "Honu",
-                "profession": "Gaachhe chora",
-                "clubRole": "Event Manager",
-                "Dept": "CSE",
-                "year": 1
-            },
-            {
-                "name": "MD Saood Khan",
-                "profession": "Back-End Developer",
-                "clubRole": "Non-Tech Head",
-                "Dept": "CSE",
-                "year": 1
-            },
-            {
-                "name": "Shirsasish Sarkar",
-                "profession": "ML Engineer",
-                "clubRole": "Tech Head",
-                "Dept": "CSE",
-                "year": 1
-            }
-        ]
-    },
+{
+    "coreTeamMembers": [{
+            "name": "Mayukh Bhowmick",
+            "profession": "React Developer",
+            "clubRole": "Coordinator",
+            "dept": "CSE",
+            "year": 3
+        },
+        {
+            "name": "Shagnik Mukherjee",
+            "profession": "UX Designer",
+            "clubRole": "Convenor",
+            "dept": "CSE",
+            "year": 3
+        },
+        {
+            "name": "Honu",
+            "profession": "Gaachhe chora",
+            "clubRole": "Event Manager",
+            "dept": "CSE",
+            "year": 3
+        },
+        {
+            "name": "MD Saood Khan",
+            "profession": "Back-End Developer",
+            "clubRole": "Non-Tech Head",
+            "dept": "CSE",
+            "year": 3
+        },
+        {
+            "name": "Shirsasish Sarkar",
+            "profession": "ML Engineer",
+            "clubRole": "Tech Head",
+            "dept": "CSE",
+            "year": 3
+        }
+    ],
 
-    {
-        "category": "Domain Managers",
-        "member": [{
-                "name": "Soham Sarkar",
-                "profession": "React Developer",
-                "clubRole": "WebDev Domain Manager",
-                "Dept": "CSE",
-                "year": 3
-            },
-            {
-                "name": "Soham Banerjee",
-                "profession": "Software Security Engineer",
-                "clubRole": "Cyber Security Domain Manager",
-                "Dept": "CSE",
-                "year": 3
-            },
-            {
-                "name": "Rishav Mandal",
-                "profession": "UX Designer",
-                "clubRole": "AppDev Domain Manager",
-                "Dept": "CSE",
-                "year": 3
-            },
-            {
-                "name": "MD Hasanuj Jaman Hossain",
-                "profession": "Competitive Programming Enthusiast",
-                "clubRole": "Competitive Programming Domain Manager",
-                "Dept": "CSE",
-                "year": 3
-            },
-            {
-                "name": "Triasis Ghosh",
-                "profession": "ML Engineer",
-                "clubRole": "AI/ML Domain Manager",
-                "Dept": "CSE",
-                "year": 3
-            }
-        ]
-    },
-    
-    {
-        "category": "Founders",
-        "member": [{
-                "name": "Sourav Chakraborty",
-                "profession": "IoT Engineer",
-                "Dept": "IT",
-                "year": 3
-            },
-            {
-                "name": "Ishaani Paul",
-                "profession": "UX Designer",
-                "Dept": "IT",
-                "year": 3
-            },
-            {
-                "name": "Arghya Guha",
-                "profession": "Web Developer",
-                "Dept": "IT",
-                "year": 3
-            },
-            {
-                "name": "Ahana Paul",
-                "profession": "ML Engineer",
-                "Dept": "CSE",
-                "year": 3
-            },
-            {
-                "name": "Souhit De",
-                "profession": "Network Security Engineer",
-                "Dept": "CSE",
-                "year": 3
-            },
-            {
-                "name": "Aritra Basu",
-                "profession": "Web Developer",
-                "Dept": "CSE",
-                "year": 3
-            }
-        ]
-    }
-]
+
+
+
+    "domainManagers": [{
+            "name": "Soham Saha Roy",
+            "profession": "React Developer",
+            "clubRole": "WebDev Domain Manager",
+            "dept": "CSE",
+            "year": 3
+        },
+        {
+            "name": "Soham Banerjee",
+            "profession": "Software Security Engineer",
+            "clubRole": "Cyber Security Domain Manager",
+            "dept": "CSE",
+            "year": 3
+        },
+        {
+            "name": "Rishav Mandal",
+            "profession": "Android Developer",
+            "clubRole": "AppDev Domain Manager",
+            "dept": "CSE",
+            "year": 3
+        },
+        {
+            "name": "MD Hasanuj Jaman Hossain",
+            "profession": "Competitive Programming Enthusiast",
+            "clubRole": "Competitive Programming Domain Manager",
+            "dept": "CSE",
+            "year": 3
+        },
+        {
+            "name": "Triasis Ghosh",
+            "profession": "ML Engineer",
+            "clubRole": "AI/ML Domain Manager",
+            "dept": "CSE",
+            "year": 3
+        }
+    ],
+
+    "founders": [{
+            "name": "Sourav Chakraborty",
+            "profession": "IoT Engineer",
+            "dept": "IT",
+            "year": 4
+        },
+        {
+            "name": "Ishaani Paul",
+            "profession": "UX Designer",
+            "dept": "IT",
+            "year": 4
+        },
+        {
+            "name": "Arghya Guha",
+            "profession": "Web Developer",
+            "dept": "IT",
+            "year": 4
+        },
+        {
+            "name": "Ahana Paul",
+            "profession": "ML Engineer",
+            "dept": "CSE",
+            "year": 4
+        },
+        {
+            "name": "Souhit De",
+            "profession": "Network Security Engineer",
+            "dept": "CSE",
+            "year": 4
+        },
+        {
+            "name": "Aritra Basu",
+            "profession": "Web Developer",
+            "dept": "CSE",
+            "year": 4
+        }
+    ]
+}
