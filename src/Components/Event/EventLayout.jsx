@@ -18,14 +18,16 @@ const EventLayout = () => {
             <VerticalTimeline
                 // className={`${classes["event-content"]}`}
                 layout={"2-columns"}
-                lineColor={"black"}
+                lineColor={"#e63946"}
             >
                 {eventData.map((element, index) => {
                     return (
                         <VerticalTimelineElement
                             key={index}
                             date={element.date}
-                            className={"w-[90%] bp_650:w-[80%] md:w-[70%] bp_1170:w-full"}
+                            className={
+                                "w-[90%] bp_650:w-[80%] md:w-[70%] bp_1170:w-full"
+                            }
                         >
                             <h3>{element.title}</h3>
                             <h4>{element.platform}</h4>
