@@ -1,8 +1,22 @@
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import teamData from "../Team/TechzTeamInfo/teamInfo.json";
 import OffClickProfile from "./OffClickProfile";
 
+// import { useInView } from "react-intersection-observer";
+// import { motion } from "framer-motion";
+
 const Members = () => {
+    // const { ref, inView } = useInView({
+    //     threshold: 0.2,
+    // });
+
+    // const [startAnimation, setAnim] = useState(false);
+
+    // useEffect(() => {
+    //     if (inView) setAnim(true);
+    //     else setAnim(false);
+    // }, [inView]);
+
     console.log("Members Comp");
     const coreTeamDetails = teamData.coreTeamMembers;
     const domainManagerDetails = teamData.domainManagers;

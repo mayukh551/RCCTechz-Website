@@ -9,7 +9,7 @@
         {
             "name": "Shagnik Mukherjee",
             "profession": "Robotics Engineer",
-            "clubRole": "Convenor",
+            "clubRole": "Non-Tech Head",
             "dept": "CSE",
             "year": 3
         },
@@ -23,7 +23,7 @@
         {
             "name": "MD Saood Khan",
             "profession": "Back-End Developer",
-            "clubRole": "Non-Tech Head",
+            "clubRole": "Social Media Head",
             "dept": "CSE",
             "year": 3
         },
@@ -31,6 +31,13 @@
             "name": "Shirsasish Sarkar",
             "profession": "PHP Developer",
             "clubRole": "Tech Head",
+            "dept": "CSE",
+            "year": 3
+        },
+        {
+            "name": "Suryasnata Saha",
+            "profession": "Front-End Developer",
+            "clubRole": "Convenor",
             "dept": "CSE",
             "year": 3
         }
