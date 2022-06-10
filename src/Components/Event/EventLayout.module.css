@@ -1,5 +1,11 @@
 .event-content {
-    width: 35rem;
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    .event-content {
+        width: 30rem;
+    }
 }
 
 .vertical-timeline-element-content {

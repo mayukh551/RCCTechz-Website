@@ -1,16 +1,15 @@
-import React, { useState } from "react";
 import classes from "./Header.module.css";
 import Navbar from "./Navbar";
-import clubLogo from "../../../Images/RCC Techz (White).png";
+// import clubLogo from "../../../Images/RCC Techz (White).png";
 
 import { motion } from "framer-motion";
 
 const Header = () => {
-    const [renderCond, setRenderCond] = useState(true);
+    // const [renderCond, setRenderCond] = useState(true);
 
     return (
         <div className={`relative h-screen ${classes.header__image}`}>
-            <Navbar renderCond={renderCond} />
+            <Navbar/>
             {/* <motion.img
                 src={clubLogo}
                 alt="RCCTechz"

@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Navbar = ({ renderCond }) => {
+const Navbar = () => {
     const [showMenubar, setNewDisplay] = useState(false);
 
     const menuHandler = () => {

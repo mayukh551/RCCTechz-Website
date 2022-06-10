@@ -16,7 +16,7 @@ const EventLayout = () => {
                 Timeline of Events
             </h1>
             <VerticalTimeline
-                className={`${classes["event-content"]}`}
+                // className={`${classes["event-content"]}`}
                 layout={"2-columns"}
                 lineColor={"black"}
             >
@@ -25,7 +25,7 @@ const EventLayout = () => {
                         <VerticalTimelineElement
                             key={index}
                             date={element.date}
-                            className={"duration-300 hover:scale-105"}
+                            className={"w-[90%] bp_650:w-[80%] md:w-[70%] bp_1170:w-full"}
                         >
                             <h3>{element.title}</h3>
                             <h4>{element.platform}</h4>
