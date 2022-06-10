@@ -12,7 +12,7 @@ const Navbar = ({ renderCond }) => {
 
     return (
         <Fragment>
-            <div className="relative h-[50px] w-full bg-black z-50 left-0 top-0">
+            <div className="relative h-[50px] w-full z-50 left-0 top-0">
                 <button
                     onClick={menuHandler}
                     className={`inline-block md:hidden text-3xl text-white mt-2 ml-2 hover:text-cyan-500`}
@@ -51,13 +51,15 @@ const Navbar = ({ renderCond }) => {
                     >
                         Projects
                     </li>
-                    <li
-                        className={`h-full pt-3 ${
-                            showMenubar ? "py-4 text" : "mx-6"
-                        } px-8 cursor-pointer hover:text-black hover:bg-slate-100`}
-                    >
-                        <Link to="/events">Events</Link>
-                    </li>
+                    <Link to="/events">
+                        <li
+                            className={`h-full pt-3 ${
+                                showMenubar ? "py-4 text" : "mx-6"
+                            } px-8 cursor-pointer hover:text-black hover:bg-slate-100`}
+                        >
+                            Events
+                        </li>
+                    </Link>
                 </motion.ul>
             </div>
         </Fragment>
