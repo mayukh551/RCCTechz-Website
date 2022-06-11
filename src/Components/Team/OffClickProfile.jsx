@@ -38,18 +38,20 @@ const OffClickProfile = (props) => {
                 Card
                 mouseEventHandler={mouseEventHandler}
                 hoverAnim={displayBtn}
-                styleCard="z-10 relative cursor-default transition-all duration-200 w-[320px] h-[360px] bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                styleCard="z-10 relative cursor-default transition-all duration-200 w-[90%] sm:w-[320px] h-[360px] bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
             >
                 {/* <div className="flex justify-end px-4 pt-4"></div> */}
                 <div
-                    className={`flex flex-col items-center justify-evenly`}
+                    className={`flex flex-col items-center h-full justify-center`}
                     id="myCard"
                 >
-                    <img
-                        className="mb-6 w-36 rounded-lg shadow-lg mt-8"
-                        src={`https://randomuser.me/api/portraits/men/14.jpg`}
-                        alt="team profile"
-                    />
+                    <div>
+                        <img
+                            className="mb-6 min-w-full sm:w-44 rounded-full shadow-lg mt-8"
+                            src={`https://randomuser.me/api/portraits/men/14.jpg`}
+                            alt="team profile"
+                        />
+                    </div>
                     <h5 className="mb-4 text-xl font-medium text-gray-900 dark:text-white">
                         {coreMember.name}
                     </h5>

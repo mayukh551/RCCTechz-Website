@@ -24,11 +24,12 @@ const Members = () => {
 
     return (
         <Fragment>
-            <div className="px-10 pt-10 mb-20">
-                <h1 className="mb-9 text-5xl text-center underline underline-offset-8 decoration-emerald-400">
+            <div className="sm:px-10 pt-10 mb-20">
+                <h1 className="mb-9 text-3xl sm:text-5xl text-center underline underline-offset-8 decoration-emerald-400">
                     Core Team
                 </h1>
-                <div className="py-10 grid grid-rows-5 grid-cols-1 md:grid-cols-2 bp_1100:grid-rows-2 bp_1100:grid-cols-3 gap-y-16 place-items-center">
+                {/* <div className="py-10 grid grid-rows-5 grid-cols-1 md:grid-cols-2 bp_1100:grid-rows-2 bp_1100:grid-cols-3 gap-y-16 place-items-center"> */}
+                <div className="py-10 flex flex-wrap justify-evenly gap-y-16 place-items-center">
                     {coreTeamDetails.map((member) => {
                         return (
                             <OffClickProfile
@@ -39,11 +40,11 @@ const Members = () => {
                     })}
                 </div>
             </div>
-            <div className="px-10 mb-20">
-                <h1 className="mb-9 text-5xl text-center underline underline-offset-8 decoration-emerald-400">
+            <div className="sm:px-10 mb-20">
+                <h1 className="mb-9 text-3xl sm:text-5xl text-center underline underline-offset-8 decoration-emerald-400">
                     Domain Managers
                 </h1>
-                <div className="py-10 grid grid-rows-5 grid-cols-1 md:grid-cols-2 bp_1100:grid-rows-2 bp_1100:grid-cols-3 gap-y-16 place-items-center">
+                <div className="py-10 flex flex-wrap justify-evenly gap-y-16 place-items-center">
                     {domainManagerDetails.map((member) => {
                         return (
                             <OffClickProfile
@@ -54,11 +55,11 @@ const Members = () => {
                     })}
                 </div>
             </div>
-            <div className="px-10 mb-20">
-                <h1 className="mb-9 text-5xl text-center underline underline-offset-8 decoration-emerald-400">
+            <div className="sm:px-10 mb-20">
+                <h1 className="mb-9 text-3xl sm:text-5xl text-center underline underline-offset-8 decoration-emerald-400">
                     Founders
                 </h1>
-                <div className="py-10 grid grid-rows-5 grid-cols-1 md:grid-cols-2 bp_1100:grid-rows-2 bp_1100:grid-cols-3 gap-y-16 place-items-center">
+                <div className="py-10 flex flex-wrap justify-evenly gap-y-16 place-items-center">
                     {founderDetails.map((member) => {
                         return (
                             <OffClickProfile
