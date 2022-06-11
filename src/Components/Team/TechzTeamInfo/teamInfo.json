@@ -68,7 +68,7 @@
             "name": "Nishant Thakur",
             "profession": "Competitive Programming Enthusiast",
             "clubRole": "Competitive Programming",
-            "dept": "CSE",
+            "dept": "IT",
             "year": 3
         },
         {
@@ -76,6 +76,20 @@
             "profession": "ML Engineer",
             "clubRole": "AI/ML",
             "dept": "CSE",
+            "year": 3
+        },
+        {
+            "name": "Sayani Patra",
+            "profession": "ML Engineer",
+            "clubRole": "Graphics Head",
+            "dept": "CSE",
+            "year": 3
+        },
+        {
+            "name": "Soham Sarkar",
+            "profession": "ML Engineer",
+            "clubRole": "Content Head",
+            "dept": "IT",
             "year": 3
         }
     ],
