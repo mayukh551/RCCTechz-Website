@@ -5,7 +5,7 @@ const Project = () => {
     return (
         <div className="bg-black h-screen">
             <Navbar />
-            <h1 className="text-4xl text-white absolute left-[37%] top-[35%]">
+            <h1 className="sm:text-4xl text-base text-white absolute left-[37%] right-[35%] top-[35%]">
                 Work in Progress . . .
             </h1>
         </div>
