@@ -44,13 +44,15 @@ const Navbar = () => {
                             Team
                         </li>
                     </Link>
-                    <li
-                        className={`h-full pt-3 ${
-                            showMenubar ? "py-4 text" : "mx-6"
-                        } px-8 cursor-pointer hover:text-black hover:bg-slate-100`}
-                    >
-                        Projects
-                    </li>
+                    <Link to="/projects">
+                        <li
+                            className={`h-full pt-3 ${
+                                showMenubar ? "py-4 text" : "mx-6"
+                            } px-8 cursor-pointer hover:text-black hover:bg-slate-100`}
+                        >
+                            Projects
+                        </li>
+                    </Link>
                     <Link to="/events">
                         <li
                             className={`h-full pt-3 ${
