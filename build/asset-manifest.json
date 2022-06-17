@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.319b6dce.css",
+    "main.js": "/static/js/main.61cede88.js",
+    "static/js/787.c47495e7.chunk.js": "/static/js/787.c47495e7.chunk.js",
+    "static/media/PC_Setup_3.jpg": "/static/media/PC_Setup_3.cc625119aa2101478738.jpg",
+    "static/media/RCC Techz (White).png": "/static/media/RCC Techz (White).dc2b25fb1abcd7013d65.png",
+    "static/media/Cyber_Security.svg": "/static/media/Cyber_Security.52684fe56fbe0a9701bfdd4eee97d546.svg",
+    "static/media/programming.svg": "/static/media/programming.eb4ca12f32bae6b3c424886b112df8b8.svg",
+    "static/media/web_development.svg": "/static/media/web_development.5ad7fe6b67de47f3c85f8d99a5c734c8.svg",
+    "static/media/artificial_intelligence.svg": "/static/media/artificial_intelligence.11899ac8738cc7ed60cacad520595c30.svg",
+    "static/media/java.svg": "/static/media/java.0ed1df319eb81e50aa563bf327962d43.svg",
+    "static/media/laptop.svg": "/static/media/laptop.9aeccc2334596cdec1b792ead60ea065.svg",
+    "static/media/cpu.svg": "/static/media/cpu.1c02c1b73e81f00bbbe764fb59e9af6c.svg",
+    "static/media/python.svg": "/static/media/python.71ab6c4c4b2b257754778a339ade87a2.svg",
+    "static/media/react.svg": "/static/media/react.76a14d4c6578aca3141cc2d2e3db1724.svg",
+    "static/media/database.svg": "/static/media/database.10dbfebeae08507e1304866013f39287.svg",
+    "static/media/angular.svg": "/static/media/angular.fa124181c79de1037f9d36c8a70ff9cc.svg",
+    "static/media/linux.svg": "/static/media/linux.f626c8924757e398613cac6297b07807.svg",
+    "index.html": "/index.html",
+    "static/media/js.svg": "/static/media/js.1c09db794ba753320f88f462ffb62a61.svg",
+    "main.319b6dce.css.map": "/static/css/main.319b6dce.css.map",
+    "main.61cede88.js.map": "/static/js/main.61cede88.js.map",
+    "787.c47495e7.chunk.js.map": "/static/js/787.c47495e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.319b6dce.css",
+    "static/js/main.61cede88.js"
+  ]
+}
