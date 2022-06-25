@@ -7,7 +7,7 @@ const TeamHeader = () => {
         <>
             <Navbar />
             {/* <div className="min-h-[540px] pt-28 flex flex-col items-center"> */}
-            <div className="min-h-screen pt-28 flex flex-col items-center">
+            <div className="h-screen flex flex-col items-center justify-center">
                 <div className="flex flex-col bp_650:flex-row bp_650:gap-x-8 justify-center">
                     <motion.span
                         initial={{ opacity: 0, y: "100%" }}
