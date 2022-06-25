@@ -30,7 +30,7 @@ const EventLayout = () => {
                                 Platform: {element.platform}
                             </h4>
                             <p>{element.description}</p>
-                            <button className="mt-6 bg-teal-500 text-white py-3 px-6 rounded-lg hover:bg-teal-600">Know More</button>
+                            {/* <button className="mt-6 bg-teal-500 text-white py-3 px-6 rounded-lg hover:bg-teal-600">Know More</button> */}
                         </VerticalTimelineElement>
                     );
                 })}
