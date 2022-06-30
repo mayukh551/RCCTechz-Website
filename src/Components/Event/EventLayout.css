@@ -2,6 +2,10 @@
     width: 80%;
 }
 
+.date-style{
+    font-weight: bolder;
+}
+
 @media (min-width: 768px) {
     .event-content {
         width: 30rem;
