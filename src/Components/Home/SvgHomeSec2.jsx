@@ -4,7 +4,6 @@ import pythonLogo from "../../SVGs/python.svg";
 import angLogo from "../../SVGs/angular.svg";
 import reactLogo from "../../SVGs/react.svg";
 import jsLogo from "../../SVGs/js.svg";
-import classes from "./SvgHomeSec2.module.css";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -24,7 +23,7 @@ const SvgLogoList = (props) => {
     }, [inView]);
 
     return (
-        <motion.div ref={ref} className={classes.animateSvg}>
+        <motion.div ref={ref}>
             {/* React SVG */}
             <motion.img
                 className={`tech-svg absolute hidden sm:inline-block sm:top-32 md:top-24 sm:right-7 md:right-12 xl:top-3 xl:left-6 ${styles.App} w-32`}
