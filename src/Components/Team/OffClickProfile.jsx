@@ -1,7 +1,5 @@
 import ProfileCard from "../UI/ProfileCard";
-import { useContext, useState, Fragment } from "react";
-import ExpandedProfile from "./ExpandedProfile";
-import TeamContext from "../store/team-context";
+import { useState, Fragment } from "react";
 
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -14,16 +12,15 @@ const CardBackdrop = () => {
 const OffClickProfile = (props) => {
     var coreMember = props.coreMember;
 
-    const teamCtx = useContext(TeamContext);
     const [displayBtn, setDisplayBtn] = useState(false);
 
-    const updateProfileView = () => {
+    const updateProfileView = (pInfo) => {
         console.log("Profile Clicked!");
-
+        console.log(pInfo);
         // to bring the backdrop and expanded profile component
         // on display
 
-        teamCtx.viewProfileHandler();
+        props.displayModal(pInfo);
     };
 
     const mouseEventHandler = () => {
@@ -98,7 +95,9 @@ const OffClickProfile = (props) => {
                         {displayBtn && (
                             <>
                                 <motion.button
-                                    onClick={updateProfileView}
+                                    onClick={() =>
+                                        updateProfileView(coreMember)
+                                    }
                                     className="absolute z-50 opacity-100 px-7 py-3 bg-green-800 hover:bg-green-900 text-white font-bold rounded-[10px] text-base"
                                     initial={{ y: -50 }}
                                     animate={{ y: 1 }}
@@ -112,10 +111,6 @@ const OffClickProfile = (props) => {
                     </AnimatePresence>
                 </div>
             </ProfileCard>
-
-            {teamCtx.isViewProfile && (
-                <ExpandedProfile coreMember={coreMember} />
-            )}
         </Fragment>
     );
 };

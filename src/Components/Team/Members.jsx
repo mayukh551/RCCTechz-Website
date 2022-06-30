@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import teamData from "../Team/TechzTeamInfo/teamInfo.json";
 import OffClickProfile from "./OffClickProfile";
 
-const Members = () => {
+const Members = (props) => {
 
     console.log("Members Comp");
     const coreTeamDetails = teamData.coreTeamMembers;
@@ -22,6 +22,7 @@ const Members = () => {
                             <OffClickProfile
                                 key={member.clubRole}
                                 coreMember={member}
+                                displayModal={props.displayModal}
                             />
                         );
                     })}
@@ -37,6 +38,7 @@ const Members = () => {
                             <OffClickProfile
                                 key={member.clubRole}
                                 coreMember={member}
+                                displayModal={props.displayModal}
                             />
                         );
                     })}
@@ -52,6 +54,7 @@ const Members = () => {
                             <OffClickProfile
                                 key={member.clubRole}
                                 coreMember={member}
+                                displayModal={props.displayModal}
                             />
                         );
                     })}

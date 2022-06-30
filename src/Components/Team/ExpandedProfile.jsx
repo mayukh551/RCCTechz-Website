@@ -1,24 +1,22 @@
-import React, { useContext } from "react";
-import TeamContext from "../store/team-context";
+import React from "react";
 import ProfileCard from "../UI/ProfileCard";
-import classes from "./ExpandedProfile.module.css";
+// import classes from "./ExpandedProfile.module.css";
 
 const ExpandedProfile = (props) => {
     var member = props.coreMember;
-
-    const teamCtx = useContext(TeamContext);
 
     console.log("On ExpandedProfile Components");
     const closeButtonHandler = () => {
         console.log("Exp profile closed");
         // To remove backdrop and expanded profile view
-        teamCtx.viewProfileHandler();
+        props.closeExpProfile();
     };
 
     return (
         <ProfileCard
-            // styleCard={`${classes.profile} z-50 text-base absolute left-[26.75%] top-[30px] ml-12 mt-12 w-[500px] h-[360px] text-white bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700`}
-            styleCard={`${classes.profile} z-50 text-base absolute top-[10%] ml-12 mt-12 w-[70%] md:w-[500px] text-white bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700`}
+            // styleCard={`${classes.profile} z-50 text-base absolute w-[70%] left-[50%] top-[50%] md:w-[500px] text-white bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700`}
+            styleCard={`z-50 text-base absolute w-[70%] left-[50%] top-[50%] md:w-[500px] text-white bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700`}
+            pos={{ transform: "translate(-50%, -50%)" }}
         >
             <div className="p-4 flex flex-col text-sm sm:text-base">
                 <h1 className="mb-9">
