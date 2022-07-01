@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Home/Header/Navbar";
+// import Navbar from "../Home/Header/Navbar";
 import prjctImg from "../../Images/Monitors.jpg";
 import ProjectHeader from "./ProjectHeader";
 import projectData from "./team-project-data";
@@ -7,7 +7,7 @@ import projectData from "./team-project-data";
 const Project = () => {
     return (
         <div className="bg-slate-800 min-h-screen">
-            <Navbar />
+            {/* <Navbar /> */}
             <ProjectHeader />
             <div className="flex flex-col gap-y-48 py-24 text-white">
                 {projectData.map((project, index) => {
