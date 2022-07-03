@@ -25,7 +25,7 @@ const WhatWeDo = () => {
             ref={ref}
         >
             <motion.div
-                initial={{ opacity: 0, y: "30%" }}
+                initial={{ opacity: 0, y: "50%" }}
                 animate={startAnimation && { opacity: 1, y: 0 }}
                 transition={{ delay: 0.1, duration: 1 }}
                 className="mt-9 mb-5 xl:mt-0 xl:mb-8"
