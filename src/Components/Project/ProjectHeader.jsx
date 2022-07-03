@@ -16,29 +16,37 @@ import flutterLogo from "../Project/TechStack for Project/flutter-svgrepo-com.sv
 import mongodbLogo from "../Project/TechStack for Project/mongodb-svgrepo-com.svg";
 
 import ProjectsStats from "./ProjectsStats";
+import Navbar from "../Home/Header/Navbar";
 
 const ProjectHeader = () => {
     return (
-        <div className="pt-16 pb-10 flex flex-col justify-between items-center bg-slate-900 min-h-[35rem]">
-            <div className="tracking-widest font-semibold text-yellow-400 mt-8 text-5xl bp_650:text-6xl">
-                PROJECTS
-            </div>
-            <ProjectsStats />
-            <div className="flex flex-wrap justify-center gap-8 px-6">
-                <img className="w-12" src={pythonLogo} alt="python" />
-                <img className="w-12" src={cppLogo} alt="cpp" />
-                <img className="w-12" src={cSharpLogo} alt="cSharp" />
-                <img className="w-12" src={javaLogo} alt="java" />
-                <img className="w-12" src={htmlLogo} alt="html" />
-                <img className="w-12" src={css3Logo} alt="css3" />
-                <img className="w-12" src={typescriptLogo} alt="typescript" />
-                <img className="w-16" src={reactLogo} alt="react" />
-                <img className="w-12" src={angularLogo} alt="angular" />
-                <img className="w-12" src={vueLogo} alt="vue" />
-                <img className="w-12" src={djangoLogo} alt="django" />
-                <img className="w-12" src={googleLogo} alt="googleCloud" />
-                <img className="w-12" src={flutterLogo} alt="flutter" />
-                <img className="w-12" src={mongodbLogo} alt="mongodb" />
+        <div className="bg-slate-900 min-h-screen">
+            <Navbar />
+            <div className="h-screen pt-16 pb-10 flex flex-col justify-between items-center">
+                <div className="tracking-widest font-semibold text-yellow-400 mt-8 text-5xl bp_650:text-6xl">
+                    PROJECTS
+                </div>
+                <ProjectsStats />
+                <div className="flex flex-wrap justify-center gap-8 px-6">
+                    <img className="w-12" src={pythonLogo} alt="python" />
+                    <img className="w-12" src={cppLogo} alt="cpp" />
+                    <img className="w-12" src={cSharpLogo} alt="cSharp" />
+                    <img className="w-12" src={javaLogo} alt="java" />
+                    <img className="w-12" src={htmlLogo} alt="html" />
+                    <img className="w-12" src={css3Logo} alt="css3" />
+                    <img
+                        className="w-12"
+                        src={typescriptLogo}
+                        alt="typescript"
+                    />
+                    <img className="w-16" src={reactLogo} alt="react" />
+                    <img className="w-12" src={angularLogo} alt="angular" />
+                    <img className="w-12" src={vueLogo} alt="vue" />
+                    <img className="w-12" src={djangoLogo} alt="django" />
+                    <img className="w-12" src={googleLogo} alt="googleCloud" />
+                    <img className="w-12" src={flutterLogo} alt="flutter" />
+                    <img className="w-12" src={mongodbLogo} alt="mongodb" />
+                </div>
             </div>
         </div>
     );

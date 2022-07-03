@@ -20,7 +20,7 @@ const WhatWeDo = () => {
 
     return (
         <motion.div
-            className={`relative px-4 sm:px-14 flex flex-col-reverse justify-center xl:flex-row h-screen xl:items-center`}
+            className={`relative py-6 px-4 sm:px-14 flex flex-col-reverse justify-center lg:flex-row min-h-screen lg:items-center`}
             style={{ backgroundColor: "#f5ebe0" }}
             ref={ref}
         >
@@ -33,7 +33,7 @@ const WhatWeDo = () => {
                 <h1 className="text-left text-3xl xl:text-5xl pl-4 border-l-[10px] border-white">
                     What do we do?
                 </h1>
-                <p className="content mt-8 pr-0 sm:pr-16 text-left 2xl:text-2xl">
+                <p className="content mt-8 pr-0 sm:pr-16 w-[70%] lg:w-auto text-left 2xl:text-2xl">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Repellendus sunt unde nemo eius, eligendi sapiente omnis
                     asperiores repudiandae ducimus quisquam? Iste esse dolore

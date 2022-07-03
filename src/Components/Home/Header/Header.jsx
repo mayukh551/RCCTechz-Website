@@ -9,12 +9,12 @@ const Header = () => {
         <div className={`relative h-screen ${classes.header__image}`}>
             <Navbar />
             <div
-                className={`h-full flex flex-row items-center justify-evenly text-5xl lg:text-6xl text-white font-semibold `}
+                className={`h-full flex flex-col lg:flex-row items-center lg:justify-evenly text-4xl lg:text-6xl text-white font-semibold `}
             >
                 <motion.img
                     src={clubLogo}
                     alt="RCCTechz"
-                    className="w-[480px]"
+                    className="w-96 lg:w-[480px]"
                     initial={{ opacity: 0.2, scale: 0.6 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6 }}

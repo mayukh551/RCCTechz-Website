@@ -7,7 +7,7 @@ import projectData from "./team-project-data";
 const Project = () => {
     return (
         <div className="bg-slate-800 min-h-screen">
-            <Navbar />
+            {/* <Navbar /> */}
             <ProjectHeader />
             <div className="flex flex-col gap-y-48 py-24 text-white">
                 {projectData.map((project, index) => {
