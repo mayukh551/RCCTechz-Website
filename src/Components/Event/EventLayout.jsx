@@ -18,7 +18,7 @@ const EventLayout = () => {
 
     return (
         <div className="py-20 px-24">
-            <h1 className="text-4xl font-semibold underline underline-offset-8 text-center mb-16">
+            <h1 className="text-4xl font-semibold underline underline-offset-8 text-left mb-16">
                 Timeline of Events
             </h1>
 
