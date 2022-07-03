@@ -7,37 +7,33 @@ const Domains = () => {
     const [domainDetails, setNewDomainDetails] = useState([
         {
             show: false,
-            manager: "Shirsasish Sarkar",
+            manager: "Soham Saha Roy",
             domainName: "Web Development",
-            description:
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus sapiente rerum cumque excepturi tempore nesciunt!",
+            
         },
         {
             show: false,
             manager: "Soham Banerjee",
             domainName: "Cyber Security",
-            description:
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus sapiente rerum cumque excepturi tempore nesciunt!",
+            
         },
         {
             show: false,
-            manager: "MD Saood Khan",
+            manager: "Nishant Thakur",
             domainName: "Competitive Programming",
-            description:
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus sapiente rerum cumque excepturi tempore nesciunt!",
+            
         },
-        // {
-        //     domainName: "App Development",
-        //     description:
-        //         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus sapiente rerum cumque excepturi tempore nesciunt!",
-        // },
+        {
+            show: false,
+            manager: "Rishav Mandal",
+            domainName: "App Development",
+            
+        },
         {
             show: false,
             manager: "Triasis Ghosh",
             domainName: "Artificial Intelligence & Machine Learning",
-            // domainName: "AI/ML",
-            description:
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus sapiente rerum cumque excepturi tempore nesciunt!",
+            // domainName: "AI/ML",     
         },
     ]);
 
@@ -68,29 +64,32 @@ const Domains = () => {
     };
 
     return (
-        <div
-            // ref={scrollTriggerDiv}
-            ref={ref}
-            className={`relative py-11 px-10 justify-items-center grid md:grid-rows-2 md:grid-cols-2 md:grid-flow-col gap-y-7 md:gap-y-16 bg-slate-800 h-screen`}
-        >
-            <h1
+        <div className={`relative bg-slate-800 min-h-screen`}>
+            {" "}
+            <div
                 ref={domainTitle}
-                className="hidden sm:inline-block absolute tracking-widest -left-24 lg:-left-36 top-[40%] bg-black text-4xl lg:text-6xl px-8 py-4 text-white -rotate-90"
+                // className="hidden sm:inline-block absolute tracking-widest -left-24 lg:-left-36 top-[40%] bg-black text-4xl lg:text-6xl px-8 py-4 text-white -rotate-90"
+                className="text-4xl lg:text-6xl px-8 py-4 text-white bg-black"
             >
                 Domains
-            </h1>
-
-            {domainDetails.map((domain, i) => {
-                return (
-                    <DomainCard
-                        key={domain.domainName}
-                        domain={domain}
-                        updateList={updateList}
-                        startAnimation={startAnimation}
-                        i={i}
-                    />
-                );
-            })}
+            </div>
+            <div
+                ref={ref}
+                // className={`relative py-11 px-10 justify-items-center grid md:grid-rows-2 md:grid-cols-2 md:grid-flow-col gap-y-7 md:gap-y-16 bg-slate-800 h-screen`}
+                className={`relative py-11 px-10 flex justify-center flex-wrap gap-x-16 gap-y-16`}
+            >
+                {domainDetails.map((domain, i) => {
+                    return (
+                        <DomainCard
+                            key={domain.domainName}
+                            domain={domain}
+                            updateList={updateList}
+                            startAnimation={startAnimation}
+                            i={i}
+                        />
+                    );
+                })}
+            </div>
         </div>
     );
 };

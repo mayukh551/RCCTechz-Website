@@ -23,11 +23,12 @@ const DomainCard = (props) => {
     return (
         <motion.div
             onClick={displayContent}
-            className={`cursor-pointer pb-0 px-5 pt-3 md:pb-7 flex items-center md:flex-col ${
+            className={`cursor-pointer pb-0 px-5 pt-3 md:pb-7 flex items-center flex-col ${
                 domain.show === false
-                    ? "justify-between"
-                    : "justify-between md:justify-center text-white md:text-black space-y-9"
-            } w-full sm:w-[57%]  md:w-[60%] lg:w-[55%] xl:w-[50%] md:hover:bg-zinc-200 md:bg-zinc-300 shadow-lg rounded-lg`}
+                    ? "justify-evenly"
+                    : " justify-center text-black space-y-9"
+            } w-80 h-72 hover:bg-zinc-200 bg-zinc-300 shadow-lg rounded-lg`}
+            // w-full sm:w-[57%]  md:w-[60%] lg:w-[55%] xl:w-[50%]
             initial={{ opacity: 0, scale: 0 }}
             animate={
                 props.startAnimation && {
@@ -37,21 +38,19 @@ const DomainCard = (props) => {
             }
             transition={{ duration: 1, delay: props.i * 0.2 }}
         >
-            {/* md:hover:w-[70%] lg:hover:w-[60%] */}
-            {/* hover:scale-110 transition-all duration-300 */}
             {domain.show === false ? (
                 <>
-                    <img className="w-28 md:w-40" src={svg} alt="" />
-                    <h2 className="font-bold text-right text-white md:text-black md:text-left text-sm md:text-base lg:text-lg">
+                    <img className="w-[50%] md:w-40" src={svg} alt="" />
+                    <h2 className="font-bold text-right text-black md:text-left text-base lg:text-lg">
                         {domain.domainName}
                     </h2>
                 </>
             ) : (
                 <>
-                    <h1 className="font-bold text-sm md:text-lg">
+                    <h1 className="font-bold text-base md:text-lg">
                         Domain Manager
                     </h1>
-                    <h1 className="text-sm md:text-base font-semibold">
+                    <h1 className="text-base md:text-base font-semibold">
                         {domain.manager}
                     </h1>
                 </>
