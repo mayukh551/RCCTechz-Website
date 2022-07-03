@@ -28,7 +28,7 @@ const Project = () => {
                                 <h3 className="text-lg lg:text-2xl font-bold underline underline-offset-8">
                                     {project.title}
                                 </h3>
-                                <h5 className="text-md lg:text-lg font-medium">
+                                <h5 className="text-center md:text-left text-md lg:text-lg font-medium">
                                     Team : {project.team.join(", ")}
                                 </h5>
                                 <div className="text-center md:text-left space-y-3">
@@ -42,6 +42,7 @@ const Project = () => {
                                     href={project.repoLink}
                                     target="_blank"
                                     rel="noreferrer"
+                                    className="underline underline-offset-4 decoration-teal-500 hover:text-teal-500 hover:decoration-white duration-200"
                                 >
                                     GitHub Repo Link
                                 </a>
