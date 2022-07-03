@@ -4,6 +4,7 @@ import DefineClub from "./DefineClub";
 import WhatWeDo from "./WhatWeDo";
 import HFooter from "./HFooter";
 import Domains from "./Domains";
+import Stats from "./Stats";
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Header />
             <DefineClub />
             <WhatWeDo />
+            <Stats />
             <Domains />
             <HFooter />
         </div>

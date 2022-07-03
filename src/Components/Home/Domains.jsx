@@ -64,12 +64,12 @@ const Domains = () => {
     };
 
     return (
-        <div className={`relative bg-slate-800 min-h-screen`}>
+        <div className={`py-10 relative bg-slate-800 min-h-screen`}>
             {" "}
             <div
                 ref={domainTitle}
                 // className="hidden sm:inline-block absolute tracking-widest -left-24 lg:-left-36 top-[40%] bg-black text-4xl lg:text-6xl px-8 py-4 text-white -rotate-90"
-                className="text-4xl lg:text-6xl px-8 py-4 text-white bg-black"
+                className="text-4xl lg:text-6xl px-8 py-4 text-white"
             >
                 Domains
             </div>
