@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Home/Header/Navbar";
+// import Navbar from "../Home/Header/Navbar";
 import prjctImg from "../../Images/Monitors.jpg";
 import ProjectHeader from "./ProjectHeader";
 import projectData from "./team-project-data";

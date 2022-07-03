@@ -6,5 +6,4 @@ Team Page
 - One page all members with different headings for different departments (Layout #1)
 - Search Bar (Layout #2)
 
-Event Page
-- Parallex Event Page / TimeLine Event Page (Layout #1)
+

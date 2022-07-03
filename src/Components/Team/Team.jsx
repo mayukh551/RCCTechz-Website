@@ -1,39 +1,39 @@
 import React, { useState } from "react";
-import TeamContext from "../store/team-context";
 import Backdrop from "../UI/Backdrop";
 import Members from "./Members";
 import TeamHeader from "./TeamHeader";
+import ExpandedProfile from "./ExpandedProfile";
 
 const Team = () => {
-    const [showBackdrop, setBackdrop] = useState(false);
-    const [isViewProfile, setViewProfile] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+    const [itemForExpProfile, setItemForExpProfile] = useState();
 
-    const viewProfileHandler = () => {
-        setViewProfile((prevCond) => !prevCond);
-        setBackdrop((prevCond) => !prevCond);
+    const backdropAndProfileHandler = () =>
+        setShowModal((prevCond) => !prevCond);
+
+    const viewProfileHandler = (item) => {
+        backdropAndProfileHandler();
+        setItemForExpProfile({ ...item });
     };
 
     console.log("Team Comp");
 
     return (
-        <TeamContext.Provider
-            value={{
-                isBackdrop: showBackdrop,
-                isViewProfile: isViewProfile,
-                viewProfileHandler: viewProfileHandler,
-            }}
+        <div
+            className={`h-screen overflow-y-scroll bg-gradient-to-tl from-gray-700 via-gray-900 to-black text-white text-2xl`}
         >
-            <div
-                // className={`h-screen overflow-y-scroll bg-gray-700 text-white text-2xl`}
-                className={`h-screen overflow-y-scroll bg-gradient-to-tl from-gray-700 via-gray-900 to-black text-white text-2xl`}
-            >
-                {console.log("is backdrop here", showBackdrop)}
-                {console.log("is viewProfile here", isViewProfile)}
-                {showBackdrop === true ? <Backdrop /> : ""}
-                <TeamHeader />
-                <Members />
-            </div>
-        </TeamContext.Provider>
+            <TeamHeader />
+            <Members displayModal={viewProfileHandler} />
+            {showModal && (
+                <>
+                    <Backdrop closeBackdrop={backdropAndProfileHandler} />
+                    <ExpandedProfile
+                        coreMember={itemForExpProfile}
+                        closeExpProfile={backdropAndProfileHandler}
+                    />
+                </>
+            )}
+        </div>
     );
 };
 

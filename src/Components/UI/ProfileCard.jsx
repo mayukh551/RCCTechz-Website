@@ -7,6 +7,7 @@ const ProfileCard = (props) => {
             onClick={props.coreTeamProfileHandler}
             onMouseEnter={props.mouseEventHandler}
             onMouseLeave={props.mouseEventHandler}
+            style={props.pos}
         >
             {props.children}
         </div>
