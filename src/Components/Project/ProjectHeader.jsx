@@ -22,7 +22,7 @@ const ProjectHeader = () => {
     return (
         <div className="bg-slate-900">
             <Navbar />
-            <div className="h-screen pt-16 pb-10 flex flex-col justify-between items-center">
+            <div className="min-h-[35rem] pt-16 pb-10 flex flex-col justify-between items-center">
                 <div className="tracking-widest font-semibold text-yellow-400 mt-8 text-5xl bp_650:text-6xl">
                     PROJECTS
                 </div>

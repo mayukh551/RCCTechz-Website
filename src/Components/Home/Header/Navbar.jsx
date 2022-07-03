@@ -28,7 +28,7 @@ const Navbar = () => {
                 >
                     <Link to="/">
                         <li
-                            className={`h-full pt-3 ${
+                            className={`rounded-br-md rounded-bl-md h-full pt-3 ${
                                 showMenubar ? "py-4" : "mx-6"
                             } px-8 cursor-pointer hover:text-black hover:bg-slate-100`}
                         >
@@ -37,7 +37,7 @@ const Navbar = () => {
                     </Link>
                     <Link to="/team">
                         <li
-                            className={`h-full pt-3 ${
+                            className={`rounded-br-md rounded-bl-md h-full pt-3 ${
                                 showMenubar ? "py-4" : "mx-6"
                             } px-8 cursor-pointer hover:text-black hover:bg-slate-100`}
                         >
@@ -46,7 +46,7 @@ const Navbar = () => {
                     </Link>
                     <Link to="/projects">
                         <li
-                            className={`h-full pt-3 ${
+                            className={`rounded-br-md rounded-bl-md h-full pt-3 ${
                                 showMenubar ? "py-4 text" : "mx-6"
                             } px-8 cursor-pointer hover:text-black hover:bg-slate-100`}
                         >
@@ -55,7 +55,7 @@ const Navbar = () => {
                     </Link>
                     <Link to="/events">
                         <li
-                            className={`h-full pt-3 ${
+                            className={`rounded-br-md rounded-bl-md h-full pt-3 ${
                                 showMenubar ? "py-4 text" : "mx-6"
                             } px-8 cursor-pointer hover:text-black hover:bg-slate-100`}
                         >

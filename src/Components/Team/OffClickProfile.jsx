@@ -32,18 +32,18 @@ const OffClickProfile = (props) => {
 
     console.log("OffClickProfile Comp");
     return (
-        // hover:scale-110 hover:dark:bg-gray-700
         <Fragment>
             <ProfileCard
                 Card
                 mouseEventHandler={mouseEventHandler}
                 hoverAnim={displayBtn}
-                styleCard="z-10 relative cursor-default transition-all duration-200 w-[90%] sm:w-[320px] h-[360px] bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                // styleCard="z-10 relative cursor-default transition-all duration-200 w-[90%] sm:w-[320px] h-[360px] bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                styleCard="z-10 relative cursor-default transition-all duration-200 w-[90%] sm:w-[320px] h-[360px] rounded-lg shadow-2xl bg-gray-800"
             >
-                {/* <div className="flex justify-end px-4 pt-4"></div> */}
                 <div
                     className={`flex flex-col items-center h-full justify-center`}
                     id="myCard"
+                    // style={{ background: "#22223b" }}
                 >
                     <div>
                         <img

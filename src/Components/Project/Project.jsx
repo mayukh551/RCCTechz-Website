@@ -17,21 +17,21 @@ const Project = () => {
                                 index % 2 === 0
                                     ? "md:flex-row"
                                     : "md:flex-row-reverse"
-                            } justify-between`}
+                            } justify-between items-center`}
                         >
                             <img
                                 src={prjctImg}
                                 alt="prjctImg"
                                 className="rounded-lg shadow-2xl mb-8 md:mb-auto w-[80%] md:max-w-[40%]"
                             />
-                            <div className="w-[90%] md:w-[50%] flex flex-col items-start gap-y-6 md:justify-evenly">
+                            <div className="w-[90%] md:w-[50%] flex flex-col items-center md:items-start gap-y-6 justify-evenly">
                                 <h3 className="text-lg lg:text-2xl font-bold underline underline-offset-8">
                                     {project.title}
                                 </h3>
                                 <h5 className="text-md lg:text-lg font-medium">
                                     Team : {project.team.join(", ")}
                                 </h5>
-                                <div className="">
+                                <div className="text-center md:text-left space-y-3">
                                     <h6>Description</h6>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur
