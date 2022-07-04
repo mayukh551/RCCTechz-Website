@@ -21,7 +21,7 @@ const Stats = () => {
             </div>
             <div className="text-lg flex flex-col gap-y-6 md:flex-row justify-evenly items-center text-white">
                 <motion.div
-                    className="font-semibold space-y-2 md:space-y-5 text-center"
+                    className="font-semibold cursor-default space-y-2 md:space-y-5 text-center"
                     initial={{ opacity: 0, y: "50%" }}
                     animate={startAnimation && { opacity: 1, y: 0 }}
                     transition={{ duration: 0.4 }}
@@ -30,7 +30,7 @@ const Stats = () => {
                     <div className="text-cyan-500">10+</div>
                 </motion.div>
                 <motion.div
-                    className="font-semibold space-y-2 md:space-y-5 text-center"
+                    className="font-semibold cursor-default space-y-2 md:space-y-5 text-center"
                     initial={{ opacity: 0, y: "50%" }}
                     animate={startAnimation && { opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.4 }}
@@ -39,7 +39,7 @@ const Stats = () => {
                     <div className="text-cyan-500">20+</div>
                 </motion.div>
                 <motion.div
-                    className="font-semibold space-y-2 md:space-y-5 text-center"
+                    className="font-semibold cursor-default space-y-2 md:space-y-5 text-center"
                     initial={{ opacity: 0, y: "50%" }}
                     animate={startAnimation && { opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.8 }}
