@@ -19,10 +19,9 @@ const DomainCard = (props) => {
     if (domain.domainName === "Web Development") svg = webdev;
     if (domain.domainName === "Cyber Security") svg = cyberSecurity;
     if (domain.domainName === "Competitive Programming") svg = cp;
-    if (domain.domainName === "Artificial Intelligence & Machine Learning")
-        svg = ai;
+    // if (domain.domainName === "Artificial Intelligence & Machine Learning") svg = ai;
+    if (domain.domainName === "AI/ML") svg = ai;
     if (domain.domainName === "App Development") svg = mobile;
-    // if (domain.domainName === "AI/ML") svg = ai;
 
     return (
         <motion.div
@@ -31,7 +30,7 @@ const DomainCard = (props) => {
                 domain.show === false
                     ? "justify-evenly"
                     : " justify-center text-black space-y-9"
-            } w-80 h-72 bg-zinc-300 shadow-lg rounded-2xl`}
+            } w-80 h-72 bg-slate-400 shadow-lg rounded-2xl`}
             // w-full sm:w-[57%]  md:w-[60%] lg:w-[55%] xl:w-[50%]
             initial={{ opacity: 0, scale: 0 }}
             animate={
@@ -45,16 +44,16 @@ const DomainCard = (props) => {
             {domain.show === false ? (
                 <>
                     <img className="w-[50%] md:w-40" src={svg} alt="" />
-                    <h2 className="font-bold text-right text-black md:text-left text-base lg:text-lg">
+                    <h2 className="font-bold text-center text-black text-base lg:text-lg">
                         {domain.domainName}
                     </h2>
                 </>
             ) : (
                 <>
-                    <h1 className="font-bold text-base md:text-lg">
+                    <h1 className="font-bold text-base md:text-md">
                         Domain Manager
                     </h1>
-                    <h1 className="text-base md:text-base font-semibold">
+                    <h1 className="text-base md:text-lg font-semibold">
                         {domain.manager}
                     </h1>
                 </>

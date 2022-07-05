@@ -32,8 +32,8 @@ const Domains = () => {
         {
             show: false,
             manager: "Triasis Ghosh",
-            domainName: "Artificial Intelligence & Machine Learning",
-            // domainName: "AI/ML",     
+            // domainName: "Artificial Intelligence & Machine Learning",
+            domainName: "AI/ML",     
         },
     ]);
 
