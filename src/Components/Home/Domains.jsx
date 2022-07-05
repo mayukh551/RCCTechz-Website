@@ -69,7 +69,7 @@ const Domains = () => {
             <div
                 ref={domainTitle}
                 // className="hidden sm:inline-block absolute tracking-widest -left-24 lg:-left-36 top-[40%] bg-black text-4xl lg:text-6xl px-8 py-4 text-white -rotate-90"
-                className="text-4xl lg:text-6xl px-8 py-4 text-white"
+                className="text-4xl lg:text-6xl px-8 py-4 text-white text-center"
             >
                 Domains
             </div>
