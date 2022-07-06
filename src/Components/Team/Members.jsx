@@ -7,7 +7,7 @@ const Members = (props) => {
     console.log("Members Comp");
     const coreTeamDetails = teamData.coreTeamMembers;
     const domainManagerDetails = teamData.domainManagers;
-    const founderDetails = teamData.founders;
+    // const founderDetails = teamData.founders;
 
     return (
         <Fragment>
@@ -45,10 +45,10 @@ const Members = (props) => {
                 </div>
             </div>
             <div className="sm:px-10 mb-20">
-                <h1 className="mb-9 text-3xl sm:text-5xl text-center underline underline-offset-8 decoration-emerald-400">
-                    Founders
+                <h1 className="cursor-pointer hover:text-emerald-400 hover:decoration-white duration-200 mb-9 text-3xl sm:text-5xl text-left underline underline-offset-8 decoration-emerald-400">
+                    Other Members
                 </h1>
-                <div className="py-10 flex flex-wrap justify-center gap-x-11 gap-y-16 place-items-center">
+                {/* <div className="py-10 flex flex-wrap justify-center gap-x-11 gap-y-16 place-items-center">
                     {founderDetails.map((member) => {
                         return (
                             <OffClickProfile
@@ -58,7 +58,7 @@ const Members = (props) => {
                             />
                         );
                     })}
-                </div>
+                </div> */}
             </div>
         </Fragment>
     );
