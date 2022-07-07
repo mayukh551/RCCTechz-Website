@@ -3,7 +3,7 @@ import Team from "./Components/Team/Team";
 import Event from './Components/Event/Event'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Project from "./Components/Project/Project";
-import NotFound from "./NotFound";
+import NotFound from "./Components/NotFound";
 
 function App() {
 
