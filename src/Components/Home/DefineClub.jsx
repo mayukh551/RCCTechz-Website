@@ -3,12 +3,11 @@ import database from "../../SVGs/database.svg";
 import laptop from "../../SVGs/laptop.svg";
 import style from "./DefineClub.module.css";
 import linux from "../../SVGs/linux.svg";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const DefineClub = () => {
-    const btn = useRef(null);
 
     const [startAnimation, setStartAnimation] = useState(false);
 
