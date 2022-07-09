@@ -19,9 +19,9 @@ const EventListItem = (props) => {
                 initial={{ scale: 0.6 }}
                 animate={startAnimation && { scale: [0.6, 1.3, 1] }}
                 transition={{
-                    duration: 1,
+                    duration: 0.4,
                     type: "spring",
-                    delay: props.index * 0.2,
+                    // delay: props.index * 0.1,
                 }}
             >
                 <svg
@@ -43,13 +43,13 @@ const EventListItem = (props) => {
                 initial={{ opacity: 0, x: "20%" }}
                 animate={startAnimation && { opacity: 1, x: 0 }}
                 transition={{
-                    duration: 0.8,
+                    duration: 0.4,
                     type: "spring",
                     stiffness: 100,
-                    delay: props.index * 0.2,
+                    // delay: props.index * 0.2,
                 }}
             >
-                <h3 className="flex items-center mb-1 text-2xl font-semibold text-gray-900 ">
+                <h3 className="flex items-center mb-1 text-lg sm:text-2xl font-semibold text-gray-900 ">
                     {event.title}{" "}
                     {props.index === 0 && (
                         <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
@@ -60,10 +60,15 @@ const EventListItem = (props) => {
                 <time className="font-semibold block mb-4 text-sm leading-none text-gray-400 dark:text-gray-500">
                     {event.date}
                 </time>
-                <div className="mb-2 text-lg font-semibold text-black">
+                <div className="mb-2 text-md sm:text-lg font-semibold text-black">
                     Platform : {event.platform}
                 </div>
-                <p className="text-base font-medium text-black">
+                {event.speaker !== "" && (
+                    <div className="mb-2 text-base sm:text-md font-semibold text-black">
+                        Speaker : {event.speaker}
+                    </div>
+                )}
+                <p className="text-sm sm:text-base font-medium text-black">
                     {event.description}
                 </p>
             </motion.div>
