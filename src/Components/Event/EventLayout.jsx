@@ -18,7 +18,7 @@ const EventLayout = () => {
     // const nonTechIcon = "";
     // const webinarIcon = <WebinarSvg />;
     return (
-        <div className="py-20 px-8 sm:px-12 md:px-24">
+        <div className="overflow-x-hidden py-20 pl-8 sm:px-12 md:px-24">
             <h1 className="text-2xl sm:text-4xl font-semibold underline underline-offset-8 text-left mb-16">
                 Timeline of Events
             </h1>

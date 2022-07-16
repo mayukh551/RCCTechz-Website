@@ -20,15 +20,15 @@ const ClubFeatures = () => {
                 Club Features
             </div>
             <div className="flex flex-col justify-center items-center gap-y-11">
-                <div className=" bg-white border-[1px] shadow-xl rounded-xl min-h-[150px] w-[90%] md:w-[500px] py-4 px-8 flex flex-row gap-x-10 justify-center items-center font-semibold">
+                <div className=" bg-white border-[1px] shadow-xl rounded-xl min-h-[150px] w-[90%] md:w-[500px] py-4 px-8 flex flex-row gap-x-10 items-center font-semibold">
                     <img src={resources} alt="resrources" className="w-20" />
                     <p>Get access to unlimited resources</p>
                 </div>
-                <div className=" bg-white border-[1px] shadow-xl rounded-xl min-h-[150px] w-[90%] md:w-[500px] py-4 px-8 flex flex-row gap-x-10 justify-center items-center font-semibold">
+                <div className=" bg-white border-[1px] shadow-xl rounded-xl min-h-[150px] w-[90%] md:w-[500px] py-4 px-8 flex flex-row gap-x-10 items-center font-semibold">
                     <img src={server} alt="server" className="w-20" />
                     <p>Optimize our website, with better performance and UI</p>
                 </div>
-                <div className=" bg-white border-[1px] shadow-xl rounded-xl min-h-[150px] w-[90%] md:w-[500px] py-4 px-8 flex flex-row gap-x-10 justify-center items-center font-semibold">
+                <div className=" bg-white border-[1px] shadow-xl rounded-xl min-h-[150px] w-[90%] md:w-[500px] py-4 px-8 flex flex-row gap-x-10 items-center font-semibold">
                     <img src={website} alt="website" className="w-20" />
                     <p>Showcase your projects on our website</p>
                 </div>

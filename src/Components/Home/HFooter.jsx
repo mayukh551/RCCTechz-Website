@@ -12,21 +12,19 @@ const HFooter = () => {
                     >
                         <img src={clubLogo} alt="RCCTechz" />
                     </a>
-                    <p className="mt-2 text-sm text-gray-500">
-                        <div>
-                            Created by{" "}
+                    <div className="mt-2 text-sm text-gray-500">
+                        Created by{" "}
+                        <div className="w-full mb-3">
                             <a
                                 href="https://www.linkedin.com/in/mayukh-bhowmick-44533a201/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span className="text-white">
-                                    Mayukh Bhowmick
-                                </span>
+                                <div className="text-white">Mayukh Bhowmick</div>
+                                <div className="text-white">Soham Saha Roy</div>
                             </a>
                         </div>
-                        <div>CSE DEPT</div>
-                    </p>
+                    </div>
                 </div>
                 <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
                     {[1, 2, 3].map(() => {

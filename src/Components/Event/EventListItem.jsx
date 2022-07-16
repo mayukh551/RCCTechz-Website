@@ -13,7 +13,7 @@ const EventListItem = (props) => {
     }, [inView]);
 
     return (
-        <li className="w-[100%] md:w-[90%] lg:w-[45rem] mb-10 ml-5 md:ml-10" ref={ref}>
+        <li className="w-[90%] lg:w-[45rem] mb-10 ml-5 md:ml-10" ref={ref}>
             <motion.span
                 className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
                 initial={{ scale: 0.6 }}

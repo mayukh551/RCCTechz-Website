@@ -9,7 +9,7 @@ const Header = () => {
         <div className={`relative min-h-screen ${classes.header__image}`}>
             <Navbar />
             <div
-                className={`h-full flex flex-col lg:flex-row items-center lg:justify-evenly text-4xl lg:text-6xl text-white font-semibold `}
+                className={`h-full flex flex-col lg:flex-row items-center lg:justify-evenly text-4xl lg:text-6xl text-white font-semibold`}
             >
                 <motion.img
                     src={clubLogo}
@@ -30,7 +30,7 @@ const Header = () => {
                         }}
                         className="mb-6"
                     >
-                        The Tech Club
+                        Home for
                     </motion.div>
                     <motion.div
                         initial={{ y: "100%", opacity: 0 }}
@@ -41,7 +41,8 @@ const Header = () => {
                             duration: 0.5,
                         }}
                     >
-                        of <span className={`text-cyan-600`}>RCC</span>IIT
+                        {/* of <span className={`text-cyan-600`}>RCC</span>IIT */}
+                        <span className={`text-cyan-500 sm:text-cyan-800 font-bold`}>Nerds</span> & <span className={`text-green-500 sm:text-green-800 font-bold`}>Geeks</span>
                     </motion.div>
                 </div>
             </div>
