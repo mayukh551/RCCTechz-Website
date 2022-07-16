@@ -37,7 +37,7 @@ const Domains = () => {
     const domainTitle = useRef(null);
 
     const { ref, inView } = useInView({
-        threshold: 0.3,
+        threshold: 0.1,
     });
     const [startAnimation, setStartAnimation] = useState(false);
 
@@ -70,6 +70,13 @@ const Domains = () => {
             >
                 Domains
             </div>
+            <div className="my-10">
+                <img
+                    src="https://images.unsplash.com/photo-1596949469909-5217f8b68f23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="domainImg"
+                    className="rounded-xl w-[50%] mx-auto shadow-xl"
+                />
+            </div>
             <div
                 ref={ref}
                 // className={`relative py-11 px-10 justify-items-center grid md:grid-rows-2 md:grid-cols-2 md:grid-flow-col gap-y-7 md:gap-y-16 bg-slate-800 h-screen`}
@@ -88,8 +95,10 @@ const Domains = () => {
                 })}
             </div>
             <div className="text-center">
-                <Link to='/team'>
-                    <button className="mt-8 rounded-lg text-white py-3 px-8 hover:bg-green-800 bg-green-700">View Team</button>
+                <Link to="/team">
+                    <button className="mt-8 rounded-lg text-white py-3 px-8 hover:bg-green-800 bg-green-700">
+                        View Team
+                    </button>
                 </Link>
             </div>
         </div>

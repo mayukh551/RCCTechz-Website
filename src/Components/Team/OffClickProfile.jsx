@@ -92,23 +92,21 @@ const OffClickProfile = (props) => {
                                 </li>
                             </motion.ul>
                         )}
-                        {displayBtn && (
-                            <>
-                                <motion.button
-                                    onClick={() =>
-                                        updateProfileView(coreMember)
-                                    }
-                                    className="absolute z-50 opacity-100 px-7 py-3 bg-green-800 hover:bg-green-900 text-white font-bold rounded-[10px] text-base"
-                                    initial={{ y: -50 }}
-                                    animate={{ y: 1 }}
-                                    transition={{ duration: 0.2 }}
-                                    exit={{ y: -50, opacity: 0 }}
-                                >
-                                    View Profile
-                                </motion.button>
-                            </>
-                        )}
                     </AnimatePresence>
+                    {displayBtn && (
+                        <>
+                            <motion.button
+                                onClick={() => updateProfileView(coreMember)}
+                                className="absolute z-50 opacity-100 px-7 py-3 bg-green-800 hover:bg-green-900 text-white font-bold rounded-[10px] text-base"
+                                initial={{ y: -50 }}
+                                animate={{ y: 1 }}
+                                transition={{ duration: 0.2 }}
+                                // exit={{ y: -50, opacity: 0 }}
+                            >
+                                View Profile
+                            </motion.button>
+                        </>
+                    )}
                 </div>
             </ProfileCard>
         </Fragment>
