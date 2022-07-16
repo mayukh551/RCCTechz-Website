@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
     return (
-        <div className={`relative h-screen ${classes.header__image}`}>
+        <div className={`relative min-h-screen ${classes.header__image}`}>
             <Navbar />
             <div
                 className={`h-full flex flex-col lg:flex-row items-center lg:justify-evenly text-4xl lg:text-6xl text-white font-semibold `}
