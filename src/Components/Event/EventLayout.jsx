@@ -18,12 +18,10 @@ const EventLayout = () => {
     // const nonTechIcon = "";
     // const webinarIcon = <WebinarSvg />;
     return (
-        <div className="py-20 px-12 md:px-24">
+        <div className="py-20 px-8 sm:px-12 md:px-24">
             <h1 className="text-2xl sm:text-4xl font-semibold underline underline-offset-8 text-left mb-16">
                 Timeline of Events
             </h1>
-            {/* <div className="h-[380px]"></div> */}
-
             <ol className="relative border-l border-gray-200 dark:border-gray-700">
                 {eventData.map((event, index) => {
                     return <EventListItem event={event} index={index} />;

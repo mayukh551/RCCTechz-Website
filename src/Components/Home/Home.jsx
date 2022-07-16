@@ -5,6 +5,7 @@ import WhatWeDo from "./WhatWeDo";
 import HFooter from "./HFooter";
 import Domains from "./Domains";
 import Stats from "./Stats";
+import ClubFeatures from "./ClubFeatures";
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <DefineClub />
             <WhatWeDo />
             <Stats />
+            <ClubFeatures />
             <Domains />
             <HFooter />
         </div>

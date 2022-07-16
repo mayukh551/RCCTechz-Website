@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import DomainCard from "./DomainCard";
 
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 const Domains = () => {
     const [domainDetails, setNewDomainDetails] = useState([
@@ -9,31 +10,27 @@ const Domains = () => {
             show: false,
             manager: "Soham Saha Roy",
             domainName: "Web Development",
-            
         },
         {
             show: false,
             manager: "Soham Banerjee",
             domainName: "Cyber Security",
-            
         },
         {
             show: false,
             manager: "Nishant Thakur",
             domainName: "Competitive Programming",
-            
         },
         {
             show: false,
             manager: "Rishav Mandal",
             domainName: "App Development",
-            
         },
         {
             show: false,
             manager: "Triasis Ghosh",
             // domainName: "Artificial Intelligence & Machine Learning",
-            domainName: "AI/ML",     
+            domainName: "AI/ML",
         },
     ]);
 
@@ -89,6 +86,11 @@ const Domains = () => {
                         />
                     );
                 })}
+            </div>
+            <div className="text-center">
+                <Link to='/team'>
+                    <button className="mt-8 rounded-lg text-white py-3 px-8 hover:bg-green-800 bg-green-700">View Team</button>
+                </Link>
             </div>
         </div>
     );
