@@ -3,6 +3,13 @@
 
 const eventData = [
     {
+        title: "Webify-22 Challenge-1",
+        date: "16th July, 2022",
+        platform: "Discord",
+        description: "A challenge for everyone to build and host their websites with the best UI using HTML and CSS",
+        speaker: ""
+    },
+    {
         title: "Diving into Git",
         date: "3rd June, 2022",
         platform: "Gmeet",

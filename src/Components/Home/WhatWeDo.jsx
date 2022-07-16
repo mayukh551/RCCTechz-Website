@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-import angular from '../../SVGs/angular.svg'
+import angular from "../../SVGs/angular.svg";
 import jsLogo from "../../SVGs/js.svg";
 import javaLogo from "../../SVGs/java.svg";
-import gitLogo from  '../../SVGs/git-svgrepo-com.svg'
-import class1 from '../../SVGs/feat.svg'
-import class2 from '../../SVGs/doubt.svg'
-import class3 from '../../SVGs/coding-svgrepo-com.svg'
-import contestLogo1 from '../../SVGs/competition-svgrepo-com.svg'
-import contestLogo2 from '../../SVGs/hackerrank-svgrepo-com.svg'
+import gitLogo from "../../SVGs/git-svgrepo-com.svg";
+import class1 from "../../SVGs/feat.svg";
+import class2 from "../../SVGs/doubt.svg";
+import class3 from "../../SVGs/coding-svgrepo-com.svg";
+import contestLogo1 from "../../SVGs/competition-svgrepo-com.svg";
+import contestLogo2 from "../../SVGs/hackerrank-svgrepo-com.svg";
 
 const WhatWeDo = () => {
     const { ref, inView } = useInView({
@@ -39,7 +39,7 @@ const WhatWeDo = () => {
             ref={ref}
         >
             <h1 className="text-center w-full text-2xl sm:text-5xl border-white mb-16">
-                What we do?
+                {`const ourWork = () => { }`}
             </h1>
             <motion.div
                 initial={{ opacity: 0, y: "50%" }}
@@ -55,25 +55,61 @@ const WhatWeDo = () => {
                                 {i === 0 && (
                                     // <button class="mt-3 rounded-lg py-2 px-4 text-white bg-indigo-500"></button>
                                     <div className="flex gap-x-3">
-                                        <img src={contestLogo1} alt="logo" className="w-11"/>
-                                        <img src={contestLogo2} alt="logo" className="w-11"/>
+                                        <img
+                                            src={contestLogo1}
+                                            alt="logo"
+                                            className="w-11"
+                                        />
+                                        <img
+                                            src={contestLogo2}
+                                            alt="logo"
+                                            className="w-11"
+                                        />
                                     </div>
                                 )}
                                 {i === 1 && (
                                     // <button class="mt-3 rounded-lg py-2 px-4 text-white bg-indigo-500"></button>
                                     <div className="flex gap-x-3">
-                                        <img src={class1} alt="logo" className="w-11"/>
-                                        <img src={class2} alt="logo" className="w-11"/>
-                                        <img src={class3} alt="logo" className="w-11"/>
+                                        <img
+                                            src={class1}
+                                            alt="logo"
+                                            className="w-11"
+                                        />
+                                        <img
+                                            src={class2}
+                                            alt="logo"
+                                            className="w-11"
+                                        />
+                                        <img
+                                            src={class3}
+                                            alt="logo"
+                                            className="w-11"
+                                        />
                                     </div>
                                 )}
                                 {i === 2 && (
                                     // <button class="mt-3 rounded-lg py-2 px-4 text-white bg-indigo-500"></button>
                                     <div className="flex gap-x-3">
-                                        <img src={angular} alt="logo" className="w-11"/>
-                                        <img src={jsLogo} alt="logo" className="w-14"/>
-                                        <img src={gitLogo} alt="logo" className="w-11"/>
-                                        <img src={javaLogo} alt="logo" className="w-11"/>
+                                        <img
+                                            src={angular}
+                                            alt="logo"
+                                            className="w-11"
+                                        />
+                                        <img
+                                            src={jsLogo}
+                                            alt="logo"
+                                            className="w-14"
+                                        />
+                                        <img
+                                            src={gitLogo}
+                                            alt="logo"
+                                            className="w-11"
+                                        />
+                                        <img
+                                            src={javaLogo}
+                                            alt="logo"
+                                            className="w-11"
+                                        />
                                     </div>
                                 )}
                             </div>

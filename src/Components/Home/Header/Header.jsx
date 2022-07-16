@@ -42,7 +42,7 @@ const Header = () => {
                         }}
                     >
                         {/* of <span className={`text-cyan-600`}>RCC</span>IIT */}
-                        <span className={`text-cyan-500 sm:text-cyan-800 font-bold`}>Nerds</span> & <span className={`text-green-500 sm:text-green-800 font-bold`}>Geeks</span>
+                        <span className={`text-cyan-500 lg:text-cyan-800 font-bold`}>Nerds</span> & <span className={`text-green-500 lg:text-green-800 font-bold`}>Geeks</span>
                     </motion.div>
                 </div>
             </div>
