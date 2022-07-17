@@ -26,7 +26,7 @@ const DefineClub = () => {
 
     return (
         <div
-            className={`relative py-11 h-auto sm:min-h-screen text-black`}
+            className={`relative py-11 h-auto text-black`}
             style={{ backgroundColor: "#f5ebe0" }}
             ref={ref}
         >
@@ -36,7 +36,7 @@ const DefineClub = () => {
                 animate={startAnimation && { opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
             >
-                <h1 className="text-2xl sm:text-5xl text-center mt-32">
+                <h1 className="text-3xl font-semibold sm:text-5xl text-center mt-32">
                     var Club
                 </h1>
                 <p className="w-[60%] md:w-[500px] font-medium text-xl 2xl:text-2xl text-center">

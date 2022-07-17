@@ -28,24 +28,24 @@ const ProjectHeader = () => {
                 </div>
                 <ProjectsStats />
                 <div className="flex flex-wrap justify-center gap-8 px-6">
-                    <img className="w-12" src={pythonLogo} alt="python" />
-                    <img className="w-12" src={cppLogo} alt="cpp" />
-                    <img className="w-12" src={cSharpLogo} alt="cSharp" />
-                    <img className="w-12" src={javaLogo} alt="java" />
-                    <img className="w-12" src={htmlLogo} alt="html" />
-                    <img className="w-12" src={css3Logo} alt="css3" />
+                    <img className="w-9 sm:w-12" src={pythonLogo} alt="python" />
+                    <img className="w-9 sm:w-12" src={cppLogo} alt="cpp" />
+                    <img className="w-9 sm:w-12" src={cSharpLogo} alt="cSharp" />
+                    <img className="w-9 sm:w-12" src={javaLogo} alt="java" />
+                    <img className="w-9 sm:w-12" src={htmlLogo} alt="html" />
+                    <img className="w-9 sm:w-12" src={css3Logo} alt="css3" />
                     <img
-                        className="w-12"
+                        className="w-9 sm:w-12"
                         src={typescriptLogo}
                         alt="typescript"
                     />
                     <img className="w-16" src={reactLogo} alt="react" />
-                    <img className="w-12" src={angularLogo} alt="angular" />
-                    <img className="w-12" src={vueLogo} alt="vue" />
-                    <img className="w-12" src={djangoLogo} alt="django" />
-                    <img className="w-12" src={googleLogo} alt="googleCloud" />
-                    <img className="w-12" src={flutterLogo} alt="flutter" />
-                    <img className="w-12" src={mongodbLogo} alt="mongodb" />
+                    <img className="w-9 sm:w-12" src={angularLogo} alt="angular" />
+                    <img className="w-9 sm:w-12" src={vueLogo} alt="vue" />
+                    <img className="w-9 sm:w-12" src={djangoLogo} alt="django" />
+                    <img className="w-9 sm:w-12" src={googleLogo} alt="googleCloud" />
+                    <img className="w-9 sm:w-12" src={flutterLogo} alt="flutter" />
+                    <img className="w-9 sm:w-12" src={mongodbLogo} alt="mongodb" />
                 </div>
             </div>
         </div>

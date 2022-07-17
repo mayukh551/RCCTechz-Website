@@ -16,7 +16,7 @@ const ClubFeatures = () => {
                 backgroundRepeat: "no-repeat",
             }}
         >
-            <div className="text-4xl rounded-xl lg:text-6xl px-8 py-4 bg-white p-4 text-center mb-6 mx-auto max-w-lg">
+            <div className="font-semibold text-4xl rounded-xl lg:text-6xl px-8 py-4 bg-white p-4 text-center mb-6 mx-auto max-w-lg">
                 Club Features
             </div>
             <div className="flex flex-col justify-center items-center gap-y-11">

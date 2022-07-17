@@ -34,11 +34,11 @@ const WhatWeDo = () => {
 
     return (
         <div
-            className={`relative py-6 px-4 min-h-screen`}
+            className={`relative py-14 px-4 min-h-screen`}
             style={{ backgroundColor: "#f5ebe0" }}
             ref={ref}
         >
-            <h1 className="text-center w-full text-2xl sm:text-5xl border-white mb-16">
+            <h1 className="text-center w-full font-semibold text-3xl sm:text-5xl border-white mb-16">
                 {`const ourWork = () => { }`}
             </h1>
             <motion.div
@@ -120,7 +120,7 @@ const WhatWeDo = () => {
 
             {/* All SVGs */}
             {/* <SvgLogoList styleSvg={""} /> */}
-            <div className="my-28">
+            <div className="mt-28">
                 <motion.img
                     className="img mx-auto w-[80%] md:w-[70%] h-auto rounded-lg shadow-2xl"
                     src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29tcHV0ZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
