@@ -23,16 +23,16 @@ const OffClickProfile = (props) => {
         props.displayModal(pInfo);
     };
 
-    const mouseEventHandler = () => {
-        setDisplayBtn((prevCond) => !prevCond);
-    };
+    // const mouseEventHandler = () => {
+    //     setDisplayBtn((prevCond) => !prevCond);
+    // };
 
     console.log("OffClickProfile Comp");
     return (
         <Fragment>
             <ProfileCard
                 Card
-                mouseEventHandler={mouseEventHandler}
+                // mouseEventHandler={mouseEventHandler}
                 hoverAnim={displayBtn}
                 // styleCard="z-10 relative cursor-default transition-all duration-200 w-[90%] sm:w-[320px] h-[360px] bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
                 styleCard="z-10 relative cursor-default transition-all duration-200 w-[90%] sm:w-[320px] h-[360px] rounded-lg shadow-2xl bg-gray-800"
@@ -44,8 +44,9 @@ const OffClickProfile = (props) => {
                 >
                     <div>
                         <img
-                            className="mb-6 min-w-full sm:w-44 rounded-full shadow-lg mt-8"
-                            src={`https://randomuser.me/api/portraits/men/14.jpg`}
+                            className="object-center object-cover mb-6 min-w-full sm:w-44 h-48 rounded-xl shadow-lg mt-8"
+                            // src={`https://randomuser.me/api/portraits/men/14.jpg`}
+                            src={coreMember.img}
                             alt="team profile"
                         />
                     </div>

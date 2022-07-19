@@ -1,9 +1,8 @@
 import { Fragment } from "react";
-import teamData from "../Team/TechzTeamInfo/teamInfo.json";
+import { teamData } from "./TechzTeamInfo/teamInfo";
 import OffClickProfile from "./OffClickProfile";
 
 const Members = (props) => {
-
     console.log("Members Comp");
     const coreTeamDetails = teamData.coreTeamMembers;
     const domainManagerDetails = teamData.domainManagers;

@@ -9,17 +9,18 @@ const Header = () => {
         <div className={`relative min-h-screen ${classes.header__image}`}>
             <Navbar />
             <div
-                className={`h-full flex flex-col lg:flex-row items-center lg:justify-evenly text-4xl lg:text-6xl text-white font-semibold`}
+                // className={`h-full flex flex-col lg:flex-row items-center lg:justify-evenly text-4xl lg:text-6xl text-white font-semibold`}
+                className={`h-full flex flex-col pl-10 items-start text-4xl lg:text-6xl text-white font-semibold`}
             >
                 <motion.img
                     src={clubLogo}
                     alt="RCCTechz"
-                    className="w-96 lg:w-[480px]"
+                    className="w-96 lg:w-[450px]"
                     initial={{ opacity: 0.2, scale: 0.6 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6 }}
                 />
-                <div>
+                <div className="pl-10">
                     <motion.div
                         initial={{ y: "100%", opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
@@ -30,7 +31,7 @@ const Header = () => {
                         }}
                         className="mb-6"
                     >
-                        Home for
+                        Club for
                     </motion.div>
                     <motion.div
                         initial={{ y: "100%", opacity: 0 }}
@@ -42,7 +43,7 @@ const Header = () => {
                         }}
                     >
                         {/* of <span className={`text-cyan-600`}>RCC</span>IIT */}
-                        <span className={`text-cyan-500 lg:text-cyan-800 font-bold`}>Nerds</span> & <span className={`text-green-500 lg:text-green-800 font-bold`}>Geeks</span>
+                        <span className={`text-cyan-600 font-bold`}>Nerds</span> & <span className={`text-green-600 font-bold`}>Geeks</span>
                     </motion.div>
                 </div>
             </div>
