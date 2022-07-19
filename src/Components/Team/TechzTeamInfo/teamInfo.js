@@ -10,7 +10,7 @@ import ai_mlDM from '../Team_Images/TRIASIS GHOSH.jpeg'
 import webDevDM from '../Team_Images/Soham Saha Roy.jpeg';
 import contentHeadImg from '../Team_Images/SOHAM IT.PNG';
 import graphicsHeadImg from '../Team_Images/Sayani Patra.PNG';
-// import nonTechHeadImg from '../Team_Images/SHAGNIK MUKHERJEE.jpg';
+import techHeadImg from '../Team_Images/ARITRA BELEL.jpg';
 
 
 export const teamData = {
@@ -33,7 +33,7 @@ export const teamData = {
     {
         name: "MD Hasanuj Jaman Hossain",
         img: eventManagerImg,
-        profession: "Gaachhe chora",
+        profession: "Competitive Programming Enthusiast",
         clubRole: "Event Manager",
         dept: "CSE",
         year: 3
@@ -47,8 +47,8 @@ export const teamData = {
         year: 3
     },
     {
-        name: "Shirsasish Sarkar",
-        img: '',
+        name: "Aritra Belel",
+        img: techHeadImg,
         profession: "PHP Developer",
         clubRole: "Tech Head",
         dept: "CSE",
@@ -67,7 +67,7 @@ export const teamData = {
     domainManagers: [{
         name: "Soham Saha Roy",
         img: webDevDM,
-        profession: "React Developer",
+        profession: "MERN Developer",
         clubRole: "WebDev",
         dept: "CSE",
         year: 3
