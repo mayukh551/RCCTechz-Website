@@ -13,7 +13,7 @@ const Project = () => {
                 {projectData.map((project, index) => {
                     return (
                         <div
-                            className="shadow-2xl rounded-lg py-7 px-7 bg-white w-[90%] md:w-[50%] flex flex-col items-center md:items-start gap-y-6 justify-evenly"
+                            className="shadow-2xl rounded-lg py-7 px-7 bg-white w-[90%] md:w-[50%] hover:scale-110 transition-transform duration-200 flex flex-col items-center md:items-start gap-y-6 justify-evenly"
                             style={{ backgroundColor: "#2a9d8f" }}
                         >
                             <h3 className="text-center text-lg lg:text-2xl font-bold underline underline-offset-8">
@@ -74,6 +74,7 @@ const Project = () => {
                         // </div>
                     );
                 })}
+                <div className="text-3xl text-white ">More Projects to Come . . .</div>
             </div>
         </div>
     );

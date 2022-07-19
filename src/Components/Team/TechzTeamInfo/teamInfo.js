@@ -5,8 +5,11 @@ import nonTechHeadImg from '../Team_Images/SHAGNIK MUKHERJEE.jpg';
 import cpDMImg from '../Team_Images/NISHANT THAKUR.jpeg';
 import coordinatorImg from '../Team_Images/LinkedInProfile.jpeg';
 import cyberSecurityImg from '../Team_Images/SOHAM BANERJEE.jpg';
-// import nonTechHeadImg from '../Team_Images/SHAGNIK MUKHERJEE.jpg';
-// import nonTechHeadImg from '../Team_Images/SHAGNIK MUKHERJEE.jpg';
+import appDevDM from '../Team_Images/RISHAV MANDAL.jpg';
+import ai_mlDM from '../Team_Images/TRIASIS GHOSH.jpeg'
+import webDevDM from '../Team_Images/Soham Saha Roy.jpeg';
+import contentHeadImg from '../Team_Images/SOHAM IT.PNG';
+import graphicsHeadImg from '../Team_Images/Sayani Patra.PNG';
 // import nonTechHeadImg from '../Team_Images/SHAGNIK MUKHERJEE.jpg';
 
 
@@ -63,7 +66,7 @@ export const teamData = {
 
     domainManagers: [{
         name: "Soham Saha Roy",
-        img: '',
+        img: webDevDM,
         profession: "React Developer",
         clubRole: "WebDev",
         dept: "CSE",
@@ -79,7 +82,7 @@ export const teamData = {
     },
     {
         name: "Rishav Mandal",
-        img: '',
+        img: appDevDM,
         profession: "Android Developer",
         clubRole: "AppDev",
         dept: "CSE",
@@ -95,7 +98,7 @@ export const teamData = {
     },
     {
         name: "Triasis Ghosh",
-        img: '',
+        img: ai_mlDM,
         profession: "ML Engineer",
         clubRole: "AI/ML",
         dept: "CSE",
@@ -103,7 +106,7 @@ export const teamData = {
     },
     {
         name: "Sayani Patra",
-        img: '',
+        img: graphicsHeadImg,
         profession: "ML Engineer",
         clubRole: "Graphics Head",
         dept: "CSE",
@@ -111,8 +114,8 @@ export const teamData = {
     },
     {
         name: "Soham Sarkar",
-        img: '',
-        profession: "ML Engineer",
+        img: contentHeadImg,
+        profession: "Technical Writer",
         clubRole: "Content Head",
         dept: "IT",
         year: 3

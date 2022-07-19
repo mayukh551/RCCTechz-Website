@@ -65,11 +65,11 @@ const projectData = [
     },
     {
         img: '',
-        title: 'Movie-Success-Predictor Desktop App',
-        team: ['Mayukh Bhowmick', 'Rounak Hazra', 'Abesh Biswas'],
+        title: 'FoodieApp',
+        team: ['Nishant Thakur', 'Suryasnata Saha'],
         url: '',
-        description: 'blah blah blah',
-        repoLink: 'https://www.github.com',
+        description: 'N/A',
+        repoLink: 'https://github.com/Nishantthakur62/FoodieApp',
     },
     {
         img: '',

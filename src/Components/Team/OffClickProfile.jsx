@@ -44,7 +44,7 @@ const OffClickProfile = (props) => {
                 >
                     <div>
                         <img
-                            className="object-center object-cover mb-6 min-w-full sm:w-44 h-48 rounded-xl shadow-lg mt-8"
+                            className="object-center object-cover mb-6 min-w-full sm:w-44 h-44 rounded-full shadow-lg mt-8"
                             // src={`https://randomuser.me/api/portraits/men/14.jpg`}
                             src={coreMember.img}
                             alt="team profile"

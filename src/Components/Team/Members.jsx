@@ -44,8 +44,14 @@ const Members = (props) => {
                 </div>
             </div>
             <div className="sm:px-10 mb-20">
-                <h1 className="cursor-pointer hover:text-emerald-400 hover:decoration-white duration-200 mb-9 text-3xl sm:text-5xl text-left underline underline-offset-8 decoration-emerald-400">
-                    Other Members
+                <h1 className="text-center cursor-pointer hover:text-emerald-400 hover:decoration-white duration-200 mb-9 text-3xl sm:text-5xl underline underline-offset-8 decoration-emerald-400">
+                    <a
+                        href="https://drive.google.com/file/d/1uzCzVDaAVNfvvJhLr6QJCJOZzYPyaHCF/view?usp=sharing"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Click to view Other Members
+                    </a>
                 </h1>
                 {/* <div className="py-10 flex flex-wrap justify-center gap-x-11 gap-y-16 place-items-center">
                     {founderDetails.map((member) => {

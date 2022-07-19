@@ -10,7 +10,7 @@ const Header = () => {
             <Navbar />
             <div
                 // className={`h-full flex flex-col lg:flex-row items-center lg:justify-evenly text-4xl lg:text-6xl text-white font-semibold`}
-                className={`h-full flex flex-col pl-10 items-start text-4xl lg:text-6xl text-white font-semibold`}
+                className={`px-9 h-screen flex flex-col lg:flex-row items-center lg:justify-between text-4xl lg:text-6xl text-white font-semibold w-full`}
             >
                 <motion.img
                     src={clubLogo}
