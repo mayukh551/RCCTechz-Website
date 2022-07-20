@@ -24,13 +24,13 @@ const HFooter = () => {
                                     Mayukh Bhowmick
                                 </div>
                             </a>
-                            <a
+                            {/* <a
                                 href="https://www.linkedin.com/in/soham-saha-roy-788115206/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 <div className="text-white">Soham Saha Roy</div>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
