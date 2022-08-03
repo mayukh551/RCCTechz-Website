@@ -1,7 +1,8 @@
 import ProfileCard from "../UI/ProfileCard";
 import { useState, Fragment } from "react";
-
 import { motion, AnimatePresence } from "framer-motion";
+import { getDownloadURL } from "firebase/storage";
+import { useEffect } from "react";
 
 const CardBackdrop = () => {
     return (
@@ -14,6 +15,8 @@ const OffClickProfile = (props) => {
 
     const [displayBtn, setDisplayBtn] = useState(false);
 
+    const [imgView, setImgView] = useState(null);
+
     const updateProfileView = (pInfo) => {
         console.log("Profile Clicked!");
         console.log(pInfo);
@@ -22,6 +25,24 @@ const OffClickProfile = (props) => {
 
         props.displayModal(pInfo);
     };
+
+    useEffect(() => {
+        async function findImgFromDb() {
+            var imgIndex = props.imgList.findIndex((item) => {
+                var orderNo = item.fullPath.indexOf(".");
+                return (
+                    // eslint-disable-next-line eqeqeq
+                    item.fullPath.slice(orderNo - 1, orderNo) == props.index + 1
+                );
+            });
+            getDownloadURL(props.imgList[imgIndex]).then((url) => {
+                setImgView(url);
+            });
+        }
+
+        findImgFromDb();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     // const mouseEventHandler = () => {
     //     setDisplayBtn((prevCond) => !prevCond);
@@ -43,10 +64,11 @@ const OffClickProfile = (props) => {
                     // style={{ background: "#22223b" }}
                 >
                     <div>
+                        {/* {console.log(imgView)} */}
                         <img
                             className="object-center object-cover mb-6 w-44 h-44 rounded-full shadow-lg mt-8"
-                            // src={`https://randomuser.me/api/portraits/men/14.jpg`}
-                            src={coreMember.img}
+                            // src={props.memberType ? imgView : coreMember.img}
+                            src={imgView}
                             alt="team profile"
                         />
                     </div>
