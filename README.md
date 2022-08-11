@@ -6,14 +6,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Tools Used :
-[![](https://skillicons.dev/icons?i=js,html,css,react,firebase)](https://skillicons.dev, https://reactjs.org/)
-[![](https://skillicons.dev/icons?i=js,html,css,react,firebase)](https://skillicons.dev)
-[![](https://skillicons.dev/icons?i=js,html,css,react,firebase)](https://skillicons.dev)
-[![](https://skillicons.dev/icons?i=react)](https://reactjs.org/)
 [![](https://skillicons.dev/icons?i=tailwind)](https://tailwindcss.com/)
+[![](https://skillicons.dev/icons?i=js)](https://www.javascript.com/)
+[![](https://skillicons.dev/icons?i=react)](https://reactjs.org/)
+[![](https://skillicons.dev/icons?i=js,html,css,react,firebase)](https://firebase.google.com/)
 
 ## Hosted on :
-[![](https://skillicons.dev/icons?i=netlify)](https://skillicons.dev)
+[![](https://skillicons.dev/icons?i=netlify)](https://www.netlify.com/)
 
 ### Make sure to run the following command before 'npm start'
 ```
