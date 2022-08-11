@@ -6,7 +6,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Tools Used :
-[![](https://skillicons.dev/icons?i=js,html,css,react,firebase)](https://skillicons.dev)(https://reactjs.org/)
+[![](https://skillicons.dev/icons?i=js,html,css,react,firebase)](https://skillicons.dev, https://reactjs.org/)
 [![](https://skillicons.dev/icons?i=js,html,css,react,firebase)](https://skillicons.dev)
 [![](https://skillicons.dev/icons?i=js,html,css,react,firebase)](https://skillicons.dev)
 [![](https://skillicons.dev/icons?i=react)](https://reactjs.org/)
