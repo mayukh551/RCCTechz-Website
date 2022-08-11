@@ -51,16 +51,16 @@ export const teamData = {
         year: 3
     },
     {
-        name: "Soham Banerjee",
-        profession: "Software Security Engineer",
-        clubRole: "Cyber Security",
+        name: "Rishav Mandal",
+        profession: "Android Developer",
+        clubRole: "AppDev",
         dept: "CSE",
         year: 3
     },
     {
-        name: "Rishav Mandal",
-        profession: "Android Developer",
-        clubRole: "AppDev",
+        name: "Soham Banerjee",
+        profession: "Software Security Engineer",
+        clubRole: "Cyber Security",
         dept: "CSE",
         year: 3
     },
