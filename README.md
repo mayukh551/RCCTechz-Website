@@ -1,11 +1,11 @@
 # RCCTechz Website
-![URL](https://effortless-cendol-448ae6.netlify.app/)
+[URL](https://effortless-cendol-448ae6.netlify.app/)
 
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##Tools Used :
+## Tools Used :
 [![](https://skillicons.dev/icons?i=js,html,css,react,firebase,tailwind)](https://skillicons.dev)
 
 ## Make sure install node_modules before 'npm start'
