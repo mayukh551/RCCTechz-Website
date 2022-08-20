@@ -1,7 +1,10 @@
 import React from "react";
 import clubLogo from "../../Images/RCC Techz (White).png";
+import { useNavigate } from "react-router-dom";
 
 const HFooter = () => {
+    const navigate = useNavigate();
+
     return (
         <footer className="text-gray-400 bg-gray-900 body-font">
             <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
@@ -42,29 +45,23 @@ const HFooter = () => {
                                     Quick Links
                                 </h2>
                                 <nav className="flex gap-x-7 lg:gap-x-20 flex-col gap-y-9 md:gap-y-0 md:flex-row list-none mb-10">
-                                    <li>
-                                        <a
-                                            href="/"
-                                            className="text-gray-400 hover:text-white"
-                                        >
-                                            Go to Navbar
-                                        </a>
+                                    <li
+                                        onClick={() => navigate("/projects")}
+                                        className="text-gray-400 hover:text-white cursor-pointer"
+                                    >
+                                        Projects
                                     </li>
-                                    <li>
-                                        <a
-                                            href="/team"
-                                            className="text-gray-400 hover:text-white"
-                                        >
-                                            Team Page
-                                        </a>
+                                    <li
+                                        onClick={() => navigate("/team")}
+                                        className="text-gray-400 hover:text-white cursor-pointer"
+                                    >
+                                        Team Page
                                     </li>
-                                    <li>
-                                        <a
-                                            href="/events"
-                                            className="text-gray-400 hover:text-white"
-                                        >
-                                            Event Page
-                                        </a>
+                                    <li
+                                        onClick={() => navigate("/events")}
+                                        className="text-gray-400 hover:text-white cursor-pointer"
+                                    >
+                                        Event Page
                                     </li>
                                     <li>
                                         <a
