@@ -93,14 +93,6 @@ const HFooter = () => {
                 <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                     <p className="text-gray-400 text-sm text-center sm:text-left">
                         © 2022 RCCTechz
-                        {/* <a
-                            href="https://twitter.com/knyttneve"
-                            rel="noopener noreferrer"
-                            className="text-gray-500 ml-1"
-                            target="_blank"
-                        >
-                            @knyttneve
-                        </a> */}
                     </p>
                     <span className="inline-flex gap-x-2 sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                         <a
