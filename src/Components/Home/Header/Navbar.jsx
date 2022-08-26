@@ -12,17 +12,18 @@ const Navbar = (props) => {
 
     return (
         <Fragment>
-            <div className="relative h-[50px] w-full z-50 left-0 top-0">
+            <div className="relative h-[50px] w-full left-0 top-0">
                 <button
                     onClick={menuHandler}
-                    className={`inline-block md:hidden text-3xl text-white mt-2 ml-2 hover:text-cyan-500`}
+                    // className={`inline-block md:hidden text-3xl text-white mt-2 ml-2 hover:text-cyan-500`}
+                    className={`block absolute md:hidden text-3xl w-full text-white pl-2 py-[10px] top-0 left-0 text-left hover:text-cyan-500 ${(showMenubar? 'bg-black': '')}`}
                 >
                     <i className="bi bi-list"></i>
                 </button>
                 <motion.ul
                     className={
                         showMenubar
-                            ? `z-20 top-[50px] absolute text-white font-bold text-base text-center bg-black w-full`
+                            ? `top-[50px] z-50 absolute text-white font-bold text-base text-center bg-black w-full`
                             : `hidden h-full text-white font-bold text-lg md:flex md:flex-row md:justify-center md:text-center`
                     }
                 >

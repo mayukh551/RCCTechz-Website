@@ -13,8 +13,8 @@ const Home = () => {
             <Header />
             <DefineClub />
             <WhatWeDo />
-            <Stats />
             <ClubFeatures />
+            <Stats />
             <Domains />
             <HFooter />
         </div>
