@@ -75,7 +75,7 @@ const HFooter = () => {
                                     </li>
                                     <li>
                                         <a
-                                            href="https://github.com/RccTechz"
+                                            href="https://github.com/RCCTechzClub"
                                             className="text-gray-400 hover:text-white"
                                             rel="noreferrer"
                                             target="_blank"
