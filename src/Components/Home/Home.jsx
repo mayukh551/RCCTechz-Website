@@ -6,6 +6,7 @@ import HFooter from "./HFooter";
 import Domains from "./Domains";
 import Stats from "./Stats";
 import ClubFeatures from "./ClubFeatures";
+import Magazine from "./Magazine";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <DefineClub />
             <WhatWeDo />
             <ClubFeatures />
+            <Magazine />
             <Stats />
             <Domains />
             <HFooter />
