@@ -93,6 +93,71 @@ export const teamData = {
         year: 3
     }
     ],
+    graphicsDesigners: [{
+        name: "Sayani Patra",
+        profession: "ML Engineer",
+        order: 1,
+        clubRole: "Graphics Head",
+        dept: "CSE",
+        year: 3
+    },
+    {
+        name: "Shagnik Mukherjee",
+        profession: "UX/UI Designer",
+        order: 2,
+        clubRole: "Non-Tech Head",
+        dept: "ECE",
+        year: 3
+    },
+    {
+        name: "Urbi Chakraborty",
+        profession: "",
+        order: 3,
+        clubRole: "Graphics Designer",
+        dept: "CSE",
+        year: 2
+    },
+    {
+        name: "Amit Roy Chowdhury",
+        profession: "",
+        order: 4,
+        clubRole: "Video Animator",
+        dept: "IT",
+        year: 2
+    },
+    {
+        name: "Atalanta Dey",
+        profession: "",
+        order: 5,
+        clubRole: "Video Animator",
+        dept: "CSE",
+        year: 2
+    },
+    {
+        name: "Swastika Bose",
+        profession: "",
+        order: 6,
+        clubRole: "Graphics Designer",
+        dept: "CSE",
+        year: 2
+    },
+    {
+        name: "Soumyadeep Chakraborty",
+        profession: "",
+        order: 7,
+        clubRole: "Graphics Designer",
+        dept: "CSE",
+        year: 2
+    },
+    {
+        name: "Priyojit Kundu",
+        profession: "",
+        order: 8,
+        clubRole: "Graphics Designer",
+        dept: "CSE",
+        year: 2
+    }
+    ],
 
     founders: [{
         name: "Sourav Chakraborty",
