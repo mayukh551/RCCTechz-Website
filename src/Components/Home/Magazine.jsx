@@ -21,12 +21,12 @@ const Magazine = () => {
                     />
                 </a>
                 <div>
-                    <div className="font-semibold text-2xl space-y-4">
+                    <div className="font-semibold text-lg md:text-2xl space-y-4">
                         <div>Webinars</div>
                         <div>Tech and Non-Tech</div>
                         <div>Upcoming Events</div>
                     </div>
-                    <div className="mt-14 font-semibold text-xl">
+                    <div className="mt-14 font-semibold text-md md:text-xl">
                         Click on the Magazine to view
                     </div>
                 </div>
