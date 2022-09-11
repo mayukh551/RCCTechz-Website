@@ -18,7 +18,7 @@ const Members = (props) => {
     const [isGdLoading, setIsGdLoading] = useState(true);
 
     useEffect(() => {
-        fetchImagesFromFirebase("CoreTeam/").then((listOfImg) => {
+        fetchImagesFromFirebase("BoardTeam/").then((listOfImg) => {
             setImgList([...listOfImg]);
             setIsLoading(false);
         });
@@ -40,7 +40,7 @@ const Members = (props) => {
                 {!isLoading && (
                     <>
                         <h1 className="mb-9 text-3xl sm:text-5xl text-center underline underline-offset-8 decoration-emerald-400">
-                            Board Memebers
+                            Board Members
                         </h1>
                         <div className="py-10 flex flex-wrap justify-center gap-x-11 gap-y-16 place-items-center">
                             {coreTeamDetails.map((member, index) => {
