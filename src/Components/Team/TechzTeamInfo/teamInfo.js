@@ -21,7 +21,7 @@ export const teamData = {
         year: 3
     },
     {
-        name: "Aritra Belel",
+        name: "Shirsasish Sarkar",
         profession: "PHP Developer",
         clubRole: "Tech Head",
         dept: "CSE",
