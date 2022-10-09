@@ -137,7 +137,7 @@ export const teamData = {
         name: "Swastika Bose",
         profession: "",
         order: 6,
-        clubRole: "Graphics Designer",
+        clubRole: "Content Writer",
         dept: "CSE",
         year: 2
     },
@@ -154,6 +154,71 @@ export const teamData = {
         profession: "",
         order: 8,
         clubRole: "Graphics Designer",
+        dept: "CSE",
+        year: 2
+    }
+    ],
+    techTeam: [{
+        name: "Debopom Banerjee",
+        profession: "Web Developer",
+        order: 1,
+        clubRole: "Web Developer",
+        dept: "CSE",
+        year: 3
+    },
+    {
+        name: "Arghya Dutta ",
+        profession: "JavaScript Developer",
+        order: 2,
+        clubRole: "JavaScript Developer",
+        dept: "CSE",
+        year: 3
+    },
+    {
+        name: "Chayandev Bera",
+        profession: "Android Developer",
+        order: 3,
+        clubRole: "Kotlin Developer",
+        dept: "CSE",
+        year: 2
+    },
+    {
+        name: "Sansrita Saha",
+        profession: "Python Developer",
+        order: 4,
+        clubRole: "Web & Python Dev",
+        dept: "CSE",
+        year: 2
+    },
+    {
+        name: "Raj Mandal",
+        profession: "Web Developer",
+        order: 5,
+        clubRole: "Web Developer",
+        dept: "CSE",
+        year: 2
+    },
+    {
+        name: "Souvik Bhattacharya",
+        profession: "Web Developer",
+        order: 6,
+        clubRole: "Competitive Coder",
+        dept: "CSE",
+        year: 2
+    },
+    {
+        name: "Sambit Sarkar",
+        profession: "Flutter Developer",
+        order: 7,
+        clubRole: "Flutter Developer",
+        dept: "CSE",
+        year: 2
+    },
+    {
+        name: "Ranit Das",
+        profession: "Web Developer",
+        order: 8,
+        clubRole: "Web Developer",
         dept: "CSE",
         year: 2
     }

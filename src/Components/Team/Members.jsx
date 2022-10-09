@@ -9,35 +9,35 @@ const Members = (props) => {
     const coreTeamDetails = teamData.coreTeamMembers;
     const domainManagerDetails = teamData.domainManagers;
     const graphicsDesignersDetails = teamData.graphicsDesigners;
+    const techTeamDetails = teamData.techTeam;
 
-    const [imgList, setImgList] = useState([]);
-    const [dMimgList, setDmImgList] = useState([]);
-    const [gDimgList, setgDImgList] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
-    const [isDmLoading, setIsDmLoading] = useState(true);
-    const [isGdLoading, setIsGdLoading] = useState(true);
+    const [imgList, setImgList] = useState({ list: [], isLoading: true });
+    const [dMimgList, setDmImgList] = useState({ list: [], isLoading: true });
+    const [gDimgList, setgDImgList] = useState({ list: [], isLoading: true });
+    const [techImgList, setTechImgList] = useState({ list: [], isLoading: true });
 
     useEffect(() => {
         fetchImagesFromFirebase("BoardTeam/").then((listOfImg) => {
-            setImgList([...listOfImg]);
-            setIsLoading(false);
+            setImgList({ list: [...listOfImg], isLoading: false });
         });
 
         fetchImagesFromFirebase("DomainManagers/").then((listOfImg) => {
-            setDmImgList([...listOfImg]);
-            setIsDmLoading(false);
+            setDmImgList({ list: [...listOfImg], isLoading: false });
         });
 
-        fetchImagesFromFirebase("GraphicsDesigners/").then((gDimgList) => {
-            setgDImgList([...gDimgList]);
-            setIsGdLoading(false);
+        fetchImagesFromFirebase("GraphicsDesigners/").then((listOfImg) => {
+            setgDImgList({ list: [...listOfImg], isLoading: false });
+        });
+
+        fetchImagesFromFirebase("TechTeam/").then((listOfImg) => {
+            setTechImgList({ list: [...listOfImg], isLoading: false });
         });
     }, []);
 
     return (
         <Fragment>
             <div className="sm:px-10 pt-10 mb-20">
-                {!isLoading && (
+                {!imgList.isLoading && (
                     <>
                         <h1 className="mb-9 text-3xl sm:text-5xl text-center underline underline-offset-8 decoration-emerald-400">
                             Board Members
@@ -49,7 +49,7 @@ const Members = (props) => {
                                         key={index}
                                         coreMember={member}
                                         displayModal={props.displayModal}
-                                        imgList={imgList}
+                                        imgList={imgList.list}
                                         memberType={true}
                                         index={index}
                                     />
@@ -59,7 +59,7 @@ const Members = (props) => {
                     </>
                 )}
 
-                {isLoading && (
+                {imgList.isLoading && (
                     <h1 className="text-xl text-white text-center">
                         Loading Content . . .
                     </h1>
@@ -69,7 +69,7 @@ const Members = (props) => {
                 <h1 className="mb-9 text-3xl sm:text-5xl text-center underline underline-offset-8 decoration-emerald-400">
                     Domain Managers
                 </h1>
-                {!isDmLoading && (
+                {!dMimgList.isLoading && (
                     <div className="py-10 flex flex-wrap justify-center gap-x-11 gap-y-16 place-items-center">
                         {domainManagerDetails.map((member, index) => {
                             return (
@@ -78,26 +78,26 @@ const Members = (props) => {
                                     coreMember={member}
                                     displayModal={props.displayModal}
                                     memberType={false}
-                                    imgList={dMimgList}
+                                    imgList={dMimgList.list}
                                     index={index}
                                 />
                             );
                         })}
                     </div>
                 )}
-                {isDmLoading && (
+                {dMimgList.isLoading && (
                     <h1 className="text-xl text-white text-center">
                         Loading Content . . .
                     </h1>
                 )}
             </div>
 
-            {/* New Addition */}
+            {/* Graphics Designers */}
             <div className="sm:px-10 mb-20">
                 <h1 className="mb-9 text-3xl sm:text-5xl text-center underline underline-offset-8 decoration-emerald-400">
-                    Graphics Designers
+                    Graphics & Content Team
                 </h1>
-                {!isGdLoading && (
+                {!gDimgList.isLoading && (
                     <div className="py-10 flex flex-wrap justify-center gap-x-11 gap-y-16 place-items-center">
                         {graphicsDesignersDetails.map((member, index) => {
                             return (
@@ -106,14 +106,42 @@ const Members = (props) => {
                                     coreMember={member}
                                     displayModal={props.displayModal}
                                     memberType={false}
-                                    imgList={gDimgList}
+                                    imgList={gDimgList.list}
                                     index={index}
                                 />
                             );
                         })}
                     </div>
                 )}
-                {isGdLoading && (
+                {gDimgList.isLoading && (
+                    <h1 className="text-xl text-white text-center">
+                        Loading Content . . .
+                    </h1>
+                )}
+            </div>
+
+            {/* Tech Team */}
+            <div className="sm:px-10 mb-20">
+                <h1 className="mb-9 text-3xl sm:text-5xl text-center underline underline-offset-8 decoration-emerald-400">
+                    Tech Team
+                </h1>
+                {!techImgList.isLoading && (
+                    <div className="py-10 flex flex-wrap justify-center gap-x-11 gap-y-16 place-items-center">
+                        {techTeamDetails.map((member, index) => {
+                            return (
+                                <OffClickProfile
+                                    key={index}
+                                    coreMember={member}
+                                    displayModal={props.displayModal}
+                                    memberType={false}
+                                    imgList={techImgList.list}
+                                    index={index}
+                                />
+                            );
+                        })}
+                    </div>
+                )}
+                {gDimgList.isLoading && (
                     <h1 className="text-xl text-white text-center">
                         Loading Content . . .
                     </h1>
@@ -130,17 +158,6 @@ const Members = (props) => {
                         Click to view Other Members
                     </a>
                 </h1>
-                {/* <div className="py-10 flex flex-wrap justify-center gap-x-11 gap-y-16 place-items-center">
-                    {founderDetails.map((member) => {
-                        return (
-                            <OffClickProfile
-                                key={member.clubRole}
-                                coreMember={member}
-                                displayModal={props.displayModal}
-                            />
-                        );
-                    })}
-                </div> */}
             </div>
         </Fragment>
     );
