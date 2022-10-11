@@ -67,7 +67,6 @@ const OffClickProfile = (props) => {
                         {/* {console.log(imgView)} */}
                         <img
                             className="object-center object-cover mb-6 w-44 h-44 rounded-full shadow-lg mt-8"
-                            // src={props.memberType ? imgView : coreMember.img}
                             src={imgView}
                             alt="team profile"
                         />

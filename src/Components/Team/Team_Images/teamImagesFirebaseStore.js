@@ -2,10 +2,9 @@ import { getStorage, listAll, ref } from "firebase/storage";
 import app from '../../../firebase';
 
 export async function fetchImagesFromFirebase(path) {
-    const storage = getStorage(app);
-    const imgStorageRef = ref(storage, path);
-
     try {
+        const storage = getStorage(app);
+        const imgStorageRef = ref(storage, path);
         const response = await listAll(imgStorageRef);
         console.log(response);
         var listOfImg = [];
@@ -16,6 +15,6 @@ export async function fetchImagesFromFirebase(path) {
         console.log(listOfImg);
         return listOfImg;
     } catch (err) {
-        console.log(err);
+        throw new Error('failed to fetch images');
     }
 }

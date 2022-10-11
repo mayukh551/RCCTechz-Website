@@ -222,43 +222,5 @@ export const teamData = {
         dept: "CSE",
         year: 2
     }
-    ],
-
-    founders: [{
-        name: "Sourav Chakraborty",
-        profession: "IoT Engineer",
-        dept: "IT",
-        year: 4
-    },
-    {
-        name: "Ishaani Paul",
-        profession: "UX Designer",
-        dept: "IT",
-        year: 4
-    },
-    {
-        name: "Arghya Guha",
-        profession: "Web Developer",
-        dept: "IT",
-        year: 4
-    },
-    {
-        name: "Ahana Paul",
-        profession: "ML Engineer",
-        dept: "CSE",
-        year: 4
-    },
-    {
-        name: "Souhit De",
-        profession: "Network Security Engineer",
-        dept: "CSE",
-        year: 4
-    },
-    {
-        name: "Aritra Basu",
-        profession: "Web Developer",
-        dept: "CSE",
-        year: 4
-    }
     ]
 }
