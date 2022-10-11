@@ -15,7 +15,7 @@ const TeamWrapper = ({ imgList, heading, teamMemberDetails, displayModal }) => {
                                 return (
                                     <OffClickProfile
                                         key={index}
-                                        coreMember={member}
+                                        member={member}
                                         displayModal={displayModal}
                                         imgList={imgList.list}
                                         index={index}
