@@ -69,7 +69,7 @@ export const teamData = {
         year: 3,
         skills: [],
         about: "",
-        socialMedia: ['', '', '', '', '']
+        socialMedia: ['https://github.com/infuman69', 'https://linkedin.com/in/soham-saha-roy-788115206/', 'https://instagram.com/n.i.b.asin90/', '', '']
     },
     {
         name: "Rishav Mandal",
@@ -109,7 +109,7 @@ export const teamData = {
         year: 3,
         skills: [],
         about: "",
-        socialMedia: ['', '', '', '', '']
+        socialMedia: ['', 'https://linkedin.com/in/triasis-ghosh-322b27201/', 'https://instagram.com/triasisghosh/', '', '']
     },
     {
         name: "Sayani Patra",
@@ -119,7 +119,7 @@ export const teamData = {
         year: 3,
         skills: [],
         about: "",
-        socialMedia: ['', '', '', '', '']
+        socialMedia: ['', 'https://linkedin.com/in/sayani-patra-252571241/', 'https://instagram.com/sayaniandpatra/', '', '']
     },
     {
         name: "Soham Sarkar",
@@ -141,7 +141,7 @@ export const teamData = {
         year: 3,
         skills: [],
         about: "",
-        socialMedia: ['', '', '', '', '']
+        socialMedia: ['', 'https://linkedin.com/in/sayani-patra-252571241/', 'https://instagram.com/sayaniandpatra/', '', '']
     },
     {
         name: "Shagnik Mukherjee",
@@ -174,7 +174,7 @@ export const teamData = {
         year: 2,
         skills: [],
         about: "",
-        socialMedia: ['', '', '', '', '']
+        socialMedia: ['', 'https://linkedin.com/in/amit-roy-chowdhury-597993223/', 'https://instagram.com/amit.is.high/', '', '']
     },
     {
         name: "Atalanta Dey",
