@@ -236,7 +236,7 @@ export const teamData = {
         name: "Arghya Dutta ",
         profession: "React Developer",
         order: 2,
-        clubRole: "JavaScript Developer",
+        clubRole: "React Developer",
         dept: "CSE",
         year: 2,
         skills: ['Frontend Web Development', 'C++ & Python programming language', 'Git & GitHub', 'VS-Code', 'Technical Content Writing'],
