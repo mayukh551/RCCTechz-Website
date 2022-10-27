@@ -1,5 +1,5 @@
 # RCCTechz Website
-[Website URL](https://effortless-cendol-448ae6.netlify.app/)
+[Website URL](https://rcctechz22.netlify.app/)
 
 ## Getting Started with Create React App
 
