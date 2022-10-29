@@ -309,5 +309,18 @@ export const teamData = {
         about: "Myself Ranit Das and currently I am working with web development. I have also done some competitive programming. I actually use python and c in competitive programming but sometimes I also use c++. I am interested in AI and ML but I am learning them at a very early stage.",
         socialMedia: ['https://github.com/Ranit6', '', '', '', '']
     }
+    ],
+    magazineHead: [
+        {
+            name: "Upashana Pan",
+            profession: "MERN Stack Developer",
+            order: 8,
+            clubRole: "Magazine-In-Charge",
+            dept: "IT",
+            year: "3rd",
+            skills: ['Web development', 'competitive programming', 'python', 'AI(very beginning stage)'],
+            about: "Myself Ranit Das and currently I am working with web development. I have also done some competitive programming. I actually use python and c in competitive programming but sometimes I also use c++. I am interested in AI and ML but I am learning them at a very early stage.",
+            socialMedia: ['https://github.com/Ranit6', '', '', '', '']
+        }
     ]
 }

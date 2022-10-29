@@ -11,11 +11,13 @@ const Members = (props) => {
     const domainManagerDetails = teamData.domainManagers;
     const graphicsDesignersDetails = teamData.graphicsDesigners;
     const techTeamDetails = teamData.techTeam;
+    const magazineTeam = teamData.magazineHead;
 
     const [imgList, setImgList] = useState({ list: [], isLoading: true });
     const [dMimgList, setDmImgList] = useState({ list: [], isLoading: true });
     const [gDimgList, setgDImgList] = useState({ list: [], isLoading: true });
     const [techImgList, setTechImgList] = useState({ list: [], isLoading: true });
+    const [magazineImgList, setMagazineImgList] = useState({ list: [], isLoading: true });
 
     useEffect(() => {
         fetchImagesFromFirebase("BoardTeam/").then((listOfImg) => {
@@ -32,6 +34,10 @@ const Members = (props) => {
 
         fetchImagesFromFirebase("TechTeam/").then((listOfImg) => {
             setTechImgList({ list: [...listOfImg], isLoading: false });
+        });
+
+        fetchImagesFromFirebase("magazineTeam/").then((listOfImg) => {
+            setMagazineImgList({ list: [...listOfImg], isLoading: false });
         });
     }, []);
 
@@ -62,6 +68,13 @@ const Members = (props) => {
                 imgList={techImgList}
                 heading='Tech Team'
                 teamMemberDetails={techTeamDetails}
+                displayModal={props.displayModal}
+            />
+
+            <TeamWrapper 
+                imgList={magazineImgList}
+                heading='Magazine'
+                teamMemberDetails={magazineTeam}
                 displayModal={props.displayModal}
             />
             
