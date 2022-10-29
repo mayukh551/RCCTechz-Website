@@ -10,3 +10,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.btn-discord {
+    background-color: #8D9FFF;
+}
+
+.btn-discord:active {
+    background-color: #A8B7FF;
+}

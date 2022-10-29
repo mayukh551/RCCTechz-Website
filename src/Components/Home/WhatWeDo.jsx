@@ -10,6 +10,8 @@ import class2 from "../../SVGs/doubt.svg";
 import class3 from "../../SVGs/coding-svgrepo-com.svg";
 import contestLogo1 from "../../SVGs/competition-svgrepo-com.svg";
 import contestLogo2 from "../../SVGs/hackerrank-svgrepo-com.svg";
+import contestLogo3 from "../../Images/valorant-logo-img.jpg";
+import contestLogo4 from "../../SVGs/photograph-photography-svgrepo-com.svg";
 
 const WhatWeDo = () => {
     const { ref, inView } = useInView({
@@ -50,11 +52,11 @@ const WhatWeDo = () => {
                 <div className="flex flex-wrap justify-center gap-x-16 gap-y-11">
                     {content.map((c, i) => {
                         return (
-                            <div class="p-4 shadow-xl rounded-xl w-[90%] sm:w-[70%] md:w-[300px] flex flex-col gap-y-6 justify-center text-left bg-white py-6 px-4">
+                            <div class="p-4 shadow-xl rounded-xl w-[90%] sm:w-[70%] md:w-[300px] flex flex-col gap-y-6 justify-between text-left bg-white py-6 px-4">
                                 <p class="leading-relaxed text-lg">{c}</p>
                                 {i === 0 && (
                                     // <button class="mt-3 rounded-lg py-2 px-4 text-white bg-indigo-500"></button>
-                                    <div className="flex gap-x-3">
+                                    <div className="flex justify-center gap-x-3">
                                         <img
                                             src={contestLogo1}
                                             alt="logo"
@@ -65,11 +67,22 @@ const WhatWeDo = () => {
                                             alt="logo"
                                             className="w-11"
                                         />
+                                        <img
+                                            src={contestLogo3}
+                                            alt="logo"
+                                            className="w-11 text-red-700"
+                                        />
+                                        <img
+                                            src={contestLogo4}
+                                            alt="logo"
+                                            className="w-11 text-red-700"
+                                        />
+
                                     </div>
                                 )}
                                 {i === 1 && (
                                     // <button class="mt-3 rounded-lg py-2 px-4 text-white bg-indigo-500"></button>
-                                    <div className="flex gap-x-3">
+                                    <div className="flex justify-center gap-x-4">
                                         <img
                                             src={class1}
                                             alt="logo"
@@ -89,7 +102,7 @@ const WhatWeDo = () => {
                                 )}
                                 {i === 2 && (
                                     // <button class="mt-3 rounded-lg py-2 px-4 text-white bg-indigo-500"></button>
-                                    <div className="flex gap-x-3">
+                                    <div className="flex justify-center gap-x-4">
                                         <img
                                             src={angular}
                                             alt="logo"

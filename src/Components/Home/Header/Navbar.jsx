@@ -12,11 +12,11 @@ const Navbar = (props) => {
 
     return (
         <Fragment>
-            <div className="relative h-[50px] w-full left-0 top-0">
+            <div className={`fixed z-50 h-[50px] w-full left-0 top-0 md:bg-black inline md:block`}>
                 <button
                     onClick={menuHandler}
                     // className={`inline-block md:hidden text-3xl text-white mt-2 ml-2 hover:text-cyan-500`}
-                    className={`block absolute md:hidden text-3xl w-full text-white pl-2 py-[10px] top-0 left-0 text-left hover:text-cyan-500 ${(showMenubar? 'bg-black': '')}`}
+                    className={`block absolute md:hidden text-3xl w-full ${showMenubar? 'text-white' : 'text-black'} pl-2 py-[10px] top-0 left-0 text-left hover:text-cyan-500 ${(showMenubar? 'bg-black': '')}`}
                 >
                     <i className="bi bi-list"></i>
                 </button>

@@ -1,16 +1,19 @@
 import classes from "./Header.module.css";
 import Navbar from "./Navbar";
-import clubLogo from "../../../Images/RCC Techz (White).png";
+import clubLogo from "../../../Images/RT Logo.png";
 
 import { motion } from "framer-motion";
 
 const Header = () => {
     return (
-        <div className={`relative min-h-screen ${classes.header__image}`}>
+        // <div className={`relative min-h-screen ${classes.header__image}`}>
+        <div className={`relative min-h-screen`}
+            style={{ backgroundColor: "#f5ebe0" }}
+        >
             <Navbar />
             <div
                 // className={`h-full flex flex-col lg:flex-row items-center lg:justify-evenly text-4xl lg:text-6xl text-white font-semibold`}
-                className={`px-9 h-screen flex flex-col lg:flex-row items-center lg:justify-between text-4xl lg:text-6xl text-white font-semibold w-full`}
+                className={`px-9 h-screen flex flex-col lg:flex-row items-center justify-evenly text-4xl lg:text-6xl text-black font-semibold w-full`}
             >
                 <motion.img
                     src={clubLogo}
@@ -41,10 +44,17 @@ const Header = () => {
                             ease: "easeOut",
                             duration: 0.5,
                         }}
+                        className="mb-6"
                     >
                         {/* of <span className={`text-cyan-600`}>RCC</span>IIT */}
                         <span className={`text-cyan-600 font-bold`}>Nerds</span> & <span className={`text-green-600 font-bold`}>Geeks</span>
                     </motion.div>
+                    <div>
+                        <a rel="noreferrer" href="https://discord.gg/BQeShbsXQB" target="_blank">
+                            <button className={`bi bi-discord rounded-full shadow-lg px-8 py-4 text-base font-semibold hover:shadow-2xl hover:-translate-y-1 duration-300 ${classes['btn-discord']}`}
+                            // style={{ backgroundColor: "#8D9FFF" }}
+                            > Discord</button></a>
+                    </div>
                 </div>
             </div>
         </div>
