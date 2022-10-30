@@ -18,12 +18,12 @@ const Header = () => {
                 <motion.img
                     src={clubLogo}
                     alt="RCCTechz"
-                    className="w-96 lg:w-[450px]"
+                    className="pl-12 lg:pl-0 w-80 md:w-96 lg:w-[450px]"
                     initial={{ opacity: 0.2, scale: 0.6 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6 }}
                 />
-                <div className="pl-10">
+                <div className="md:pl-10 md:pt-10 text-center lg:text-left">
                     <motion.div
                         initial={{ y: "100%", opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}

@@ -7,11 +7,13 @@ import Domains from "./Domains";
 import Stats from "./Stats";
 import ClubFeatures from "./ClubFeatures";
 import Magazine from "./Magazine";
+import SocialMedia from "./Header/SocialMedia";
 
 const Home = () => {
     return (
         <div className="h-screen">
             <Header />
+            <SocialMedia />
             <DefineClub />
             <WhatWeDo />
             <ClubFeatures />
