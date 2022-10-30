@@ -15,6 +15,10 @@
     background-color: #8D9FFF;
 }
 
+.btn-discord:hover{
+    background-color: #9d15e6;
+}
+
 .btn-discord:active {
     background-color: #A8B7FF;
 }

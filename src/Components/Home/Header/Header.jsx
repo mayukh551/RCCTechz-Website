@@ -53,9 +53,8 @@ const Header = () => {
                     </motion.div>
                     <div>
                         <a rel="noreferrer" href="https://discord.gg/BQeShbsXQB" target="_blank">
-                            <button className={`bi bi-discord rounded-full shadow-lg px-8 py-4 text-base font-semibold hover:shadow-2xl hover:-translate-y-1 duration-300 ${classes['btn-discord']}`}
-                            // style={{ backgroundColor: "#8D9FFF" }}
-                            > Discord</button></a>
+                            <button className={`hover:text-white rounded-full shadow-lg px-8 py-4 text-base font-semibold hover:shadow-2xl hover:-translate-y-1 duration-300 ${classes['btn-discord']}`}
+                            ><i className="bi bi-discord hover:text-white"></i> Discord</button></a>
                     </div>
                 </div>
             </div>

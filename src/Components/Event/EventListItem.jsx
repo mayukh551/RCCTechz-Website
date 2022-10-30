@@ -48,6 +48,7 @@ const EventListItem = (props) => {
                     stiffness: 100,
                     // delay: props.index * 0.2,
                 }}
+                whileHover={{ scale: 1.04 }}
             >
                 <h3 className="flex items-center mb-1 text-lg sm:text-2xl font-semibold text-gray-900 ">
                     {event.title}{" "}
