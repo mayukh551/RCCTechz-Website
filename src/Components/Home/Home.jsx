@@ -11,7 +11,8 @@ import SocialMedia from "./Header/SocialMedia";
 
 const Home = () => {
     return (
-        <div className="h-screen">
+        // <div className="h-screen">
+        <div className="">
             <Header />
             <SocialMedia />
             <DefineClub />

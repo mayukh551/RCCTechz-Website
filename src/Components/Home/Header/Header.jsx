@@ -1,6 +1,7 @@
 import classes from "./Header.module.css";
 import Navbar from "./Navbar";
 import clubLogo from "../../../Images/RT Logo.png";
+import startupLogo from '../Header/socialMediaSVG/startup-rocket-svgrepo-com.svg'
 
 import { motion } from "framer-motion";
 
@@ -13,7 +14,7 @@ const Header = () => {
             <Navbar />
             <div
                 // className={`h-full flex flex-col lg:flex-row items-center lg:justify-evenly text-4xl lg:text-6xl text-white font-semibold`}
-                className={`px-9 h-screen flex flex-col lg:flex-row items-center justify-evenly text-4xl lg:text-6xl text-black font-semibold w-full`}
+                className={`px-9 h-screen flex flex-col lg:flex-row items-center justify-evenly text-black font-semibold w-full`}
             >
                 <motion.img
                     src={clubLogo}
@@ -23,7 +24,7 @@ const Header = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6 }}
                 />
-                <div className="md:pl-10 md:pt-10 text-center lg:text-left">
+                <div className="lg:pl-10 lg:pt-10 flex flex-col items-center lg:items-start text-center lg:text-left text-4xl lg:text-6xl">
                     <motion.div
                         initial={{ y: "100%", opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
@@ -32,22 +33,23 @@ const Header = () => {
                             duration: 0.5,
                             delay: 0.7,
                         }}
-                        className="mb-6"
+                        className="mb-6 flex gap-x-4"
                     >
-                        Club for
+                        <span>RCCTechz</span><span><img src={startupLogo} className='w-11 md:w-12 lg:w-16' alt="startup" /></span>
                     </motion.div>
                     <motion.div
-                        initial={{ y: "100%", opacity: 0 }}
+                        initial={{ y: "40%", opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{
                             delay: 1,
                             ease: "easeOut",
                             duration: 0.5,
                         }}
-                        className="mb-6"
+                        className="mb-6 text-base md:text-lg"
                     >
-                        {/* of <span className={`text-cyan-600`}>RCC</span>IIT */}
-                        <span className={`text-cyan-600 font-bold`}>Nerds</span> & <span className={`text-green-600 font-bold`}>Geeks</span>
+                        {/* <span className={`text-cyan-600 font-bold`}>Nerds</span> & <span className={`text-green-600 font-bold`}>Geeks</span> */}
+                        <div>Your<span className={`text-cyan-600 font-bold`}> Mentor.</span> Your<span className={`text-green-600 font-bold`}> Guide.</span></div>
+                        <div className="mt-2 w-[100%] md:w-[500px]">To help you get started with software development and guide you in your growth and achievements in Tech</div>
                     </motion.div>
                     <div>
                         <a rel="noreferrer" href="https://discord.gg/BQeShbsXQB" target="_blank">
