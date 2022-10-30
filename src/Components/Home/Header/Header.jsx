@@ -51,10 +51,14 @@ const Header = () => {
                         <div>Your<span className={`text-cyan-600 font-bold`}> Mentor.</span> Your<span className={`text-green-600 font-bold`}> Guide.</span></div>
                         <div className="mt-2 w-[100%] md:w-[500px]">To help you get started with software development and guide you in your growth and achievements in Tech</div>
                     </motion.div>
-                    <div>
+                    <div className="flex flex-col md:flex-row gap-y-8 md:gap-y-0 md:gap-x-8">
                         <a rel="noreferrer" href="https://discord.gg/BQeShbsXQB" target="_blank">
-                            <button className={`hover:text-white rounded-full shadow-lg px-8 py-4 text-base font-semibold hover:shadow-2xl hover:-translate-y-1 duration-300 ${classes['btn-discord']}`}
+                            <button className={`hover:text-white rounded-full shadow-md px-8 py-4 text-base font-semibold hover:shadow-2xl hover:-translate-y-1 duration-300 ${classes['btn-discord']}`}
                             ><i className="bi bi-discord hover:text-white"></i> Discord</button></a>
+                        <a rel="noreferrer" href="https://github.com/RCCTechzClub/RCCTechz-Website" target="_blank">
+                            {/* <button className={`hover:text-white rounded-full shadow-md px-8 py-4 text-base font-semibold hover:shadow-2xl hover:-translate-y-1 duration-300 ${classes['btn-github']}`} */}
+                            <button className={`hover:text-white border-[1px] border-gray-900 hover:bg-slate-700 rounded-full shadow-md px-8 py-4 text-base font-semibold hover:shadow-2xl hover:-translate-y-1 duration-300`}
+                            ><i className="bi bi-github hover:text-white"></i> GitHub</button></a>
                     </div>
                 </div>
             </div>
