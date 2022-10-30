@@ -7,14 +7,11 @@ import { motion } from "framer-motion";
 
 const Header = () => {
     return (
-        // <div className={`relative min-h-screen ${classes.header__image}`}>
         <div className={`relative min-h-screen`}
             style={{ backgroundColor: "#f5ebe0" }}
         >
             <Navbar />
-            <div
-                // className={`h-full flex flex-col lg:flex-row items-center lg:justify-evenly text-4xl lg:text-6xl text-white font-semibold`}
-                className={`px-9 h-screen flex flex-col lg:flex-row items-center justify-evenly text-black font-semibold w-full`}
+            <div className={`px-9 h-screen flex flex-col lg:flex-row items-center justify-evenly text-black font-semibold w-full`}
             >
                 <motion.img
                     src={clubLogo}
@@ -47,7 +44,6 @@ const Header = () => {
                         }}
                         className="mb-6 text-base md:text-lg"
                     >
-                        {/* <span className={`text-cyan-600 font-bold`}>Nerds</span> & <span className={`text-green-600 font-bold`}>Geeks</span> */}
                         <div>Your<span className={`text-cyan-600 font-bold`}> Mentor.</span> Your<span className={`text-green-600 font-bold`}> Guide.</span></div>
                         <div className="mt-2 w-[100%] md:w-[500px]">To help you get started with software development and guide you in your growth and achievements in Tech</div>
                     </motion.div>
@@ -56,7 +52,6 @@ const Header = () => {
                             <button className={`hover:text-white rounded-full shadow-md px-8 py-4 text-base font-semibold hover:shadow-2xl hover:-translate-y-1 duration-300 ${classes['btn-discord']}`}
                             ><i className="bi bi-discord hover:text-white"></i> Discord</button></a>
                         <a rel="noreferrer" href="https://github.com/RCCTechzClub/RCCTechz-Website" target="_blank">
-                            {/* <button className={`hover:text-white rounded-full shadow-md px-8 py-4 text-base font-semibold hover:shadow-2xl hover:-translate-y-1 duration-300 ${classes['btn-github']}`} */}
                             <button className={`hover:text-white border-[1px] border-gray-900 hover:bg-slate-700 rounded-full shadow-md px-8 py-4 text-base font-semibold hover:shadow-2xl hover:-translate-y-1 duration-300`}
                             ><i className="bi bi-github hover:text-white"></i> GitHub</button></a>
                     </div>
