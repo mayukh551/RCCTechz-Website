@@ -298,7 +298,7 @@ export const teamData = {
             year: "3rd",
             skills: ['Web development', 'competitive programming', 'python', 'AI(very beginning stage)'],
             about: "Myself Ranit Das and currently I am working with web development. I have also done some competitive programming. I actually use python and c in competitive programming but sometimes I also use c++. I am interested in AI and ML but I am learning them at a very early stage.",
-            socialMedia: ['https://github.com/Ranit6', '', '', '', '']
+            socialMedia: ['https://github.com/Upasana-610', 'https://www.linkedin.com/in/upasana-pan-610upa', '', '', '']
         }
     ]
 }
