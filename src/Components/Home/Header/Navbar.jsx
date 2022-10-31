@@ -16,7 +16,7 @@ const Navbar = (props) => {
                 <button
                     onClick={menuHandler}
                     // className={`inline-block md:hidden text-3xl text-white mt-2 ml-2 hover:text-cyan-500`}
-                    className={`block absolute md:hidden text-3xl w-full ${showMenubar? 'text-white' : 'text-black'} pl-2 py-[10px] top-0 left-0 text-left hover:text-cyan-500 ${(showMenubar? 'bg-black': '')}`}
+                    className={`block absolute md:hidden text-3xl w-full ${showMenubar? 'text-white' : 'text-black'} pl-2 py-[10px] top-0 left-0 text-left text-cyan-500 hover:text-purple-600 ${(showMenubar? 'bg-black': '')}`}
                 >
                     <i className="bi bi-list"></i>
                 </button>
