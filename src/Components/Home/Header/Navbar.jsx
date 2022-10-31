@@ -12,7 +12,7 @@ const Navbar = (props) => {
 
     return (
         <Fragment>
-            <div className={`static md:fixed z-50 h-[50px] w-full left-0 top-0 md:bg-black inline md:block`}>
+            <div className={`static md:fixed z-50 h-[50px] w-full left-0 top-0 md:bg-black inline-block md:block`}>
                 <button
                     onClick={menuHandler}
                     // className={`inline-block md:hidden text-3xl text-white mt-2 ml-2 hover:text-cyan-500`}

@@ -133,42 +133,9 @@ export const teamData = {
     }
     ],
     graphicsDesigners: [{
-        name: "Sayani Patra",
-        profession: "ML Engineer",
-        order: 1,
-        clubRole: "Graphics Head",
-        dept: "CSE",
-        year: 3,
-        skills: [],
-        about: "",
-        socialMedia: ['', 'https://linkedin.com/in/sayani-patra-252571241/', 'https://instagram.com/sayaniandpatra/', '', '']
-    },
-    {
-        name: "Shagnik Mukherjee",
-        profession: "UX/UI Designer",
-        order: 2,
-        clubRole: "Non-Tech Head",
-        dept: "ECE",
-        year: 3,
-        skills: ['Graphics Designing', 'Java', 'Event Management', 'Leadership', 'Web development'],
-        about: "Warm Greetings! I am Shagnik Mukherjee and I am currently pursuing B.Tech(ECE) from RCCIIT. I live in Kolkata. I am highly interested in Graphics Designing and Web Development. I love to play Video Games and I'm a weeb. Arigato",
-        socialMedia: ['', 'https://linkedin.com/in/shagnik-mukherjee-3980a720b', 'https://instagram.com/dark_star_shines/', '', '']
-    },
-    {
-        name: "Urbi Chakraborty",
-        profession: "",
-        order: 3,
-        clubRole: "Graphics Designer",
-        dept: "CSE",
-        year: 2,
-        skills: ['Web Dev', 'Python programming', 'graphic design'],
-        about: "Some languages that I know are Java, Python, C, and C++. I use Figma and Canva for Designing. I can do basic front-end development using: Html, CSS, and Js. Sometimes I use frameworks like Tailwind/Bootstrap. I have used MySQL.Can use Github ",
-        socialMedia: ['https://github.com/Urbi-C', 'https://linkedin.com/in/urbi-chakraborty-190bb0227/', 'https://instagram.com/urbi__chakraborty/', '', '']
-    },
-    {
         name: "Amit Roy Chowdhury",
         profession: "",
-        order: 4,
+        order: 1,
         clubRole: "Video Animator",
         dept: "IT",
         year: 2,
@@ -179,7 +146,7 @@ export const teamData = {
     {
         name: "Atalanta Dey",
         profession: "",
-        order: 5,
+        order: 2,
         clubRole: "Video Animator",
         dept: "CSE",
         year: 2,
@@ -190,7 +157,7 @@ export const teamData = {
     {
         name: "Swastika Bose",
         profession: "",
-        order: 6,
+        order: 3,
         clubRole: "Content Writer",
         dept: "CSE",
         year: 2,
@@ -199,9 +166,20 @@ export const teamData = {
         socialMedia: ['https://github.com/swastika07bose', 'https://linkedin.com/in/swastika-bose-25at25', 'https://instagram.com/the_swastikabose?igshid=YmMyMTA2M2Y=', 'https://m.facebook.com/profile.php?id=100005661045208', '']
     },
     {
+        name: "Urbi Chakraborty",
+        profession: "",
+        order: 4,
+        clubRole: "Graphics Designer",
+        dept: "CSE",
+        year: 2,
+        skills: ['Web Dev', 'Python programming', 'graphic design'],
+        about: "Some languages that I know are Java, Python, C, and C++. I use Figma and Canva for Designing. I can do basic front-end development using: Html, CSS, and Js. Sometimes I use frameworks like Tailwind/Bootstrap. I have used MySQL.Can use Github ",
+        socialMedia: ['https://github.com/Urbi-C', 'https://linkedin.com/in/urbi-chakraborty-190bb0227/', 'https://instagram.com/urbi__chakraborty/', '', '']
+    },
+    {
         name: "Soumyadeep Chakraborty",
         profession: "",
-        order: 7,
+        order: 5,
         clubRole: "Graphics Designer",
         dept: "CSE",
         year: 2,
@@ -212,7 +190,7 @@ export const teamData = {
     {
         name: "Priyojit Kundu",
         profession: "",
-        order: 8,
+        order: 6,
         clubRole: "Graphics Designer",
         dept: "CSE",
         year: 2,
