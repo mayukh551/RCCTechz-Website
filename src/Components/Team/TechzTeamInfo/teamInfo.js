@@ -315,7 +315,7 @@ export const teamData = {
             name: "Upashana Pan",
             profession: "MERN Stack Developer",
             order: 8,
-            clubRole: "Magazine-In-Charge",
+            clubRole: "Editor",
             dept: "IT",
             year: "3rd",
             skills: ['Web development', 'competitive programming', 'python', 'AI(very beginning stage)'],
