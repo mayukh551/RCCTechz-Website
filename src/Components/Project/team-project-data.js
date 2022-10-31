@@ -4,7 +4,7 @@ const projectData = [
         title: 'Movie-Success-Predictor Desktop App',
         team: ['Rounak Hazra', 'Abesh Biswas', 'Mayukh Bhowmick'],
         url: '',
-        description: 'blah blah blah',
+        description: 'A Desktop Application that predicts Upcoming Hollywood Movies to be hit, average, flop by analyzing performance of actors and directors based on their past movies',
         repoLink: 'https://www.github.com/',
     },
     {
