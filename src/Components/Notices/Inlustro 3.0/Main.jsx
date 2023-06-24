@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import reg from "./assets/reg.png";
 import cheked from "./assets/checked.png";
 import trophy from "./assets/trophy.png";
@@ -15,41 +15,76 @@ import new_banner from './assets/new_banner.jpg'
 import "react-icons";
 import Navbar from "../../Home/Header/Navbar";
 
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 
 const Main = () => {
+
+    const [startAnimation, setStartAnimation] = useState(false);
+
+    const { ref, inView } = useInView({
+        threshold: 0.4,
+    });
+
+    useEffect(() => {
+        if (inView) {
+            setStartAnimation(true);
+        } else {
+            setStartAnimation(false);
+        }
+    }, [inView]);
+
     return (
         <div className="w-full overflow-y-hidden">
-            <Navbar/>
+            <Navbar />
             <div className="min-w-[415px] lg:w-full  bg-black text-white flex items-center justify-center">
-                
-                <img src={banner} alt="" className="w-full h-full md:mt-14"/>
+
+                <img src={banner} alt="" className="w-full h-full md:mt-14" />
             </div>
             <div className="bg-[#000A2F] pb-[100px] min-w-[415px] lg:w-full">
-                <div className=" flex flex-col gap-[5rem] md:flex-row justify-evenly items-center pt-[100px]">
-                    <div className="bg-[#9B8CF8] mr-5 hover:scale-110 duration-100 flex flex-col items-center  justify-center w-[280px] h-[395px] md:w-[315px] md:h-[434px] rounded-3xl">
+                <div className=" flex flex-col gap-[5rem] md:flex-row justify-evenly items-center pt-[100px]"
+                    ref={ref}
+                >
+                    <motion.div
+                        className="bg-[#9B8CF8] mr-5 hover:scale-110 duration-100 flex flex-col items-center  justify-center w-[280px] h-[395px] md:w-[315px] md:h-[434px] rounded-3xl"
+                        initial={{ opacity: 0, x: "-20%" }}
+                        animate={startAnimation && { opacity: 1, x: 0 }}
+                        transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
+                    >
                         <div>
                             <img src={reg} alt="/" className="h-30" />
                         </div>
                         <p className="font-patua font-bold w-[225px] pt-16 flex flex-col items-center space-y-2 text-xl">
-                            <p>Imagine</p> <p>Design</p> <p>Develop</p>  
+                            <p>Imagine</p> <p>Design</p> <p>Develop</p>
                         </p>
-                    </div>
-                    <div className=" bg-[#E96D6D] mr-5  flex flex-col justify-center items-center w-[280px] h-[395px] md:w-[315px] md:h-[434px] rounded-3xl">
+                    </motion.div>
+                    <motion.div
+                        className=" bg-[#E96D6D] mr-5  flex flex-col justify-center items-center w-[280px] h-[395px] md:w-[315px] md:h-[434px] rounded-3xl"
+                        initial={{ opacity: 0, y: "+20%" }}
+                        animate={startAnimation && { opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
+                    >
                         <div>
                             <img src={cheked} alt="/" className=" h-30" />
                         </div>
                         <p className="font-patua font-bold w-[225px] pt-12 flex flex-col items-center justify-center space-y-2 text-lg text-center">
                             <p>Present your work with confidence</p> <p>contribute and make an impact.</p> <p> <button class="rounded-full px-3 py-1 mt-5 font-semibold hover:scale-110 duration-100  bg-[#ffe4e6]"><a href="https://forms.gle/rzVk3srTgEog3baG8">Register Now</a></button></p>
                         </p>
-                    </div>
-                    <div className="bg-[#7CDD9D] mr-5 hover:scale-110 duration-100 flex flex-col items-center justify-center w-[280px] h-[395px] md:w-[315px] md:h-[434px] rounded-3xl">
+                    </motion.div>
+                    <motion.div
+                        className="bg-[#7CDD9D] mr-5 hover:scale-110 duration-100 flex flex-col items-center justify-center w-[280px] h-[395px] md:w-[315px] md:h-[434px] rounded-3xl"
+                        initial={{ opacity: 0, x: "+20%" }}
+                        animate={startAnimation && { opacity: 1, x: 0 }}
+                        transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
+                    >
                         <div>
                             <img src={trophy} alt="/" className=" h-30" />
                         </div>
                         <p className="font-patua font-bold w-[225px] flex flex-col items-center justify-center text-center pt-16 text-2xl">
-                            <p>Rising above the competition.</p> 
+                            <p>Rising above the competition.</p>
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
 
                 <div>
