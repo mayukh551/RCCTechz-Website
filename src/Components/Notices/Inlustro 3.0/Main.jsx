@@ -18,11 +18,11 @@ import Navbar from "../../Home/Header/Navbar";
 
 const Main = () => {
     return (
-        <div className="w-full overflow-x-hidden">
+        <div className="w-full overflow-y-hidden">
             <Navbar/>
-            <div className="min-w-[415px] lg:w-full h-[155px] md:h-[564px] bg-black text-white flex items-center justify-center">
+            <div className="min-w-[415px] lg:w-full h-[155px] md:h-[580px] bg-black text-white flex items-center justify-center top-3">
                 
-                <img src={banner} alt="" className="w-full"/>
+                <img src={banner} alt="" className="w-full h-full md:mt-14"/>
             </div>
             <div className="bg-[#000A2F] pb-[100px] min-w-[415px] lg:w-full">
                 <div className=" flex flex-col gap-[5rem] md:flex-row justify-evenly items-center pt-[100px]">
@@ -56,7 +56,7 @@ const Main = () => {
                     <img
                         src={bulb}
                         alt="/"
-                        className="absolute left-[166px] top-[5040px] lg:top-[1800px] lg:left-[1066px] h-[300px] lg:h-[608px] opacity-[60%] "
+                        className="absolute right-[0] top-[5040px] lg:top-[1800px] h-[300px] lg:h-[608px] opacity-[60%] "
                     />
                 </div>
 
