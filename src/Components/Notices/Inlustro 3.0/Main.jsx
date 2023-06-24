@@ -36,7 +36,7 @@ const Main = () => {
     }, [inView]);
 
     return (
-        <div className="w-full overflow-y-hidden">
+        <div className="w-full overflow-y-hidden bg-black">
             <Navbar />
             <div className="min-w-[415px] lg:w-full  bg-black text-white flex items-center justify-center">
 
