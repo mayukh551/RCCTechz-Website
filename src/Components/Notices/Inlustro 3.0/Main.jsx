@@ -68,8 +68,8 @@ const Main = () => {
                         <div>
                             <img src={cheked} alt="/" className=" h-30" />
                         </div>
-                        <p className="font-patua font-bold w-[225px] pt-12 flex flex-col items-center justify-center space-y-2 text-lg text-center">
-                            <p>Present your work with confidence</p> <p>contribute and make an impact.</p> <p> <button class="rounded-full px-3 py-1 mt-5 font-semibold hover:scale-110 duration-100  bg-[#ffe4e6]"><a href="https://forms.gle/rzVk3srTgEog3baG8">Register Now</a></button></p>
+                        <p className="font-patua font-bold w-[225px] pt-12 flex flex-col items-center justify-center space-y-2 text-md text-center">
+                            <p>Present your work with confidence</p> <p>contribute and make an impact.</p> <p> <button class="rounded-full px-4 py-2 mt-5 font-semibold hover:scale-110 duration-100  bg-[#ffe4e6]"><a href="https://forms.gle/rzVk3srTgEog3baG8">Register Now</a></button></p>
                         </p>
                     </motion.div>
                     <motion.div
@@ -99,7 +99,7 @@ const Main = () => {
                     <img
                         src={rocket}
                         alt=""
-                        className="z-[0] absolute top-[2040px] lg:top-[1140px] lg:left-[-80px] h-[300px] lg:h-[608px] opacity-[60%]"
+                        className="z-[0] absolute top-[2040px] lg:top-[1200px] lg:left-[-80px] h-[300px] lg:h-[608px] opacity-[60%]"
                     />
                 </div>
 
@@ -110,6 +110,7 @@ const Main = () => {
                 <Illustration />
 
                 <Animation />
+
             </div>
         </div>
     );

@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [![](https://skillicons.dev/icons?i=firebase)](https://firebase.google.com/)
 
 ## Hosted on :
-[![](https://skillicons.dev/icons?i=netlify)](https://www.netlify.com/)
+[![](https://skillicons.dev/icons?i=vercel)](https://vercel.com/)
 
 ### Make sure to run the following command before 'npm start'
 ```
@@ -23,7 +23,7 @@ In the project directory, you can run on your terminal:
 
 ```npm start```
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
