@@ -1,19 +1,7 @@
 import React, { useEffect, useState } from "react";
-import reg from "./assets/reg.png";
-import cheked from "./assets/checked.png";
-import trophy from "./assets/trophy.png";
+
 import pen from "./assets/pen.png";
-import camera from "./assets/camera.png";
-import draw from "./assets/draw.png";
-import video from "./assets/video.png";
-import rocket from "./assets/rocket.png";
-import bulb from "./assets/bulb.png";
-import water from "./assets/water.png";
-import write from "./assets/write.png";
-import banner from "./assets/banner.jpeg"
-import new_banner from './assets/new_banner.jpg'
 import "react-icons";
-import Navbar from "../../Home/Header/Navbar";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
