@@ -20,7 +20,7 @@ const Main = () => {
     return (
         <div className="w-full overflow-y-hidden">
             <Navbar/>
-            <div className="min-w-[415px] lg:w-full h-[155px] md:h-[580px] bg-black text-white flex items-center justify-center top-3">
+            <div className="min-w-[415px] lg:w-full  bg-black text-white flex items-center justify-center">
                 
                 <img src={banner} alt="" className="w-full h-full md:mt-14"/>
             </div>
