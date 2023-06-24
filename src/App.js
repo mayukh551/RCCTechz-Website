@@ -4,6 +4,7 @@ import Event from './Components/Event/Event'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Project from "./Components/Project/Project";
 import NotFound from "./Components/NotFound";
+import Main from "./Components/Notices/Inlustro 3.0/Main";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/projects" element={<Project />} />
         <Route path="/events" element={<Event />} />
         <Route path='*' element={<NotFound />} />
+        <Route path="/notice" element={ <Main/> } />
       </Routes>
     </Router>
   );
