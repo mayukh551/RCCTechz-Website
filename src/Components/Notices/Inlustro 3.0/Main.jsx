@@ -47,7 +47,7 @@ const Main = () => {
                     ref={ref}
                 >
                     <motion.div
-                        className="bg-[#9B8CF8] mr-5 hover:scale-110 duration-100 flex flex-col items-center  justify-center w-[280px] h-[395px] md:w-[315px] md:h-[434px] rounded-3xl"
+                        className="bg-[#9B8CF8] z-[10] mr-5 hover:scale-110 duration-100 flex flex-col items-center  justify-center w-[280px] h-[395px] md:w-[315px] md:h-[434px] rounded-3xl"
                         initial={{ opacity: 0, x: "-20%" }}
                         animate={startAnimation && { opacity: 1, x: 0 }}
                         transition={{ delay: 0.2, duration: 0.7, ease: "easeOut" }}
@@ -60,7 +60,7 @@ const Main = () => {
                         </p>
                     </motion.div>
                     <motion.div
-                        className=" bg-[#E96D6D] mr-5  flex flex-col justify-center items-center w-[280px] h-[395px] md:w-[315px] md:h-[434px] rounded-3xl"
+                        className=" bg-[#E96D6D] z-[10] mr-5  flex flex-col justify-center items-center w-[280px] h-[395px] md:w-[315px] md:h-[434px] rounded-3xl"
                         initial={{ opacity: 0, y: "+20%" }}
                         animate={startAnimation && { opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, duration: 0.7, ease: "easeOut" }}
@@ -73,7 +73,7 @@ const Main = () => {
                         </p>
                     </motion.div>
                     <motion.div
-                        className="bg-[#7CDD9D] mr-5 hover:scale-110 duration-100 flex flex-col items-center justify-center w-[280px] h-[395px] md:w-[315px] md:h-[434px] rounded-3xl"
+                        className="bg-[#7CDD9D] z-[10] mr-5 hover:scale-110 duration-100 flex flex-col items-center justify-center w-[280px] h-[395px] md:w-[315px] md:h-[434px] rounded-3xl"
                         initial={{ opacity: 0, x: "+20%" }}
                         animate={startAnimation && { opacity: 1, x: 0 }}
                         transition={{ delay: 0.2, duration: 0.7, ease: "easeOut" }}

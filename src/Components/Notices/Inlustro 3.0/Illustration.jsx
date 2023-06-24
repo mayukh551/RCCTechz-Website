@@ -25,7 +25,7 @@ const Illustration = () => {
 
     return (
         <div className="flex flex-col gap-[5rem] md:flex-row justify-evenly  items-center mt-40" ref={ref}>
-            <motion.div className="h-[225px] w-[225px] flex flex-col mr-5 justify-center items-center rounded-full hover:scale-110 duration-100 bg-[#7CDD9D]"
+            <motion.div className="h-[225px] w-[225px] flex flex-col z-[10] mr-5 justify-center items-center rounded-full hover:scale-110 duration-100 bg-[#7CDD9D]"
                 initial={{ opacity: 0, x: "-20%" }}
                 animate={startAnimation && { opacity: 1, x: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}

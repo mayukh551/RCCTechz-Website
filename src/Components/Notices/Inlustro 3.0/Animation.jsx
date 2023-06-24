@@ -33,7 +33,7 @@ const Animation = () => {
                 <p className=" text-lg">Crafting compelling narratives through the art of moving images, sound, and editing.</p>
                 <p className=" text-lg"> <button class="rounded-full px-3 py-1 mt-2 bg-[#DDA6E5] font-semibold hover:scale-110 duration-100 text-black"><a href=" https://forms.gle/UHPdQ5RCbkbju3eM6">Submit Now</a></button></p>
             </motion.div>
-            <motion.div className="h-[225px] w-[225px] mr-5 flex flex-col justify-center hover:scale-110 duration-100 items-center rounded-full bg-[#DDA6E5]"
+            <motion.div className="h-[225px] w-[225px] z-[10] mr-5 flex flex-col justify-center hover:scale-110 duration-100 items-center rounded-full bg-[#DDA6E5]"
                 initial={{ opacity: 0, x: "+20%" }}
                 animate={startAnimation && { opacity: 1, x: 0 }}
                 transition={{ delay: (0.3), duration: 0.7, ease: "easeOut" }}
